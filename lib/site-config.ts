@@ -40,7 +40,7 @@ export const siteConfig = {
     {
       label: "Mobile Apps",
       name: "Mobile App Development",
-      href: "/services/mobile-apps",
+      href: "/services/mobile-app-development",
       serviceType: "Mobile App Development",
       description:
         "Native iOS, Android, and cross-platform applications built with React Native, Flutter, Swift, and Kotlin. We design and ship mobile experiences that users love and businesses depend on.",

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
+  Check,
   Code2,
   Palette,
   PenTool,
@@ -14,6 +15,7 @@ import {
 } from "lucide-react";
 
 import { siteConfig } from "@/lib/site-config";
+import { servicesContent } from "@/lib/services-content";
 import { fadeInUp, staggerContainer } from "@/lib/motion";
 
 const serviceIcons: Record<string, LucideIcon> = {
@@ -28,27 +30,16 @@ const serviceIcons: Record<string, LucideIcon> = {
 export function ServicesGrid() {
   return (
     <section
-      aria-labelledby="services-heading"
+      aria-labelledby="services-grid-heading"
       className="bg-neutral-50 px-6 py-20 md:py-32"
     >
       <div className="mx-auto max-w-6xl">
-        <p className="text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase">
-          What We Do
-        </p>
         <h2
-          id="services-heading"
-          className="mt-4 max-w-3xl font-serif text-4xl text-black md:text-5xl"
+          id="services-grid-heading"
+          className="font-serif text-4xl text-black md:text-5xl"
         >
-          Services built to scale ambitious brands globally
+          Six services. One integrated approach.
         </h2>
-        <p className="mt-6 max-w-2xl text-base text-neutral-600 md:text-lg">
-          From the foundation of a high-performing website to the strategy
-          behind a million-dollar ad campaign — we cover every pillar of
-          digital growth under one roof. Six core services. One integrated
-          team. Zero handoffs between agencies. As an international digital
-          agency, we build every engagement to the same standard, whether
-          you&apos;re a startup in Austin or an enterprise in London.
-        </p>
 
         <motion.div
           initial="hidden"
@@ -58,7 +49,10 @@ export function ServicesGrid() {
           className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {siteConfig.services.map((service) => {
+            const slug = service.href.replace("/services/", "");
+            const content = servicesContent[slug];
             const Icon = serviceIcons[service.href] ?? Code2;
+
             return (
               <motion.article
                 key={service.href}
@@ -69,14 +63,28 @@ export function ServicesGrid() {
                 <h3 className="mt-6 font-serif text-2xl text-black">
                   {service.name}
                 </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-600">
-                  {service.description}
+                <p className="mt-3 text-sm leading-relaxed text-neutral-600">
+                  {content.gridSummary}
                 </p>
+                <ul className="mt-4 flex flex-col gap-2">
+                  {content.gridHighlights.map((highlight) => (
+                    <li
+                      key={highlight}
+                      className="flex items-start gap-2 text-sm text-neutral-700"
+                    >
+                      <Check
+                        className="mt-0.5 size-4 shrink-0 text-black"
+                        aria-hidden="true"
+                      />
+                      {highlight}
+                    </li>
+                  ))}
+                </ul>
                 <Link
                   href={service.href}
                   className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-black underline-offset-4 hover:underline"
                 >
-                  Learn More
+                  Explore {service.name}
                   <ArrowRight className="size-3.5" aria-hidden="true" />
                 </Link>
               </motion.article>
