@@ -55,7 +55,21 @@ export const siteConfig = {
     },
   },
   legal: [
-    { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Terms of Service", href: "/terms-of-service" },
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Terms of Service", href: "/terms" },
   ] satisfies NavLink[],
+  foundingDate: "2026",
+  areaServed: [
+    "United States",
+    "United Kingdom",
+    "European Union",
+    "Australia",
+  ],
+  address: {
+    country: "IN",
+    locality: "Udaipur",
+    region: "Rajasthan",
+    latitude: 24.5854,
+    longitude: 73.7125,
+  },
 } as const;

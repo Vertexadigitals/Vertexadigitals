@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { siteConfig } from "@/lib/site-config";
+import { JsonLd } from "@/components/JsonLd";
+import { generateSeoMetadata } from "@/lib/seo";
+import { getOrganizationSchema, getWebsiteSchema } from "@/lib/schema";
 import "./globals.css";
 
 const inter = Inter({
@@ -18,8 +20,24 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} | ${siteConfig.tagline}`,
-  description: siteConfig.description,
+  ...generateSeoMetadata({
+    title: "Vertexa Digitals | Your Complete Digital Growth Partner",
+    description:
+      "We design, build, and scale digital experiences for ambitious brands across the US, UK, EU, and Australia. Web development, mobile apps, SEO, paid ads, branding, and content.",
+    canonical: "/",
+  }),
+  // Overrides the plain string above with the template Next.js uses to
+  // suffix every other page's <title> with " | Vertexa Digitals".
+  title: {
+    default: "Vertexa Digitals | Your Complete Digital Growth Partner",
+    template: "%s | Vertexa Digitals",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#000000",
 };
 
 export default function RootLayout({
@@ -33,6 +51,7 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <JsonLd data={[getOrganizationSchema(), getWebsiteSchema()]} />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
