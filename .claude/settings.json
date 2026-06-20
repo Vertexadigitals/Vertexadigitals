@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:3433/ -o homepage-debug.html)",
+      "Bash(node -e ' *)",
+      "Bash(rm -f homepage-debug.html)"
+    ]
+  }
+}

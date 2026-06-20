@@ -3,6 +3,13 @@ export type NavLink = {
   href: string;
 };
 
+export type ServiceLink = NavLink & {
+  /** Full marketing name used in headings/schema (label stays short for Navbar/Footer). */
+  name: string;
+  description: string;
+  serviceType: string;
+};
+
 export const siteConfig = {
   name: "Vertexa Digitals",
   tagline: "Your complete digital growth partner.",
@@ -22,13 +29,55 @@ export const siteConfig = {
     { label: "Contact", href: "/contact" },
   ] satisfies NavLink[],
   services: [
-    { label: "Web Development", href: "/services/web-development" },
-    { label: "Mobile Apps", href: "/services/mobile-apps" },
-    { label: "SEO", href: "/services/seo" },
-    { label: "Performance Marketing", href: "/services/performance-marketing" },
-    { label: "Branding & Design", href: "/services/branding-design" },
-    { label: "Content & Social Media", href: "/services/content-social-media" },
-  ] satisfies NavLink[],
+    {
+      label: "Web Development",
+      name: "Web Development",
+      href: "/services/web-development",
+      serviceType: "Web Development",
+      description:
+        "From marketing sites to complex web applications, we build fast, SEO-optimized, conversion-focused websites using Next.js, React, Shopify, WordPress, and modern stacks that scale with your business.",
+    },
+    {
+      label: "Mobile Apps",
+      name: "Mobile App Development",
+      href: "/services/mobile-apps",
+      serviceType: "Mobile App Development",
+      description:
+        "Native iOS, Android, and cross-platform applications built with React Native, Flutter, Swift, and Kotlin. We design and ship mobile experiences that users love and businesses depend on.",
+    },
+    {
+      label: "SEO",
+      name: "SEO Services",
+      href: "/services/seo",
+      serviceType: "Search Engine Optimization",
+      description:
+        "Technical SEO, on-page optimization, content strategy, and link building designed to rank you on page one for keywords that drive revenue — not vanity metrics. Built for international markets.",
+    },
+    {
+      label: "Performance Marketing",
+      name: "Performance Marketing",
+      href: "/services/performance-marketing",
+      serviceType: "Performance Marketing",
+      description:
+        "Paid acquisition campaigns across Google Ads, Meta, LinkedIn, and emerging platforms — engineered around ROAS, CAC, and lifetime value. We don't run ads. We engineer growth.",
+    },
+    {
+      label: "Branding & Design",
+      name: "Branding & Design",
+      href: "/services/branding-design",
+      serviceType: "Branding and Design",
+      description:
+        "Brand identity, visual design systems, UI/UX, and creative direction for companies that want to look as serious as they are. The work you'd expect from a branding agency obsessed with outcomes, not just aesthetics.",
+    },
+    {
+      label: "Content & Social Media",
+      name: "Content & Social Media",
+      href: "/services/content-social-media",
+      serviceType: "Content and Social Media Marketing",
+      description:
+        "Content strategy, copywriting, social media management, and editorial production — built to attract, convert, and retain customers. Words and visuals that do real work.",
+    },
+  ] satisfies ServiceLink[],
   company: [
     { label: "About", href: "/about" },
     { label: "Work", href: "/work" },

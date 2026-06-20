@@ -84,6 +84,25 @@ export function getServiceSchema(params: ServiceSchemaParams) {
   };
 }
 
+type ItemListEntry = {
+  name: string;
+  url: string;
+};
+
+/** ItemList schema for a list of named, linked entities (e.g. the services list). */
+export function getItemListSchema(items: ItemListEntry[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: item.url,
+    })),
+  };
+}
+
 type BreadcrumbItem = {
   name: string;
   url: string;

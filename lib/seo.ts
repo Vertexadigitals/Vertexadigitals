@@ -25,7 +25,11 @@ export function generateSeoMetadata({
 }: GenerateSeoMetadataParams): Metadata {
   const url = new URL(canonical, siteConfig.url).toString();
   const imageUrl = new URL(ogImage, siteConfig.url).toString();
-  const fullTitle = `${title} | ${siteConfig.name}`;
+  // Avoids "X | Vertexa Digitals | Vertexa Digitals" when a caller (e.g. the
+  // homepage) passes an already-branded title instead of a short page title.
+  const fullTitle = title.includes(siteConfig.name)
+    ? title
+    : `${title} | ${siteConfig.name}`;
 
   return {
     metadataBase: new URL(siteConfig.url),
