@@ -206,3 +206,64 @@ export function getLocalBusinessSchema() {
     priceRange: "$$$",
   };
 }
+
+type PersonSchemaParams = {
+  name: string;
+  jobTitle: string;
+  description?: string;
+};
+
+/** Person schema for team/founder bios (e.g. on the About page). */
+export function getPersonSchema(params: PersonSchemaParams) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: params.name,
+    jobTitle: params.jobTitle,
+    description: params.description,
+    worksFor: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+  };
+}
+
+type WebPageSchemaParams = {
+  name: string;
+  description: string;
+  url: string;
+};
+
+/** Generic WebPage schema for simple pages like Privacy and Terms. */
+export function getWebPageSchema(params: WebPageSchemaParams) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: params.name,
+    description: params.description,
+    url: params.url,
+    isPartOf: {
+      "@type": "WebSite",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+  };
+}
+
+type ContactPageSchemaParams = {
+  name: string;
+  description: string;
+  url: string;
+};
+
+/** ContactPage schema for the contact page. */
+export function getContactPageSchema(params: ContactPageSchemaParams) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: params.name,
+    description: params.description,
+    url: params.url,
+  };
+}
