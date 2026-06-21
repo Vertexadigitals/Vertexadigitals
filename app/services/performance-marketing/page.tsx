@@ -42,7 +42,7 @@ export default function PerformanceMarketingPage() {
   return (
     <>
       <JsonLd data={[serviceSchema, faqSchema, breadcrumbSchema]} />
-      <ServiceDetailTemplate serviceName={link.name} content={content} />
+      <ServiceDetailTemplate slug={SLUG} serviceName={link.name} content={content} />
     </>
   );
 }

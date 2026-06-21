@@ -5,19 +5,25 @@ import { ServiceProcess } from "@/components/sections/service-detail/ServiceProc
 import { ServiceWhyUs } from "@/components/sections/service-detail/ServiceWhyUs";
 import { ServiceTechStack } from "@/components/sections/service-detail/ServiceTechStack";
 import { ServiceIndustries } from "@/components/sections/service-detail/ServiceIndustries";
+import { ServiceSubServices } from "@/components/sections/service-detail/ServiceSubServices";
 import { ServiceFAQ } from "@/components/sections/service-detail/ServiceFAQ";
 import { ServiceCTA } from "@/components/sections/service-detail/ServiceCTA";
 import type { ServiceContent } from "@/lib/services-content";
+import { getSubServicesByParent } from "@/lib/sub-services-content";
 
 type ServiceDetailTemplateProps = {
+  slug: string;
   serviceName: string;
   content: ServiceContent;
 };
 
 export function ServiceDetailTemplate({
+  slug,
   serviceName,
   content,
 }: ServiceDetailTemplateProps) {
+  const subServices = getSubServicesByParent(slug);
+
   return (
     <>
       <ServiceDetailHero
@@ -37,6 +43,7 @@ export function ServiceDetailTemplate({
         serviceName={serviceName}
         industries={content.industries}
       />
+      <ServiceSubServices serviceName={serviceName} subServices={subServices} />
       <ServiceFAQ serviceName={serviceName} faqs={content.faqs} />
       <ServiceCTA heading={content.ctaHeading} text={content.ctaText} />
     </>

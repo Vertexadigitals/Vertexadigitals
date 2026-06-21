@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site-config";
+import { subServices } from "@/lib/sub-services-content";
 
 type ChangeFrequency = NonNullable<
   MetadataRoute.Sitemap[number]["changeFrequency"]
@@ -33,13 +34,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  const subServiceEntries: Entry[] = subServices.map((subService) => ({
+    path: `/services/${subService.parentSlug}/${subService.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   const legalEntries: Entry[] = siteConfig.legal.map((item) => ({
     path: item.href,
     changeFrequency: "yearly",
     priority: 0.3,
   }));
 
-  return [...staticEntries, ...serviceEntries, ...legalEntries].map(
+  return [
+    ...staticEntries,
+    ...serviceEntries,
+    ...subServiceEntries,
+    ...legalEntries,
+  ].map(
     (entry) => ({
       url: `${siteConfig.url}${entry.path}`,
       lastModified,

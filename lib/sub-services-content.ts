@@ -5326,6 +5326,8 @@ export const subServices: SubService[] = [
         "A brand identity is a system, not a single asset — typography, color, photography or illustration direction, iconography, and layout principles that need to work together coherently across a pitch deck, a website, a product interface, and a trade show booth. This is the meaningful distinction between a brand identity project and a logo design project: identity work produces the full system a logo gets used within.",
         "Brand guidelines are the deliverable that determines whether an identity system actually gets used consistently after we hand it off — clear, practical documentation that a non-designer on your team can follow when building a slide deck or social post, not a beautiful but impractical PDF that gets opened once and ignored. We design guidelines to be genuinely usable, testing them against realistic, unglamorous use cases.",
         "Not every engagement needs a full identity project — sometimes a logo refresh within an already-solid existing system, or design work for a single new product line, is the right scope. We'll tell you honestly when a smaller, more targeted engagement actually fits your need better than a comprehensive identity overhaul.",
+        "Brand identity also needs to anticipate how the business will actually grow, not just reflect where it stands today. A system designed only around a single product, a single market, or a single audience tends to crack under pressure the moment the company expands into a second product line or a new geography, forcing an expensive redesign far sooner than it should have been necessary. We build in enough flexibility from the outset to absorb that growth without losing coherence.",
+        "Internal buy-in matters as much as external market reception, since a brand identity that the founding team or internal stakeholders don't genuinely believe in tends to get applied inconsistently or quietly abandoned within a year regardless of how strong the strategic rationale was. We involve key stakeholders throughout the process specifically to build that conviction, rather than presenting a finished system at the end and hoping it lands well with people who weren't part of shaping it.",
       ],
     },
     whatsIncluded: {
@@ -5413,12 +5415,12 @@ export const subServices: SubService[] = [
         {
           title: "Guidelines Built for Actual Use",
           description:
-            "We design brand guidelines tested against realistic scenarios your non-designer team members will actually encounter, not a beautiful document opened once and ignored.",
+            "We design brand guidelines tested against realistic scenarios your non-designer team members will actually encounter, not a beautiful document opened once and ignored. The real test is whether someone in sales can build an on-brand slide deck without asking design for help.",
         },
         {
           title: "Honest About Scope",
           description:
-            "We'll tell you when a smaller engagement — a logo refresh, not a full identity overhaul — actually fits your need, rather than always pitching the larger project.",
+            "We'll tell you when a smaller engagement — a logo refresh, not a full identity overhaul — actually fits your need, rather than always pitching the larger project regardless of what the situation actually calls for.",
         },
       ],
     },
@@ -5450,6 +5452,11 @@ export const subServices: SubService[] = [
           title: "Companies Launching a New Product Line or Division",
           description:
             "Businesses needing sub-brand identity work that fits coherently within an existing master brand system rather than creating a disconnected new visual identity.",
+        },
+        {
+          title: "Companies Preparing for Investment or Acquisition",
+          description:
+            "Businesses needing a more credible, polished brand presence ahead of a funding round or acquisition conversation, where perception genuinely affects how seriously the business gets taken.",
         },
       ],
     },
@@ -5543,10 +5550,12 @@ export const subServices: SubService[] = [
     overview: {
       h2: "Why a Logo Is One Artifact, Not the Whole Identity",
       paragraphs: [
-        "A logo is a single, specific deliverable — the mark itself — distinct from the fuller brand identity system (typography, color palette, voice, guidelines) that a complete brand identity project produces. This service is scoped specifically to the mark, which makes sense as a standalone engagement when you already have a solid identity system and need a refresh, or for early-stage projects with a tighter budget.",
-        "Versatility testing is where most amateur logo design falls apart — a mark that looks great large on a homepage hero section often breaks down at favicon size, loses legibility in single-color print contexts, or doesn't work when flipped to a dark background. We test every logo concept across the full range of real-world contexts it'll actually need to perform in before considering it finished.",
-        "Trend-chasing produces logos that look dated within a few years, because design trends cycle faster than most businesses want to invest in a logo refresh. We aim for marks that feel current without being so trend-dependent that they'll look obviously of-their-moment in five years — a genuinely harder design problem than chasing whatever's popular in logo design galleries this year.",
+        "A logo is a single, specific deliverable — the mark itself — distinct from the fuller brand identity system (typography, color palette, voice, guidelines) that a complete brand identity project actually produces. This service is scoped specifically to the mark, which makes sense as a standalone engagement when you already have a solid identity system in place and need a refresh, or for early-stage projects with a tighter budget.",
+        "Versatility testing is where most amateur logo design falls apart — a mark that looks great large on a homepage hero section often breaks down at favicon size, loses legibility in single-color print contexts, or doesn't work when flipped to a dark background. We test every logo concept across the full range of real-world contexts it'll actually need to perform in well before considering it finished.",
+        "Trend-chasing produces logos that look dated within a few short years, because design trends cycle faster than most businesses actually want to invest in a logo refresh. We aim for marks that feel current without being so trend-dependent that they'll look obviously of-their-moment in five years — a genuinely harder design problem than chasing whatever's popular in logo design galleries this particular year.",
         "Standalone logo design makes sense when your broader brand strategy and identity system are already solid and you specifically need a new or refreshed mark — for a full identity overhaul including positioning, voice, and the complete visual system, our brand identity service is the better fit, and we'll tell you honestly which one your situation calls for.",
+        "Color and typography choices within a logo carry more strategic weight than clients often expect going in, since these decisions get inherited across the entire brand the moment the logo ships, whether or not anyone consciously decided that should happen. A color chosen because it looked good in a single mockup can end up constraining packaging, signage, and digital product decisions for years, which is why we treat these choices as strategic commitments rather than purely aesthetic preferences made late in the process.",
+        "Negative space and how a mark behaves when placed near other logos — a partner's, a platform's, an app store icon — is a practical consideration that's easy to overlook until a logo actually needs to share a crowded space with several others. We test concepts in these realistic crowded contexts, not just on a clean white background, since that's rarely where a logo actually has to perform in the real world.",
       ],
     },
     whatsIncluded: {
@@ -5634,12 +5643,12 @@ export const subServices: SubService[] = [
         {
           title: "We're Clear About Scope",
           description:
-            "If your project actually needs a full brand identity — positioning, voice, the complete system — we'll tell you, rather than deliver a logo in isolation when it won't solve the underlying need.",
+            "If your project actually needs a full brand identity — positioning, voice, the complete system — we'll tell you, rather than deliver a logo in isolation when it won't solve the underlying need you actually came to us with.",
         },
         {
           title: "Practical Deliverables, Not Just Pretty Files",
           description:
-            "We deliver the full range of formats and variations your team will actually need across web, print, and software, with usage guidance that prevents common misapplication.",
+            "We deliver the full range of formats and variations your team will actually need across web, print, and software, with usage guidance that prevents the common misapplication mistakes we see most often.",
         },
       ],
     },
@@ -5667,33 +5676,38 @@ export const subServices: SubService[] = [
           description:
             "Companies with an already-strong brand voice and visual system needing specifically a new or refreshed logo, without revisiting the broader identity work.",
         },
+        {
+          title: "Companies Merging Brands or Consolidating Sub-Brands",
+          description:
+            "Businesses combining multiple brands or product lines under a single mark following a merger, acquisition, or internal consolidation, needing a logo that represents the combined entity credibly.",
+        },
       ],
     },
     faqs: [
       {
         question: "Do we need a full brand identity project, or just a logo?",
         answer:
-          "If your positioning, voice, and broader visual system are already solid, a standalone logo project can work well. If those fundamentals don't exist yet, a full brand identity project will serve you better.",
+          "If your positioning, voice, and broader visual system are already solid, a standalone logo project can work well on its own. If those fundamentals don't exist yet, a full brand identity project will serve you noticeably better.",
       },
       {
         question: "How many logo concepts will we see?",
         answer:
-          "Typically 2-3 genuinely distinct concepts, each grounded in a different strategic angle, rather than many minor variations of the same underlying idea.",
+          "Typically 2-3 genuinely distinct concepts, each grounded in a different strategic angle and rationale, rather than many minor variations of the same underlying idea presented as options.",
       },
       {
         question: "How long does logo design take?",
         answer:
-          "A standalone logo project typically takes 2-4 weeks, including concept development, refinement, and final delivery. Timelines extend if it's bundled with broader brand identity work.",
+          "A standalone logo project typically takes 2-4 weeks, including concept development, refinement, and final delivery of all required files. Timelines extend if it's bundled with broader brand identity work.",
       },
       {
         question: "Can you refresh our existing logo without starting from scratch?",
         answer:
-          "Yes — logo modernization that preserves existing recognition and equity while updating dated elements is a common and often more strategic choice than a complete redesign from zero.",
+          "Yes — logo modernization that preserves existing recognition and equity while updating dated elements is a common and often more strategic choice than a complete redesign starting entirely from zero.",
       },
       {
         question: "What files will we receive?",
         answer:
-          "Vector source files, the full range of export formats (SVG, EPS, PNG, PDF), logo variations (primary, secondary, icon-only), and usage guidelines.",
+          "Vector source files, the full range of export formats (SVG, EPS, PNG, PDF), logo variations (primary, secondary, icon-only), and clear usage guidelines for applying the mark correctly.",
       },
       {
         question: "Will the logo work for a trademark application?",
@@ -5747,15 +5761,17 @@ export const subServices: SubService[] = [
       eyebrow: "UI/UX Design",
       h1: "UI/UX Design Grounded in How People Actually Use Things",
       subheadline:
-        "We design interfaces and user experiences for websites and digital products, grounded in usability research and user flows rather than just visual trends. Good UI/UX design is mostly invisible when it's working — users complete what they came to do without friction they have to consciously notice — which is a harder design problem than it looks.",
+        "We design interfaces and user experiences for websites and digital products, grounded in usability research and real user flows rather than just visual trends. Good UI/UX design is mostly invisible when it's working well — users complete what they came to do without friction they have to consciously notice — which is a much harder design problem than it looks at first glance.",
     },
     overview: {
       h2: "Why UX Structure and UI Polish Get Designed Together",
       paragraphs: [
-        "UX and UI are related but distinct disciplines we design together rather than treating as separate phases: UX covers user flows, information architecture, and interaction patterns — the structural decisions about how someone moves through a product or site to accomplish something. UI covers the visual interface layer built on top of that structure — the specific look, feel, and visual hierarchy of each screen.",
-        "Design decisions grounded in actual user research — usability testing, user interviews, behavioral data — consistently outperform decisions based purely on aesthetic judgment or internal opinion, even when the research-informed design looks less immediately impressive in a presentation. We push for research where the budget and timeline allow it, because the alternative is designing based on assumptions about how users behave.",
-        "Prototyping and testing before full development catches usability problems while they're still cheap to fix — a confusing flow discovered in a clickable prototype costs a redesign session; the same problem discovered after development costs a rebuild. We build interactive prototypes for validation specifically because skipping this step is one of the most expensive false economies in digital product design.",
+        "UX and UI are related but genuinely distinct disciplines we design together rather than treating as separate phases: UX covers user flows, information architecture, and interaction patterns — the structural decisions about how someone moves through a product or site to accomplish something. UI covers the visual interface layer built on top of that structure — the specific look, feel, and visual hierarchy of each screen.",
+        "Design decisions grounded in actual user research — usability testing, user interviews, behavioral data — consistently outperform decisions based purely on aesthetic judgment or internal opinion, even when the research-informed design looks less immediately impressive in a presentation. We push for research where the budget and timeline allow it, because the alternative is designing purely based on assumptions about how users behave.",
+        "Prototyping and testing before full development catches usability problems while they're still genuinely cheap to fix — a confusing flow discovered in a clickable prototype costs a redesign session; the same problem discovered after development costs a full rebuild. We build interactive prototypes for validation specifically because skipping this step is one of the most expensive false economies in digital product design.",
         "This service focuses on the specific interface and experience design for a website or product — distinct from our design systems service, which builds the reusable component infrastructure that scales consistent design across many product surfaces and a growing team. Many projects need both, starting with strong UI/UX design before formalizing it into a systematized component library.",
+        "Accessibility is a structural requirement we build into UX decisions from the start, not a compliance checklist applied after the visual design is already finished. Color contrast, keyboard navigation, and screen reader compatibility shape real design decisions — layout, component choice, interaction pattern — and retrofitting accessibility into a design that ignored it from the outset almost always produces a worse result than designing for it from the first wireframe.",
+        "Edge cases and error states deserve as much design attention as the primary happy path, since real users hit empty states, validation errors, and slow network conditions constantly, and a polished primary flow paired with neglected edge cases still produces a frustrating overall experience. We design these states deliberately rather than leaving them as an engineering afterthought filled in with whatever default the framework happens to provide.",
       ],
     },
     whatsIncluded: {
@@ -5789,12 +5805,17 @@ export const subServices: SubService[] = [
         {
           title: "Responsive & Multi-Device Design",
           description:
-            "Interface design that adapts thoughtfully across desktop, tablet, and mobile, considering how interaction patterns genuinely differ across device types.",
+            "Interface design that adapts thoughtfully across desktop, tablet, and mobile, considering how interaction patterns genuinely differ across device types rather than simply scaling the same layout down.",
         },
         {
           title: "Design-to-Development Handoff",
           description:
-            "Detailed design specifications and assets prepared for development handoff, reducing the back-and-forth and implementation drift common with poorly documented handoffs.",
+            "Detailed design specifications and assets prepared for development handoff, reducing the back-and-forth and implementation drift common with poorly documented handoffs between design and engineering teams.",
+        },
+        {
+          title: "Accessibility-Informed Design",
+          description:
+            "Color contrast, keyboard navigation, and semantic structure built into design decisions from the start, rather than treated as a compliance pass applied after visual design is finished.",
         },
       ],
     },
@@ -5843,12 +5864,12 @@ export const subServices: SubService[] = [
         {
           title: "UX and UI Designed Together",
           description:
-            "We don't treat user flow structure and visual design as separate, sequential phases handled by different specialists with no coordination. The two inform each other throughout.",
+            "We don't treat user flow structure and visual design as separate, sequential phases handled by different specialists with no coordination. The two inform each other throughout the entire project, not just at the handoff point.",
         },
         {
           title: "Detailed, Developer-Friendly Handoff",
           description:
-            "We prepare specifications that reduce implementation drift and back-and-forth, since a great design that gets built incorrectly delivers the same poor experience as a mediocre one.",
+            "We prepare specifications that reduce implementation drift and back-and-forth, since a great design that gets built incorrectly delivers the same poor experience as a mediocre design built faithfully.",
         },
       ],
     },
@@ -5876,13 +5897,18 @@ export const subServices: SubService[] = [
           description:
             "Product teams that want to test and validate UX decisions through prototyping before committing development time to building something that might need significant rework.",
         },
+        {
+          title: "Companies Needing Accessibility Compliance",
+          description:
+            "Organizations needing to meet accessibility standards for legal, contractual, or genuine inclusivity reasons, requiring design decisions that account for accessibility from the structural level up, not as a late patch.",
+        },
       ],
     },
     faqs: [
       {
         question: "What's the difference between UI design and UX design?",
         answer:
-          "UX covers user flows, information architecture, and interaction structure. UI covers the visual interface layer built on that structure. We design both together, since they're deeply interdependent.",
+          "UX covers user flows, information architecture, and interaction structure. UI covers the visual interface layer built on top of that structure. We design both together as one process, since they're deeply interdependent and rarely succeed in isolation.",
       },
       {
         question: "Do you do user research, or just design based on best practices?",
@@ -5892,7 +5918,7 @@ export const subServices: SubService[] = [
       {
         question: "How is this different from your design systems service?",
         answer:
-          "This service focuses on the specific experience and interface design for a website or product. Design systems builds the reusable, scalable component infrastructure across many product surfaces.",
+          "This service focuses on the specific experience and interface design for a single website or product. Design systems builds the reusable, scalable component infrastructure across many product surfaces at once.",
       },
       {
         question: "Do you build interactive prototypes, or just static designs?",
@@ -5902,12 +5928,12 @@ export const subServices: SubService[] = [
       {
         question: "How long does a UI/UX design project take?",
         answer:
-          "A focused project covering a core flow or product area typically takes 4-8 weeks including research and testing. Larger, multi-area products take longer. We'll scope based on your project.",
+          "A focused project covering a core flow or product area typically takes 4-8 weeks including research, prototyping, and usability testing. Larger, multi-area products take meaningfully longer. We'll scope based on your specific project.",
       },
       {
         question: "Do you also handle the development, or just the design?",
         answer:
-          "We offer web and mobile app development as separate services and frequently handle both design and development together, though we can also hand off designs to your existing development team.",
+          "We offer web and mobile app development as separate services and frequently handle both design and development together as one coordinated engagement, though we can also hand off designs to your existing development team.",
       },
     ],
     cta: {
@@ -5963,15 +5989,17 @@ export const subServices: SubService[] = [
       eyebrow: "Design Systems",
       h1: "Design Systems That Scale Past What One Designer Can Personally Oversee",
       subheadline:
-        "We build component libraries and design token systems that bridge design and development, reducing inconsistency and design debt as your product and team grow. A design system isn't a nice-to-have once you're shipping more than a handful of screens with more than one designer — it's the infrastructure that determines whether your product stays coherent or fragments.",
+        "We build component libraries and design token systems that bridge design and development, reducing inconsistency and design debt as your product and team continue to grow. A design system isn't a nice-to-have once you're shipping more than a handful of screens with more than one designer — it's the infrastructure that genuinely determines whether your product stays coherent or fragments.",
     },
     overview: {
       h2: "Why a Component Folder Isn't the Same as a Design System",
       paragraphs: [
-        "Design systems become necessary at a specific point: when a single designer can no longer personally review every screen for consistency, or when your product has grown past what ad hoc component reuse can handle gracefully. Below that scale, a lightweight component library is often sufficient; above it, the absence of a real design system starts compounding into visible inconsistency and design debt that gets more expensive to fix the longer it's deferred.",
-        "A proper design system is built on design tokens — the foundational values (colors, spacing, typography scales) that propagate consistently across every component — paired with a component library built on top of those tokens. This structure is what makes systematic updates possible: changing a foundational color token updates every component using it, rather than requiring manual updates across dozens of disconnected component instances.",
-        "Documentation is as critical as the components themselves, and it's the piece most design systems shortchange. Clear usage guidelines — when to use which component, what variants exist, what the underlying logic is — determine whether a design system actually gets adopted consistently by a growing team, or whether people route around it because they can't figure out how to use it correctly.",
-        "A folder of reusable Figma components isn't the same thing as a design system — the difference is governance: a clear ownership model for proposing changes, a versioning approach that doesn't silently break existing usage, and genuine adoption tracking that tells you whether the system is actually being used consistently or quietly ignored. We build for this governance layer, not just the component library itself.",
+        "Design systems become necessary at a fairly specific point: when a single designer can no longer personally review every screen for consistency, or when your product has grown well past what ad hoc component reuse can handle gracefully. Below that scale, a lightweight component library is often sufficient; above it, the absence of a real design system starts compounding into visible inconsistency and design debt that gets more expensive to fix the longer it's deferred.",
+        "A proper design system is built on design tokens — the foundational values (colors, spacing, typography scales) that propagate consistently across every component — paired with a component library built on top of those tokens. This structure is what makes systematic updates possible: changing a single foundational color token updates every component using it, rather than requiring manual updates across dozens of disconnected component instances.",
+        "Documentation is as critical as the components themselves, and it's the piece most design systems shortchange badly. Clear usage guidelines — when to use which component, what variants exist, what the underlying logic is — determine whether a design system actually gets adopted consistently by a growing team, or whether people route around it because they can't figure out how to use it correctly.",
+        "A folder of reusable Figma components isn't actually the same thing as a real design system — the difference is governance: a clear ownership model for proposing changes, a versioning approach that doesn't silently break existing usage, and genuine adoption tracking that tells you whether the system is actually being used consistently or quietly ignored. We build for this governance layer, not just the component library itself.",
+        "Migration from an existing, fragmented setup deserves as much planning as the system itself, since most teams can't simply pause feature work for months to rebuild every screen against the new system at once. We plan incremental migration paths that let new feature work adopt the system immediately while existing screens transition gradually, rather than forcing a disruptive all-or-nothing cutover that stalls product development.",
+        "Adoption tends to stall when a system feels imposed on a team rather than built with them, which is why we involve engineers and other designers in component decisions throughout the project rather than handing down a finished system for everyone else to simply comply with. A system the team helped shape gets defended and maintained in ways a system that was simply mandated rarely is.",
       ],
     },
     whatsIncluded: {
@@ -6059,12 +6087,12 @@ export const subServices: SubService[] = [
         {
           title: "Governance, Not Just a Component Folder",
           description:
-            "We build the ownership and contribution model alongside the components, since a system without governance fragments the moment more than one person contributes to it.",
+            "We build the ownership and contribution model alongside the components, since a system without governance fragments the moment more than one person contributes to it without a shared process.",
         },
         {
           title: "Accessibility Built Into Every Component",
           description:
-            "We build accessibility requirements into component specifications from the start, rather than treating it as a separate audit applied after the fact.",
+            "We build accessibility requirements into component specifications from the start, rather than treating it as a separate audit applied after the fact once components are already widely used.",
         },
       ],
     },
@@ -6097,6 +6125,11 @@ export const subServices: SubService[] = [
           description:
             "Development teams frustrated by design handoffs that don't translate cleanly into reusable code components, needing a token-based system that bridges the gap.",
         },
+        {
+          title: "Companies Standardizing Across Multiple Products",
+          description:
+            "Organizations running several distinct products or platforms that want consistent design language across all of them, without forcing every product to look visually identical.",
+        },
       ],
     },
     faqs: [
@@ -6108,27 +6141,27 @@ export const subServices: SubService[] = [
       {
         question: "At what point does our product actually need a design system?",
         answer:
-          "Generally once a single designer can no longer personally review every screen for consistency, or once you have multiple designers and developers contributing. Below that scale, a lighter library often suffices.",
+          "Generally once a single designer can no longer personally review every screen for consistency, or once you have multiple designers and developers contributing simultaneously. Below that scale, a lighter component library often suffices just fine.",
       },
       {
         question: "How long does building a design system take?",
         answer:
-          "A focused initial system covering core components typically takes 6-10 weeks. Comprehensive systems covering a large existing product can take longer, often built incrementally.",
+          "A focused initial system covering core components typically takes 6-10 weeks to design and document properly. Comprehensive systems covering a large existing product can take longer, often built incrementally over several phases.",
       },
       {
         question: "Will our developers need to rebuild everything to use the new system?",
         answer:
-          "Not necessarily — we plan migration strategies that can be incremental, updating components and screens over time rather than requiring an immediate full rebuild.",
+          "Not necessarily — we plan migration strategies that can be incremental, updating components and screens gradually over time rather than requiring an immediate, disruptive full rebuild of the whole product.",
       },
       {
         question: "Do you maintain the design system after building it, or just hand it off?",
         answer:
-          "Both options are available. Many clients move to an ongoing design retainer for system maintenance and expansion, while others prefer a full handoff with documentation.",
+          "Both options are available to clients. Many move to an ongoing design retainer for system maintenance and expansion, while others prefer a full handoff with complete documentation.",
       },
       {
         question: "Can a design system work across both our website and product?",
         answer:
-          "Yes, when designed with that scope in mind from the start — a shared token foundation can support both marketing and product surfaces, though component needs often differ.",
+          "Yes, when designed with that broader scope in mind from the start — a shared token foundation can support both marketing and product surfaces well, though component needs often differ between the two.",
       },
     ],
     cta: {
@@ -6184,15 +6217,17 @@ export const subServices: SubService[] = [
       eyebrow: "Website Redesign",
       h1: "Website Redesign That Doesn't Throw Away What's Working",
       subheadline:
-        "We redesign underperforming or outdated websites — rebuilding the parts that genuinely need to change while protecting the SEO equity, conversion paths, and brand recognition already built into the site you have. A redesign that tanks your rankings or confuses returning customers isn't actually progress, even if it looks better in a before-and-after screenshot.",
+        "We redesign underperforming or outdated websites — rebuilding the parts that genuinely need to change while protecting the SEO equity, conversion paths, and brand recognition already built into the site you currently have. A redesign that tanks your rankings or confuses returning customers isn't actually genuine progress, even if it looks better in a simple before-and-after screenshot.",
     },
     overview: {
       h2: "Why Redesigns Carry Risks a New Build Doesn't",
       paragraphs: [
-        "A website redesign carries risks a brand-new build doesn't: an existing site has accumulated search rankings, backlinks, and customer familiarity that a careless redesign can damage even while improving the site's appearance. We treat protecting what's already working as a core project requirement, because we've seen redesigns that looked great at launch tank organic traffic for months afterward.",
-        "Every redesign starts with an honest audit of what's actually broken versus what just looks dated — a site can have an outdated visual style while its information architecture, conversion paths, and SEO foundation are genuinely sound, in which case a more surgical redesign makes more sense than a full rebuild. We diagnose this distinction before recommending the scope of the project.",
-        "The temptation in any redesign is to change everything simultaneously, since you're already touching the codebase — but bundling a visual refresh with a CMS migration, an information architecture overhaul, and new functionality all at once multiplies risk and makes it far harder to diagnose what caused any post-launch issue. We scope redesigns deliberately, sometimes recommending a phased approach over one big-bang relaunch.",
+        "A website redesign carries risks a brand-new build simply doesn't: an existing site has accumulated search rankings, backlinks, and customer familiarity that a careless redesign can damage even while improving the site's appearance. We treat protecting what's already working as a core project requirement, because we've personally seen redesigns that looked great at launch tank organic traffic for months afterward.",
+        "Every redesign starts with an honest audit of what's actually broken versus what just looks visually dated — a site can have an outdated visual style while its information architecture, conversion paths, and SEO foundation are genuinely sound underneath, in which case a more surgical redesign makes more sense than a full rebuild. We diagnose this distinction carefully before recommending the actual scope of the project.",
+        "The temptation in any redesign is to change everything simultaneously, since you're already touching the codebase anyway — but bundling a visual refresh with a CMS migration, an information architecture overhaul, and new functionality all at once multiplies risk and makes it far harder to diagnose what actually caused any post-launch issue. We scope redesigns deliberately, sometimes recommending a phased approach over one risky big-bang relaunch.",
         "Launch day execution determines whether a redesign's risks actually materialize — proper URL mapping and redirects, structured data validation, and close monitoring in the weeks after launch catch issues while they're still easy to fix. We treat launch as a critical, carefully managed event, not just flipping a switch once development is done.",
+        "Stakeholder expectations also need active management throughout a redesign, since the people approving the new design often respond most strongly to visual polish while underweighting the structural and technical decisions that actually determine whether the redesign succeeds commercially. We make a point of keeping the conversation anchored to the metrics that matter — rankings, conversion rate, task completion — rather than letting the project drift into a purely aesthetic exercise judged on subjective taste alone.",
+        "Content migration is frequently underestimated in scope and timeline, since moving years of accumulated pages, blog posts, and resources into a new structure involves more judgment calls than a simple copy-paste exercise — what to keep, what to consolidate, what to retire, and how to map old URLs to new ones without breaking links that other sites and search engines still reference. We budget real time for this work rather than treating it as a quick task squeezed in at the end of the project.",
       ],
     },
     whatsIncluded: {
@@ -6280,12 +6315,12 @@ export const subServices: SubService[] = [
         {
           title: "We Scope to Reduce Risk, Not Maximize Scope",
           description:
-            "We'll recommend a phased approach when bundling every change into one relaunch multiplies risk unnecessarily, even though a bigger project would be easier for us to sell.",
+            "We'll recommend a phased approach when bundling every change into one relaunch multiplies risk unnecessarily, even though a bigger project would be easier for us to sell and bill for upfront.",
         },
         {
           title: "Careful Launch Execution & Monitoring",
           description:
-            "We treat launch as a managed event with close monitoring afterward, catching issues within days rather than discovering a ranking drop a month later with no clear cause.",
+            "We treat launch as a managed event with close monitoring afterward, catching issues within days rather than discovering a ranking drop a month later with no clear cause to point to.",
         },
       ],
     },
@@ -6318,38 +6353,43 @@ export const subServices: SubService[] = [
           description:
             "Businesses whose site was built for an earlier, smaller version of the company and needs restructuring to reflect expanded services, content, or audience.",
         },
+        {
+          title: "Companies Migrating Platforms During a Redesign",
+          description:
+            "Businesses using a redesign as the opportunity to also move platforms — from a legacy CMS to Next.js or another modern stack — requiring extra care around migration and SEO preservation simultaneously.",
+        },
       ],
     },
     faqs: [
       {
         question: "Will a redesign hurt our existing SEO rankings?",
         answer:
-          "It can if handled carelessly, which is why we treat SEO preservation — URL mapping, redirects, structured data — as a core requirement. Done correctly, a redesign shouldn't cost you meaningful ranking equity.",
+          "It can if handled carelessly, which is why we treat SEO preservation — URL mapping, redirects, structured data — as a genuine core requirement. Done correctly, a redesign shouldn't cost you meaningful ranking equity at all.",
       },
       {
         question: "How do we know if we need a full redesign or just a refresh?",
         answer:
-          "We audit your existing site first to distinguish genuine structural or technical problems from elements that are simply visually dated. The audit determines the right scope.",
+          "We audit your existing site first to distinguish genuine structural or technical problems from elements that are simply visually dated and need a refresh. The audit determines the right scope for your specific situation.",
       },
       {
         question: "How long does a website redesign take?",
         answer:
-          "A focused visual and UX refresh typically takes 6-8 weeks. A more substantial rebuild involving architecture and platform changes runs 10-16 weeks. We'll give you a specific timeline after the audit.",
+          "A focused visual and UX refresh typically takes 6-8 weeks from kickoff to launch. A more substantial rebuild involving architecture and platform changes runs 10-16 weeks. We'll give you a specific timeline after the audit.",
       },
       {
         question: "Should we redesign everything at once, or in phases?",
         answer:
-          "It depends on your risk tolerance and how many things are changing simultaneously. We'll recommend phasing when bundling everything into one relaunch would meaningfully increase risk.",
+          "It depends on your risk tolerance and how many things are changing simultaneously across the project. We'll recommend phasing when bundling everything into one relaunch would meaningfully increase overall risk.",
       },
       {
         question: "What happens to our existing content during a redesign?",
         answer:
-          "We audit and migrate existing content as part of the redesign, identifying what to keep, update, consolidate, or retire — content migration is planned explicitly, not an afterthought.",
+          "We audit and migrate existing content as part of the redesign, identifying what to keep, update, consolidate, or retire — content migration is planned explicitly from the start, not treated as an afterthought.",
       },
       {
         question: "Do you handle the technical platform work too, or just design?",
         answer:
-          "Both — we handle the full redesign including development, whether that's on Next.js, WordPress, Shopify, or Webflow, coordinated with the design and SEO preservation work.",
+          "Both — we handle the full redesign including development work, whether that's on Next.js, WordPress, Shopify, or Webflow, all coordinated with the design and SEO preservation work together.",
       },
     ],
     cta: {
@@ -6405,15 +6445,17 @@ export const subServices: SubService[] = [
       eyebrow: "Content Strategy",
       h1: "Content Strategy Built Around What You're Actually Trying to Achieve",
       subheadline:
-        "We build editorial roadmaps and topic cluster strategy grounded in real search demand, buyer journey stages, and specific business goals — the planning layer that determines whether content production actually moves a metric, or just fills a calendar. Strategy is the part most content marketing skips in the rush to start publishing.",
+        "We build editorial roadmaps and topic cluster strategy grounded in real search demand, buyer journey stages, and specific business goals — the planning layer that determines whether content production actually moves a metric, or simply just fills up a calendar. Strategy is the part most content marketing skips entirely in the rush to start publishing content right away.",
     },
     overview: {
       h2: "Why Strategy Is the Planning Layer, Not the Writing",
       paragraphs: [
-        "Most content marketing starts with production — assigning blog topics and a publishing schedule — without first answering the strategic questions that should come before any of that: what is this content actually supposed to achieve, who specifically is it for, and what does the competitive content landscape already look like. Content strategy is that planning layer, separate from the actual writing and production work.",
-        "A content audit of what already exists — what's ranking, what's not, what's outdated, what's redundant — is almost always the right starting point, since most established businesses have more existing content than they realize, much of it underperforming for specific, fixable reasons. We audit before recommending new production, because creating more content on top of an unaudited foundation often just adds to existing problems.",
-        "Topic cluster architecture — organizing content around pillar topics with supporting cluster content that interlinks strategically — builds topical authority more effectively than publishing disconnected individual articles, even on genuinely good topics. We map content opportunities into this cluster structure from the start, rather than letting a content library accumulate organically into a disconnected pile of individually decent but strategically unconnected pieces.",
-        "Every piece of recommended content gets mapped to a specific business goal and funnel stage — organic traffic growth, lead generation, sales enablement, brand authority — because content without a clear purpose tends to be generically competent and strategically useless. We'd rather recommend less content with clear purpose than a high-volume calendar nobody can explain the business reason for.",
+        "Most content marketing starts with production — assigning blog topics and a publishing schedule — without first answering the strategic questions that should come before any of that work: what is this content actually supposed to achieve, who specifically is it for, and what does the competitive content landscape already look like today. Content strategy is that planning layer, separate from the actual writing and production work.",
+        "A content audit of what already exists — what's ranking, what's not, what's outdated, what's redundant — is almost always the right starting point, since most established businesses have far more existing content than they realize, much of it underperforming for specific, fixable reasons. We audit before recommending new production, because creating more content on top of an unaudited foundation often just adds to existing problems.",
+        "Topic cluster architecture — organizing content around pillar topics with supporting cluster content that interlinks strategically — builds topical authority far more effectively than publishing disconnected individual articles, even on genuinely good topics. We map content opportunities into this cluster structure from the start, rather than letting a content library accumulate organically into a disconnected pile of individually decent but strategically unconnected pieces.",
+        "Every single piece of recommended content gets mapped to a specific business goal and funnel stage — organic traffic growth, lead generation, sales enablement, brand authority — because content without a clear purpose tends to be generically competent and strategically useless in practice. We'd rather recommend less content with a clear purpose than a high-volume calendar nobody can actually explain the business reason for.",
+        "Content strategy also needs a realistic relationship with production capacity, since a roadmap built around an unrealistic publishing cadence just becomes a source of ongoing guilt and missed deadlines rather than an actual plan anyone follows. We size the roadmap to what your team or our production capacity can sustainably deliver, since a smaller, consistently executed plan beats an ambitious one that quietly falls apart after the second month.",
+        "Strategy needs to evolve as actual performance data comes in, rather than being treated as a fixed plan set once and followed rigidly regardless of what's actually working. A topic cluster that isn't gaining traction after a reasonable runway is a signal worth acting on, and we build in regular checkpoints specifically to catch and respond to these signals rather than discovering eighteen months later that an entire content pillar never resonated.",
       ],
     },
     whatsIncluded: {
@@ -6422,7 +6464,7 @@ export const subServices: SubService[] = [
         {
           title: "Content Audits",
           description:
-            "Comprehensive audits of existing content identifying what's ranking, what's underperforming, what's outdated, and what's redundant, informing whether to update, consolidate, or retire each piece.",
+            "Comprehensive audits of existing content identifying what's ranking, what's underperforming, what's outdated, and what's redundant, informing whether to update, consolidate, or retire each individual piece.",
         },
         {
           title: "Topic Cluster & Pillar Content Architecture",
@@ -6447,12 +6489,12 @@ export const subServices: SubService[] = [
         {
           title: "Cross-Channel Content Planning",
           description:
-            "Strategy for how a single content investment gets adapted across blog, social, and email, maximizing return on each piece of original research or insight produced.",
+            "Strategy for how a single content investment gets adapted across blog, social, and email, maximizing the return on each piece of original research or insight produced.",
         },
         {
           title: "Content Strategy for New Initiatives",
           description:
-            "Strategic planning for entering new content categories, launching a new content format, or supporting a new product or service line with appropriate content.",
+            "Strategic planning for entering new content categories, launching a new content format, or supporting a new product or service line with appropriate, well-targeted content.",
         },
       ],
     },
@@ -6491,22 +6533,22 @@ export const subServices: SubService[] = [
         {
           title: "We Audit Before We Recommend More Content",
           description:
-            "We won't recommend a pile of new content on top of an unaudited existing library. We diagnose what's actually underperforming and why before adding to the pile.",
+            "We won't recommend a pile of new content on top of an unaudited existing library. We diagnose what's actually underperforming and why before adding anything new to the pile.",
         },
         {
           title: "Strategy Mapped to Specific Business Goals",
           description:
-            "Every content recommendation ties to a specific goal — traffic, leads, authority — not a generic content calendar with no clear business rationale behind each piece.",
+            "Every content recommendation ties to a specific, measurable goal — traffic, leads, authority — not a generic content calendar with no clear business rationale behind each individual piece.",
         },
         {
           title: "Topic Clusters, Not Disconnected Articles",
           description:
-            "We architect content as interconnected clusters building topical authority, rather than letting a content library accumulate into disconnected individual pieces.",
+            "We architect content as interconnected clusters building topical authority, rather than letting a content library accumulate into disconnected individual pieces with no relationship to each other.",
         },
         {
           title: "We Coordinate Strategy with Execution",
           description:
-            "Content strategy disconnected from who's actually producing the content often doesn't survive contact with reality. We coordinate closely with content production.",
+            "Content strategy disconnected from who's actually producing the content often doesn't survive contact with reality. We coordinate closely with content production from the start, not after the roadmap is finalized.",
         },
       ],
     },
@@ -6541,38 +6583,43 @@ export const subServices: SubService[] = [
           description:
             "Established content programs looking to expand into new topics, formats, or audience segments, needing strategic planning before production begins.",
         },
+        {
+          title: "Marketing Teams Needing to Justify Content Investment",
+          description:
+            "Teams needing to make a clear, defensible case internally for continued or increased content investment, grounded in a strategic plan rather than an instinct that content marketing is generally worthwhile.",
+        },
       ],
     },
     faqs: [
       {
         question: "What's the difference between this and your blog writing service?",
         answer:
-          "Content strategy is the planning layer — what to create, why, and in what sequence. Blog writing is the actual production of long-form articles. Many clients use both together, but they're distinct deliverables.",
+          "Content strategy is the planning layer — what to create, why, and in what sequence to create it. Blog writing is the actual production of long-form articles. Many clients use both together, but they're distinct deliverables.",
       },
       {
         question: "Do you also produce the content, or just plan it?",
         answer:
-          "We can do both — strategy plus production through our blog writing, copywriting, and other content services — or just deliver the strategy for your existing content team to execute.",
+          "We can do both — strategy plus production through our blog writing, copywriting, and other content services — or just deliver the strategy for your existing content team to execute themselves.",
       },
       {
         question: "How long does a content strategy engagement take?",
         answer:
-          "An initial audit and roadmap typically takes 3-4 weeks. Ongoing strategy work (quarterly reviews, roadmap updates) continues as a lighter-touch retainer alongside content production.",
+          "An initial audit and roadmap typically takes 3-4 weeks to complete thoroughly and properly. Ongoing strategy work (quarterly reviews, roadmap updates) continues afterward as a lighter-touch retainer alongside content production.",
       },
       {
         question: "Do you do content strategy for social media too, or just blog/web content?",
         answer:
-          "Our content strategy work can encompass cross-channel planning, though deep platform-specific social strategy is often coordinated with our social media management service.",
+          "Our content strategy work can encompass cross-channel planning across formats, though deep platform-specific social strategy is often coordinated closely with our social media management service.",
       },
       {
         question: "How do you decide what content to prioritize?",
         answer:
-          "We prioritize based on search demand, competitive gaps, and potential business impact — weighing effort against expected return, rather than treating every idea as equally worth pursuing.",
+          "We prioritize based on search demand, competitive gaps, and potential business impact — weighing effort against expected return realistically, rather than treating every single idea as equally worth pursuing right away.",
       },
       {
         question: "Can you create a content strategy for a brand-new business with no existing content?",
         answer:
-          "Yes — for new businesses, we build the strategy around market research, competitive analysis, and audience research instead of an existing content audit.",
+          "Yes — for new businesses, we build the strategy around market research, competitive analysis, and audience research instead of an existing content audit that simply doesn't exist yet.",
       },
     ],
     cta: {
@@ -6628,15 +6675,17 @@ export const subServices: SubService[] = [
       eyebrow: "Blog Writing",
       h1: "Blog Writing Built to Rank and Actually Convert Readers",
       subheadline:
-        "We write long-form blog content grounded in real keyword research and search intent — built to rank competitively and move readers toward a next step, not just hit a publish quota. This is the production and writing service; if you need the strategic planning behind what to write about, that's our content strategy service.",
+        "We write long-form blog content grounded in real keyword research and genuine search intent — built to rank competitively and move readers toward a clear next step, not just hit a publish quota each month. This is the production and writing service; if you need the strategic planning behind what to write about, that's our content strategy service instead.",
     },
     overview: {
       h2: "Why Writing Is Execution, Distinct from Strategy",
       paragraphs: [
         "Blog writing is the production and execution layer — the actual researching and writing of articles — distinct from content strategy, which determines what to write about and why. Many clients use both services together, but they're separable: some come to us with a clear content roadmap already in place and just need the writing executed well; others need the strategic planning first.",
-        "Every article starts with keyword and search intent research specific to that piece, not a generic brief based on a topic that sounds relevant. Understanding what's actually ranking for a target term — and why — informs the structure, depth, and angle of what we write, rather than producing content optimized for nothing but word count and a keyword density checklist.",
-        "Subject matter depth matters more than most content mills account for — a well-researched piece that demonstrates genuine understanding of a topic outperforms a competently-written but shallow article covering the same ground. We research thoroughly, including talking to subject matter experts on your team when a topic requires expertise we don't have in-house.",
+        "Every single article starts with keyword and search intent research specific to that piece, not a generic brief based on a topic that simply sounds relevant. Understanding what's actually ranking for a target term — and why — informs the structure, depth, and angle of what we write, rather than producing content optimized for nothing but word count and a keyword density checklist.",
+        "Subject matter depth matters more than most content mills account for — a well-researched piece that demonstrates genuine understanding of a topic outperforms a competently-written but shallow article covering the exact same ground. We research thoroughly, including talking to subject matter experts on your team when a topic requires expertise we don't have in-house.",
         "Structure serves both readers and search engines simultaneously — clear headings, scannable formatting, and a logical argument structure that helps readers actually find what they're looking for, while also giving search engines the structural signals they use to understand and rank content. Good structure isn't a separate SEO consideration bolted onto writing; it's part of writing well in the first place.",
+        "Consistency over time matters as much as the quality of any individual article, since a publishing cadence that starts strong and then quietly tapers off after a few months undermines both the SEO momentum and the audience trust that consistent publishing builds. We structure production as a sustainable, ongoing cadence rather than a front-loaded sprint that produces a burst of content and then stalls once the initial enthusiasm fades.",
+        "Fact-checking and accuracy matter more in blog writing than the casual tone of most content might suggest, since a single factual error discovered by a knowledgeable reader can undermine the credibility of an entire piece, and by extension the brand publishing it. We verify claims and statistics against primary sources rather than repeating secondhand figures circulating across other blogs, since an inherited error doesn't become more accurate just because it's been copied widely.",
       ],
     },
     whatsIncluded: {
@@ -6670,12 +6719,17 @@ export const subServices: SubService[] = [
         {
           title: "Content Formatting & On-Page SEO",
           description:
-            "Structuring articles with proper headings, internal linking, and on-page elements that support both readability and search visibility.",
+            "Structuring articles with proper headings, internal linking, and on-page elements that support both readability and search visibility across every published piece.",
         },
         {
           title: "Editorial Calendar Execution",
           description:
-            "Consistent production against an agreed editorial calendar, whether that's one we developed through content strategy or one you bring to us already planned.",
+            "Consistent production against an agreed editorial calendar, whether that's one we developed through content strategy or one you bring to us already planned and ready to execute.",
+        },
+        {
+          title: "Multi-Format Adaptation",
+          description:
+            "Adapting long-form articles into supporting formats — social snippets, email summaries, internal documentation — extending the value of each piece of original research beyond the blog post itself.",
         },
       ],
     },
@@ -6724,12 +6778,12 @@ export const subServices: SubService[] = [
         {
           title: "Structure That Serves Readers and Search Engines Together",
           description:
-            "We don't treat good writing and SEO structure as separate, competing concerns. Clear, scannable structure serves both simultaneously when done well.",
+            "We don't treat good writing and SEO structure as separate, competing concerns. Clear, scannable structure serves both simultaneously when done well, without feeling like it was written for an algorithm instead of a person.",
         },
         {
           title: "Flexible to Your Existing Strategy or Ours",
           description:
-            "We can execute against a content roadmap you already have, or pair this service with our content strategy work for a fully integrated approach.",
+            "We can execute against a content roadmap you already have, or pair this service with our content strategy work for a fully integrated, end-to-end approach.",
         },
       ],
     },
@@ -6763,6 +6817,11 @@ export const subServices: SubService[] = [
           description:
             "Founders and executives who want to build a public voice and authority through content but don't have time to write it themselves.",
         },
+        {
+          title: "Companies Needing Consistent Production Without an In-House Writer",
+          description:
+            "Businesses without a dedicated content writer on staff who still need a reliable, ongoing publishing cadence rather than sporadic articles whenever someone internally finds the time.",
+        },
       ],
     },
     faqs: [
@@ -6774,22 +6833,22 @@ export const subServices: SubService[] = [
       {
         question: "Do you need our input for every article, or can you write independently?",
         answer:
-          "It depends on the topic — for general topics, we can research and write largely independently. For topics requiring specific company or product knowledge, we'll need brief input or an expert interview.",
+          "It depends on the topic — for general topics, we can research and write largely independently. For topics requiring specific company or product knowledge, we'll need brief input or a short expert interview.",
       },
       {
         question: "How long does each blog article take to produce?",
         answer:
-          "A standard long-form article typically takes 1-2 weeks from brief to final draft, depending on research depth required and revision rounds. We'll give you a specific cadence for ongoing production.",
+          "A standard long-form article typically takes 1-2 weeks from initial brief to final draft, depending on research depth required and the number of revision rounds needed. We'll give you a specific cadence for ongoing production.",
       },
       {
         question: "Can you write in our company's existing voice?",
         answer:
-          "Yes — we study existing content and any voice guidelines you have, or help establish a consistent voice if one doesn't exist yet, then write consistently within it.",
+          "Yes — we study existing content and any voice guidelines you have, or help establish a consistent voice if one doesn't exist yet, then write consistently within it across every piece.",
       },
       {
         question: "Do you publish the content, or just deliver the writing?",
         answer:
-          "Both options are available — we can publish directly to your CMS with full on-page SEO setup, or deliver publish-ready content for your team to post.",
+          "Both options are available to clients — we can publish directly to your CMS with full on-page SEO setup, or deliver publish-ready content for your own team to post.",
       },
       {
         question: "Can you update and improve our existing underperforming articles?",
@@ -6850,15 +6909,18 @@ export const subServices: SubService[] = [
       eyebrow: "Social Media Management",
       h1: "Social Media Management Built for Consistency, Not Just Virality",
       subheadline:
-        "We manage day-to-day social media presence — platform-specific content, posting cadence, and community engagement — built around a sustainable rhythm your brand can actually maintain, rather than chasing every viral trend and burning out within a few months. The brands that win on social media long-term show up consistently, not occasionally brilliantly.",
+        "We manage day-to-day social media presence — platform-specific content, posting cadence, and community engagement — built around a sustainable rhythm your brand can genuinely maintain over time, rather than chasing every viral trend and burning out within a few months. The brands that win on social media long-term show up consistently, not just occasionally brilliantly once in a while.",
     },
     overview: {
       h2: "Why Consistency Beats Chasing Virality",
       paragraphs: [
-        "Social media strategy needs to be genuinely platform-specific, because the content that performs on LinkedIn looks nothing like what performs on Instagram or TikTok, and an identical cross-posted piece of content typically underperforms everywhere compared to content built for each platform's specific format and audience expectations. We build distinct content approaches per platform rather than producing once and distributing identically.",
-        "Most brands either post sporadically with no consistent cadence, or burn out trying to chase every viral trend and format, both of which undermine the platform algorithms' preference for consistent, reliable posting. We build a sustainable cadence specific to what your team or budget can actually maintain long-term, since a consistent, modest posting schedule outperforms an ambitious one that collapses after two months.",
+        "Social media strategy needs to be genuinely platform-specific, because the content that performs on LinkedIn looks nothing like what performs on Instagram or TikTok, and an identical cross-posted piece of content typically underperforms everywhere compared to content built for each platform's specific format and audience expectations. We build distinct content approaches for each platform rather than producing once and distributing identically everywhere.",
+        "Most brands either post sporadically with no consistent cadence at all, or burn out trying to chase every viral trend and format, both of which undermine the platform algorithms' clear preference for consistent, reliable posting. We build a sustainable cadence specific to what your team or budget can actually maintain long-term, since a consistent, modest posting schedule reliably outperforms an ambitious one that collapses after two months.",
         "Community management — responding to comments, messages, and mentions — is as much a part of social media management as content creation, and it's the piece many brands neglect once content is scheduled and 'done.' Genuine engagement with your audience builds the relationship that makes social media valuable beyond pure reach.",
         "We report on metrics tied to actual business value — engagement that correlates with brand affinity, traffic and conversions driven to owned channels, follower growth in genuinely relevant audiences — rather than vanity metrics like raw impressions or follower count that look good in a report but don't necessarily reflect business impact.",
+        "Crisis and reputation moments are also part of what a real social media management relationship needs to plan for, since even well-run brand accounts occasionally face a product issue, a customer complaint that goes viral, or a broader industry controversy that demands a fast, careful response. We establish an escalation process and tone guidance for these situations upfront, rather than improvising a response in the middle of an actual incident when the brand's reputation is already on the line.",
+        "Platform algorithm changes are a constant rather than an occasional disruption, and a strategy that worked six months ago on a given platform can quietly stop working as the platform shifts what it rewards. We monitor performance closely enough to notice these shifts early and adjust the approach, rather than continuing to execute a strategy that's already stopped delivering the results it once did.",
+        "Brand voice on social media needs to feel like an actual person communicating, not a corporate account reciting approved talking points, since audiences on every platform respond more to content that feels genuinely human than to content that reads like it passed through several layers of approval before publishing. We write social copy with that directness in mind, even while staying within brand guardrails.",
       ],
     },
     whatsIncluded: {
@@ -6946,12 +7008,12 @@ export const subServices: SubService[] = [
         {
           title: "Community Management as a Core Deliverable",
           description:
-            "We treat ongoing engagement with comments and messages as seriously as content creation, not an afterthought once content is scheduled and considered done.",
+            "We treat ongoing engagement with comments and messages as seriously as content creation, not an afterthought once content is scheduled and considered done. A brand that posts well but never replies still feels absent to its actual audience.",
         },
         {
           title: "Reporting Tied to Business Value",
           description:
-            "We report on metrics that actually correlate with business impact, not vanity numbers like raw follower count or impressions that look good but don't necessarily mean anything.",
+            "We report on metrics that actually correlate with business impact, not vanity numbers like raw follower count or impressions that look good but don't necessarily mean anything to your bottom line.",
         },
       ],
     },
@@ -6986,6 +7048,11 @@ export const subServices: SubService[] = [
           description:
             "Consumer brands needing a steady stream of platform-native visual content across Instagram, TikTok, or other visually-driven platforms.",
         },
+        {
+          title: "Brands Recovering from an Inactive or Neglected Presence",
+          description:
+            "Companies whose social accounts went dormant for months or longer, needing both a content reboot and a realistic plan for rebuilding engagement that doesn't bounce back overnight.",
+        },
       ],
     },
     faqs: [
@@ -6997,7 +7064,7 @@ export const subServices: SubService[] = [
       {
         question: "Do you create the visual content, or just manage scheduling?",
         answer:
-          "Both — we handle content creation (visual and written) as well as scheduling, community management, and reporting, as a full management service rather than just a posting tool.",
+          "Both — we handle content creation (visual and written) as well as scheduling, community management, and reporting, as a complete management service rather than just a scheduling tool.",
       },
       {
         question: "How do you handle responding to negative comments or messages?",
@@ -7007,17 +7074,17 @@ export const subServices: SubService[] = [
       {
         question: "How is success measured for social media management?",
         answer:
-          "We track engagement quality, follower growth in relevant audiences, and traffic/conversion impact to owned channels — not just raw impressions or follower counts.",
+          "We track engagement quality, follower growth in relevant audiences, and traffic or conversion impact to owned channels — not just raw impressions or vanity follower counts alone.",
       },
       {
         question: "Do you handle paid social too, or just organic?",
         answer:
-          "Organic content and community management is this service. Paid social campaigns fall under our performance marketing services (Meta Ads, TikTok Ads), though we coordinate closely between the two.",
+          "Organic content and community management is this specific service. Paid social campaigns fall under our performance marketing services (Meta Ads, TikTok Ads), though we coordinate closely between the two teams.",
       },
       {
         question: "Can you work with our existing in-house social media person?",
         answer:
-          "Yes — we can take over full management, support an existing team member with strategy and overflow content production, or focus specifically on platforms where you need additional capacity.",
+          "Yes — we can take over full management entirely, support an existing team member with strategy and overflow content production, or focus specifically on platforms where you need additional capacity.",
       },
     ],
     cta: {
@@ -7073,15 +7140,17 @@ export const subServices: SubService[] = [
       eyebrow: "Copywriting",
       h1: "Copywriting Built to Convert, with One Consistent Voice",
       subheadline:
-        "We write conversion-focused copy for websites, ads, sales pages, and email — short-form, persuasive writing distinct from long-form blog content, built around a consistent brand voice across every channel. Copy written by five different freelancers across your website, ads, and email creates a brand that sounds like a different company depending on which page someone's reading.",
+        "We write conversion-focused copy for websites, ads, sales pages, and email — short-form, persuasive writing distinct from long-form blog content, built around one consistent brand voice across every single channel you use. Copy written by five different freelancers across your website, ads, and email creates a brand that sounds like a different company depending on which page someone's currently reading.",
     },
     overview: {
       h2: "Why Copywriting Is a Different Discipline from Blog Writing",
       paragraphs: [
-        "Copywriting and blog writing are different disciplines serving different purposes — copywriting is short-form, persuasion-focused writing built to move someone toward a specific action (a purchase, a signup, a click), while blog writing is longer-form, informational content built primarily to inform and rank. Both matter, but conflating them produces website copy that reads like a blog post, or blog content padded with sales language.",
-        "Voice consistency across every channel — website, ads, email, sales materials — is one of the most underrated brand assets, and one of the easiest to accidentally fragment by using different freelance writers for each channel without coordination. We write across all of a client's copy needs specifically to maintain one consistent voice, rather than each channel sounding like a different company wrote it.",
+        "Copywriting and blog writing are different disciplines serving entirely different purposes — copywriting is short-form, persuasion-focused writing built to move someone toward a specific action (a purchase, a signup, a click), while blog writing is longer-form, informational content built primarily to inform and rank. Both matter, but conflating them produces website copy that reads like a blog post, or blog content padded with sales language.",
+        "Voice consistency across every single channel — website, ads, email, sales materials — is one of the most underrated brand assets, and one of the easiest to accidentally fragment by using different freelance writers for each channel without any coordination. We write across all of a client's copy needs specifically to maintain one consistent voice, rather than each channel sounding like a completely different company wrote it.",
         "Each copywriting format has different conversion mechanics that the writing needs to account for — a landing page needs to overcome objections and build a complete case for action within a single scroll; an ad needs to capture attention in a few seconds before someone scrolls past; an email needs a subject line that earns the open before the body copy can do any persuasive work at all. We write with these format-specific mechanics in mind.",
         "Good copywriting is research-informed, not just clever wordplay — understanding your actual customer's objections, language, and decision-making process produces copy that resonates and converts, while copy that's just stylistically polished without that grounding often falls flat with real audiences regardless of how well-written it sounds in isolation.",
+        "Clarity should win over cleverness whenever the two are in tension, since a clever line that requires a second read to understand almost always converts worse than a plain sentence the reader grasps instantly. We're willing to cut a line we personally like if it doesn't communicate as fast as a simpler alternative, because the job of conversion copy is to move someone toward action, not to demonstrate writing skill for its own sake.",
+        "Objection handling is the part of copywriting that separates persuasive writing from merely descriptive writing, since simply listing features and benefits does nothing to address the specific doubts a real prospect is silently weighing before they'll act. We write directly to the objections a buyer is actually having — price, risk, trust, timing — rather than writing around them and hoping the reader doesn't notice the gap.",
       ],
     },
     whatsIncluded: {
@@ -7115,12 +7184,17 @@ export const subServices: SubService[] = [
         {
           title: "Product & Feature Copy",
           description:
-            "Concise, clear copy for product descriptions, feature explanations, and in-app messaging, balancing clarity with persuasive value communication.",
+            "Concise, clear copy for product descriptions, feature explanations, and in-app messaging, balancing clarity with persuasive value communication throughout the product experience.",
         },
         {
           title: "Copy Audits & Optimization",
           description:
-            "Auditing existing copy across channels for voice consistency and conversion effectiveness, identifying specific underperforming copy worth rewriting.",
+            "Auditing existing copy across channels for voice consistency and conversion effectiveness, identifying specific underperforming copy worth rewriting rather than leaving it untouched.",
+        },
+        {
+          title: "Pitch Deck & Investor Copy",
+          description:
+            "Sharpening the written narrative within pitch decks, one-pagers, and investor updates, where clear, persuasive writing genuinely affects how an opportunity gets received by its audience.",
         },
       ],
     },
@@ -7169,12 +7243,12 @@ export const subServices: SubService[] = [
         {
           title: "Research-Informed, Not Just Clever Wordplay",
           description:
-            "We ground copy in real understanding of your customer's objections and language, since stylistically polished copy without that grounding often falls flat with real audiences.",
+            "We ground copy in real understanding of your customer's objections and language, since stylistically polished copy without that grounding often falls flat with real audiences regardless of craft.",
         },
         {
           title: "Copywriting and Content Strategy Coordinated",
           description:
-            "When you also work with us on content strategy or blog writing, your copy and content stay coordinated under one consistent strategic and voice framework.",
+            "When you also work with us on content strategy or blog writing, your copy and content stay coordinated under one consistent strategic and voice framework, not siloed between separate teams.",
         },
       ],
     },
@@ -7206,6 +7280,11 @@ export const subServices: SubService[] = [
           description:
             "Businesses needing ad copy coordinated with landing page copy for a cohesive campaign experience from click to conversion.",
         },
+        {
+          title: "Companies Preparing for a Funding Round or Major Pitch",
+          description:
+            "Businesses needing sharper, more persuasive copy for pitch decks, one-pagers, and supporting materials where the writing quality genuinely affects how the opportunity gets perceived.",
+        },
       ],
     },
     faqs: [
@@ -7222,22 +7301,22 @@ export const subServices: SubService[] = [
       {
         question: "Do you write for a specific platform's character limits and format requirements?",
         answer:
-          "Yes — we write within each platform's specific constraints (Google Ads character limits, LinkedIn's text-forward expectations, email subject line length) rather than writing generically.",
+          "Yes — we write within each platform's specific constraints (Google Ads character limits, LinkedIn's text-forward expectations, email subject line length) rather than writing generically and adjusting afterward.",
       },
       {
         question: "How long does a copywriting project take?",
         answer:
-          "A landing page or set of website pages typically takes 1-2 weeks. Ad copy and email campaigns are often faster, especially once brand voice is established.",
+          "A landing page or set of website pages typically takes 1-2 weeks from brief to final copy. Ad copy and email campaigns are often faster, especially once brand voice is already well established.",
       },
       {
         question: "Do you test different copy variations?",
         answer:
-          "Where possible, yes — we recommend A/B testing copy variations, especially for high-traffic pages or ads, to validate what actually performs better with your specific audience.",
+          "Where possible, yes — we recommend A/B testing copy variations, especially for high-traffic pages or ads, to validate what actually performs better with your specific real audience.",
       },
       {
         question: "Can you write copy for a product or industry you're not familiar with?",
         answer:
-          "Yes, through dedicated research and, when needed, interviews with your team's subject matter experts — thorough research lets us write credibly even in unfamiliar technical areas.",
+          "Yes, through dedicated research and, when needed, interviews with your own team's subject matter experts — thorough research lets us write credibly even in unfamiliar, technical industry areas.",
       },
     ],
     cta: {
@@ -7293,15 +7372,17 @@ export const subServices: SubService[] = [
       eyebrow: "Email Marketing",
       h1: "Email Marketing for an Audience You Actually Own",
       subheadline:
-        "We build email marketing strategy and execution — lifecycle automations, campaign sends, and the segmentation and deliverability practices that determine whether your emails actually reach the inbox. Email is the rare owned channel you don't rent from a platform algorithm, and most brands underinvest in it relative to how reliably it performs.",
+        "We build email marketing strategy and execution — lifecycle automations, campaign sends, and the segmentation and deliverability practices that determine whether your emails actually reach the inbox at all. Email is the rare owned channel you don't rent from a platform algorithm, and most brands genuinely underinvest in it relative to how reliably and consistently it actually performs.",
     },
     overview: {
       h2: "Why Email Is the Owned Channel Most Brands Underinvest In",
       paragraphs: [
-        "Email marketing has a structural advantage over social media and paid advertising: it's an owned channel, meaning your relationship with subscribers doesn't depend on a platform algorithm's changing rules about organic reach, or on an ever-rising cost-per-click for paid acquisition. Building and nurturing an email list is one of the few marketing investments that compounds in value over time rather than requiring continuous spend just to maintain reach.",
-        "Deliverability — actually landing in the inbox rather than spam — is the unglamorous technical foundation email marketing depends on, and it's frequently neglected until a sending reputation problem tanks open rates across an entire program. Proper authentication (SPF, DKIM, DMARC), list hygiene, and sending practices that respect engagement signals all factor into deliverability, and we treat this infrastructure as seriously as the actual email content.",
-        "Lifecycle automation — welcome series, abandoned cart flows, post-purchase sequences, re-engagement campaigns — generates consistent, often higher-converting revenue with a one-time setup investment, compared to one-off campaign sends that require continuous content production to sustain. We build automation flows as the foundation, with campaign sends layered on top for timely promotions and announcements.",
-        "Segmentation lets a single email program feel personally relevant to meaningfully different subscriber groups — new versus returning customers, high-value versus occasional buyers, engaged versus dormant subscribers — rather than sending identical content to everyone. We build segmentation strategy that genuinely changes what different groups receive, not just personalized name fields in an otherwise identical email.",
+        "Email marketing has a genuine structural advantage over social media and paid advertising: it's an owned channel, meaning your relationship with subscribers doesn't depend on a platform algorithm's changing rules about organic reach, or on an ever-rising cost-per-click for paid acquisition. Building and nurturing an email list is one of the few marketing investments that compounds in value over time rather than requiring continuous spend just to maintain reach.",
+        "Deliverability — actually landing in the inbox rather than spam — is the unglamorous technical foundation email marketing depends on, and it's frequently neglected until a sending reputation problem quietly tanks open rates across an entire program. Proper authentication (SPF, DKIM, DMARC), list hygiene, and sending practices that respect engagement signals all factor into deliverability, and we treat this infrastructure as seriously as the actual email content itself.",
+        "Lifecycle automation — welcome series, abandoned cart flows, post-purchase sequences, re-engagement campaigns — generates consistent, often higher-converting revenue with a one-time setup investment, compared to one-off campaign sends that require continuous content production to sustain indefinitely. We build automation flows as the foundation, with campaign sends layered on top for timely promotions and announcements.",
+        "Segmentation lets a single email program feel personally relevant to meaningfully different subscriber groups — new versus returning customers, high-value versus occasional buyers, engaged versus dormant subscribers — rather than sending identical content to everyone on the list. We build segmentation strategy that genuinely changes what different groups actually receive, not just personalized name fields in an otherwise completely identical email.",
+        "List hygiene deserves ongoing attention rather than a one-time cleanup, since an email list naturally accumulates disengaged subscribers over time, and continuing to send to addresses that never open or click actively damages sending reputation with mailbox providers. We build regular suppression and re-engagement processes into the program from the start, treating list health as something that needs continuous maintenance rather than a problem solved once and forgotten.",
+        "Mobile rendering deserves dedicated testing rather than an assumption that a desktop-designed template will simply scale down acceptably, since the majority of email opens now happen on mobile devices where a poorly tested template can break entirely or render illegibly. We test every template across the major mobile email clients before it goes into active rotation, since a broken render on launch day undermines an otherwise well-planned campaign.",
       ],
     },
     whatsIncluded: {
@@ -7335,12 +7416,17 @@ export const subServices: SubService[] = [
         {
           title: "A/B Testing & Optimization",
           description:
-            "Testing subject lines, send times, and content variations to improve open and click rates based on actual subscriber behavior, not assumptions.",
+            "Testing subject lines, send times, and content variations to improve open and click rates based on actual subscriber behavior, not internal assumptions about what should work.",
         },
         {
           title: "Email Platform Migration & Setup",
           description:
-            "Migrating between email service providers or setting up a new platform correctly, including list import, automation rebuilding, and deliverability reputation management.",
+            "Migrating between email service providers or setting up a new platform correctly, including list import, automation rebuilding, and deliverability reputation management throughout the transition.",
+        },
+        {
+          title: "List Growth Strategy",
+          description:
+            "Advising on lead magnets, signup incentives, and on-site capture points that grow your list with genuinely engaged subscribers, coordinated with content and paid acquisition efforts.",
         },
       ],
     },
@@ -7379,7 +7465,7 @@ export const subServices: SubService[] = [
         {
           title: "Deliverability Treated as Core Infrastructure",
           description:
-            "We treat authentication, list hygiene, and sending reputation as seriously as email content itself, since even great copy doesn't matter if it lands in spam.",
+            "We treat authentication, list hygiene, and sending reputation as seriously as email content itself, since even great copy doesn't matter if it lands in the spam folder.",
         },
         {
           title: "Automation as the Foundation, Not an Afterthought",
@@ -7389,12 +7475,12 @@ export const subServices: SubService[] = [
         {
           title: "Genuine Segmentation, Not Just Name Personalization",
           description:
-            "We build segmentation that changes what different subscriber groups actually receive, not just inserting a first name into an otherwise identical email for everyone.",
+            "We build segmentation that changes what different subscriber groups actually receive, not just inserting a first name into an otherwise identical email sent to your entire list.",
         },
         {
           title: "We Understand Email as an Owned Asset",
           description:
-            "We think about your email list as a long-term owned asset worth genuinely nurturing, not just a channel for periodic promotional blasts when there's a sale to announce.",
+            "We think about your email list as a long-term owned asset worth genuinely nurturing, not just a channel for periodic promotional blasts when there's a sale to announce and revenue to chase quickly.",
         },
       ],
     },
@@ -7416,17 +7502,22 @@ export const subServices: SubService[] = [
         {
           title: "E-commerce Brands Wanting Lifecycle Revenue",
           description:
-            "D2C and e-commerce businesses wanting to maximize revenue from automated flows — abandoned cart, post-purchase, win-back — rather than relying solely on one-off promotional sends.",
+            "D2C and e-commerce businesses wanting to maximize revenue from automated flows — abandoned cart, post-purchase, win-back — rather than relying solely on one-off promotional sends and discount blasts.",
         },
         {
           title: "B2B Companies Nurturing Long Sales Cycles",
           description:
-            "B2B companies needing email nurture sequences that support a long, multi-touch buying process between initial interest and a sales-ready opportunity.",
+            "B2B companies needing email nurture sequences that support a long, multi-touch buying process between initial interest and an eventual sales-ready opportunity for their sales team.",
         },
         {
           title: "Brands with Poor Email Deliverability",
           description:
             "Companies whose email open rates have declined due to deliverability issues, needing a technical audit and remediation before campaign strategy can be effective again.",
+        },
+        {
+          title: "Brands Switching Email Platforms",
+          description:
+            "Companies migrating from one email service provider to another, needing careful list import, automation rebuilding, and sending reputation management through the transition.",
         },
       ],
     },
@@ -7434,32 +7525,32 @@ export const subServices: SubService[] = [
       {
         question: "What's the difference between automation flows and campaign emails?",
         answer:
-          "Automation flows trigger based on subscriber behavior (joining a list, abandoning a cart) and run continuously once set up. Campaign emails are one-off sends to a chosen segment at a specific time.",
+          "Automation flows trigger based on specific subscriber behavior (joining a list, abandoning a cart) and run continuously once set up. Campaign emails are one-off sends to a chosen segment at a specific time.",
       },
       {
         question: "How do you fix poor email deliverability?",
         answer:
-          "We audit authentication setup (SPF, DKIM, DMARC), list hygiene, and sending practices, then implement fixes and often a gradual sending reputation rebuild, since issues don't resolve instantly.",
+          "We audit authentication setup (SPF, DKIM, DMARC), list hygiene, and sending practices, then implement fixes and often a gradual sending reputation rebuild, since deliverability issues don't resolve instantly overnight.",
       },
       {
         question: "Which email platform should we use?",
         answer:
-          "It depends on your business model and existing stack — Klaviyo works well for e-commerce, especially on Shopify; HubSpot suits B2B companies already using its CRM.",
+          "It depends on your specific business model and existing stack — Klaviyo works well for e-commerce, especially on Shopify; HubSpot suits B2B companies already using its CRM for sales and marketing.",
       },
       {
         question: "How often should we send campaign emails?",
         answer:
-          "It depends on your audience and content volume, but consistency matters more than frequency — a sustainable weekly or biweekly cadence usually outperforms sporadic high-frequency sending.",
+          "It depends on your audience and content volume, but consistency matters more than raw frequency overall — a sustainable weekly or biweekly cadence usually outperforms sporadic, high-frequency bursts of sending.",
       },
       {
         question: "Can you grow our email list, or just manage what we have?",
         answer:
-          "We can advise on list growth strategy (lead magnets, signup incentives), though list growth tactics often coordinate with our content strategy, social media, or paid ads services.",
+          "We can advise on list growth strategy (lead magnets, signup incentives), though list growth tactics often coordinate closely with our content strategy, social media, or paid ads services together.",
       },
       {
         question: "Do you design the emails too, or just write the strategy?",
         answer:
-          "Both — we handle email design and template development alongside strategy and copywriting, ensuring everything works together as one coordinated program.",
+          "Both — we handle email design and template development alongside strategy and copywriting, ensuring everything works together as one coordinated, cohesive program from top to bottom.",
       },
     ],
     cta: {
