@@ -18,7 +18,7 @@ export const metadata: Metadata = generateSeoMetadata({
   title: content.metaTitle,
   description: content.metaDescription,
   canonical: link.href,
-  keywords: content.keywords,
+  keywords: content.keywords, 
 });
 
 export default function WebDevelopmentPage() {

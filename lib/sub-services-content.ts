@@ -4147,6 +4147,236 @@ export const subServices: SubService[] = [
     ],
   },
   {
+    slug: "off-page-seo",
+    parentSlug: "seo",
+    parentName: "SEO Services",
+    parentLabel: "SEO",
+    meta: {
+      title: "Off-Page SEO Services",
+      description:
+        "Off-page SEO — domain authority, digital PR, brand mentions, and citation consistency built as one coordinated strategy, not a single link-building tactic.",
+      keywords: [
+        "off-page SEO services",
+        "off page optimization",
+        "brand authority building",
+        "digital PR services",
+        "off-site SEO",
+        "domain authority SEO",
+        "online reputation management SEO",
+        "brand mention monitoring",
+      ],
+    },
+    hero: {
+      eyebrow: "Off-Page SEO",
+      h1: "Off-Page SEO That Builds Authority Beyond Just Backlinks",
+      subheadline:
+        "We build off-page authority through digital PR, brand mention monitoring, social signals, citation consistency, and reputation management — the full strategic layer that search engines read as evidence your brand is genuinely established, not just a site with some inbound links. Link building is one tactic inside this strategy; off-page SEO is the strategy itself.",
+    },
+    overview: {
+      h2: "Why Off-Page Authority Is Bigger Than Your Backlink Profile",
+      paragraphs: [
+        "Off-page SEO covers everything that happens away from your own website that still shapes how search engines and real audiences perceive your authority — brand mentions that never include a link, social engagement signals, citation consistency across directories, press coverage, and the overall sentiment people express about your brand across the web. Backlinks are part of this picture, but they're far from the whole picture.",
+        "We treat off-page SEO and link building as related but distinct services for a reason: link building is the specific, focused tactic of acquiring backlinks, while off-page SEO is the broader strategic umbrella that link building sits inside, alongside digital PR, brand mention monitoring, social signal building, citation management, and reputation work. A site can have a perfectly healthy backlink profile and still be losing off-page ground on every other dimension search engines and prospective customers actually notice.",
+        "Brand mentions without a link still carry signal value, since search engines increasingly interpret unlinked mentions of your brand name across the web as a legitimacy signal independent of any specific backlink. A brand that gets talked about — in forums, in press coverage, in comparison roundups, even without a hyperlink attached — is building authority that a backlink-only strategy completely misses.",
+        "Citation consistency — your business name, address, and phone number matching exactly across every directory and platform that lists you — matters for more than local search rankings specifically. Inconsistent citations create a fragmented, less trustworthy footprint across the web generally, and we audit and correct this as a standard part of off-page work, not something we only address under local SEO.",
+        "Online reputation directly intersects with off-page SEO in ways most agencies treat as a separate discipline entirely. Review sentiment, how your brand responds to criticism publicly, and what shows up when someone searches your brand name directly all factor into the trust signals search engines and prospective customers both read, and we manage this as part of a coordinated off-page strategy rather than handing it to a disconnected reputation management vendor.",
+        "Digital PR and HARO-style journalist outreach earn off-page authority through coverage and citation in publications that wouldn't necessarily produce a traditional backlink campaign on their own — a quote in a trade publication, inclusion in a roundup, or a mention in industry press all compound the same brand authority signals that pure link acquisition chases, often with more durability since this kind of coverage rarely needs to be disavowed later.",
+      ],
+    },
+    whatsIncluded: {
+      h2: "What Off-Page SEO with Vertexa Includes",
+      items: [
+        {
+          title: "Digital PR Strategy & Execution",
+          description:
+            "Planning and running digital PR campaigns — original research, expert commentary, newsworthy angles — that earn coverage, citations, and brand mentions across relevant publications.",
+        },
+        {
+          title: "Brand Mention Monitoring & Earned Citation Tracking",
+          description:
+            "Ongoing monitoring of where your brand gets mentioned across the web, including unlinked mentions, and identifying opportunities to convert valuable mentions into links where it makes sense.",
+        },
+        {
+          title: "Social Signals & Engagement Strategy",
+          description:
+            "Building genuine social engagement and sharing activity around your content and brand, contributing to the broader authority and visibility signals off-page SEO depends on.",
+        },
+        {
+          title: "Guest Posting Program Management",
+          description:
+            "Strategic guest content placement on genuinely relevant, reputable publications as part of a coordinated authority-building program, not an isolated link-acquisition tactic.",
+        },
+        {
+          title: "Citation Building & NAP Consistency",
+          description:
+            "Auditing and correcting your business name, address, and phone number across directories and platforms, building a consistent, trustworthy footprint across the web.",
+        },
+        {
+          title: "Online Reputation Management",
+          description:
+            "Monitoring and managing review sentiment, search results for your brand name, and public response to criticism, treating reputation as a genuine off-page SEO input.",
+        },
+        {
+          title: "HARO & Journalist Outreach",
+          description:
+            "Responding to journalist queries and building relationships with reporters covering your industry, earning citations and mentions in publications a standalone outreach campaign wouldn't reach.",
+        },
+        {
+          title: "Influencer & Community Outreach",
+          description:
+            "Identifying and engaging relevant influencers, forums, and online communities where genuine participation builds brand authority and visibility beyond what link acquisition alone produces.",
+        },
+      ],
+    },
+    process: {
+      h2: "How We Run Off-Page SEO",
+      steps: [
+        {
+          number: "01",
+          title: "Off-Page Audit",
+          description:
+            "We audit your current backlink profile, brand mention footprint, citation consistency, and online reputation to understand where authority is genuinely strong versus where it's actually thin.",
+        },
+        {
+          number: "02",
+          title: "Strategy & Channel Prioritization",
+          description:
+            "We prioritize which off-page channels — digital PR, citations, reputation, social signals — offer the most realistic authority gains for your specific situation and industry.",
+        },
+        {
+          number: "03",
+          title: "Execution Across Channels",
+          description:
+            "We run digital PR, outreach, citation correction, and reputation management in parallel, coordinated under one strategy rather than as disconnected, separately-managed initiatives.",
+        },
+        {
+          number: "04",
+          title: "Authority & Sentiment Monitoring",
+          description:
+            "We track brand mentions, citation accuracy, and sentiment over time, adjusting the strategy as new opportunities and reputation issues surface.",
+        },
+      ],
+    },
+    whyChoose: {
+      h2: "Why Brands Choose Us for Off-Page SEO",
+      points: [
+        {
+          title: "We Treat Off-Page SEO as Bigger Than Link Building",
+          description:
+            "We don't relabel a link-building campaign as off-page SEO. Brand mentions, citations, reputation, and digital PR are managed as genuine, coordinated parts of the strategy.",
+        },
+        {
+          title: "We Track Signals Most Agencies Ignore",
+          description:
+            "Unlinked brand mentions and citation consistency rarely get tracked by agencies focused purely on backlink counts. We monitor and act on these signals as a standard part of the service.",
+        },
+        {
+          title: "Reputation Managed as an SEO Input, Not a Separate Vendor",
+          description:
+            "We don't hand reputation management off to a disconnected vendor with no visibility into your broader SEO strategy. It's coordinated under the same off-page program.",
+        },
+        {
+          title: "Digital PR That Earns Coverage, Not Just Links",
+          description:
+            "Our digital PR work is built to earn genuine press coverage and citations, which compounds brand authority even in cases where a specific link doesn't result.",
+        },
+      ],
+    },
+    techStack: {
+      h2: "Off-Page SEO Tools We Use",
+      paragraph:
+        "We monitor brand mentions and backlink profiles through Ahrefs and Semrush, cross-referenced with dedicated brand monitoring alerts for unlinked mentions across the web. Citation auditing and correction runs through BrightLocal across the full range of relevant directories, not just the major ones. Digital PR and journalist outreach happens through HARO (Connectively) and outreach platforms like Buzzstream and Pitchbox, letting us manage relationships and pitches at a scale manual outreach alone couldn't sustain.",
+      tools: [
+        "Ahrefs",
+        "Semrush",
+        "BrightLocal",
+        "HARO / Connectively",
+        "Buzzstream",
+        "Pitchbox",
+      ],
+    },
+    useCases: {
+      h2: "Who Needs Off-Page SEO",
+      cases: [
+        {
+          title: "Brands with Strong Content But Thin Authority Signals",
+          description:
+            "Sites publishing genuinely good content that isn't translating into broader brand authority, needing digital PR, mentions, and social signals beyond what a pure content strategy produces.",
+        },
+        {
+          title: "Brands Needing Reputation & Sentiment Management",
+          description:
+            "Businesses whose online reputation or search results for their own brand name need active management alongside, not separate from, their broader SEO strategy.",
+        },
+        {
+          title: "Multi-Location Brands Needing Citation Consistency at Scale",
+          description:
+            "Businesses with inconsistent or outdated citations across many directories and locations, needing systematic correction as part of a coordinated off-page program.",
+        },
+      ],
+    },
+    faqs: [
+      {
+        question: "What's the difference between off-page SEO and link building?",
+        answer:
+          "Link building is the specific tactic of acquiring backlinks. Off-page SEO is the broader strategy that link building sits inside, alongside digital PR, brand mentions, citations, social signals, and reputation management.",
+      },
+      {
+        question: "Do I need both off-page SEO and link building, or just one?",
+        answer:
+          "Most established brands benefit from both, since link building is a core tactic within off-page SEO. We'll scope based on whether you need the full strategic umbrella or specifically link acquisition.",
+      },
+      {
+        question: "Does off-page SEO include reputation management?",
+        answer:
+          "Yes — review sentiment and search results for your brand name factor directly into off-page authority and trust signals, so we manage this as a coordinated part of the service.",
+      },
+      {
+        question: "Can unlinked brand mentions actually help SEO?",
+        answer:
+          "Yes, increasingly so — search engines read unlinked brand mentions as a legitimacy signal independent of any specific backlink, which is why we monitor and build toward these mentions deliberately.",
+      },
+      {
+        question: "How long does off-page SEO take to show results?",
+        answer:
+          "Similar to link building, off-page authority builds over months rather than weeks, since digital PR, reputation, and citation work compound gradually rather than producing instant ranking shifts.",
+      },
+      {
+        question: "Do you handle citation building for multi-location businesses?",
+        answer:
+          "Yes — citation consistency across many locations is a core part of off-page SEO for multi-location brands, and we audit and correct this systematically rather than location by location.",
+      },
+    ],
+    cta: {
+      h2: "Ready to build authority beyond just your backlink count?",
+      subhead:
+        "Let's audit your current off-page footprint — mentions, citations, reputation, and links — and show you where the real authority gaps actually are.",
+    },
+    relatedSubServices: [
+      {
+        slug: "link-building",
+        parentSlug: "seo",
+        name: "Link Building",
+        shortDescription:
+          "The focused backlink-acquisition tactic that sits inside a broader off-page strategy.",
+      },
+      {
+        slug: "technical-seo",
+        parentSlug: "seo",
+        name: "Technical SEO",
+        shortDescription:
+          "The on-site foundation that lets off-page authority gains actually translate into rankings.",
+      },
+      {
+        slug: "saas-seo",
+        parentSlug: "seo",
+        name: "SaaS SEO",
+        shortDescription:
+          "Category-specific organic strategy that off-page authority work compounds alongside.",
+      },
+    ],
+  },
+  {
     slug: "google-ads",
     parentSlug: "performance-marketing",
     parentName: "Performance Marketing",
