@@ -1,11 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Globe, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 import { siteConfig } from "@/lib/site-config";
+import { industries } from "@/lib/industries-content";
 
-// lucide-react no longer ships brand/logo glyphs, so Instagram and LinkedIn
-// are inlined here as plain SVGs to match the rest of the icon sizing.
+// lucide-react no longer ships brand/logo glyphs, so every social icon
+// here is inlined as a plain SVG to match the rest of the icon sizing.
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+    </svg>
+  );
+}
+
 function InstagramIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -22,62 +31,138 @@ function LinkedinIcon({ className }: { className?: string }) {
   );
 }
 
+function XIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+    </svg>
+  );
+}
+
+const linkClassName =
+  "block text-sm text-neutral-600 transition-colors duration-150 hover:text-neutral-900";
+
+const headingClassName = "text-base font-semibold text-neutral-900";
+
+const ourServicesLinks = siteConfig.services.map((service) => ({
+  label: service.name,
+  href: service.href,
+}));
+
+const industriesLinks = industries.map((industry) => ({
+  label: industry.name,
+  href: `/industries/${industry.slug}`,
+}));
+
+const locationsLinks = [
+  { label: "New York", href: "/locations/new-york" },
+  { label: "Los Angeles", href: "/locations/los-angeles" },
+  { label: "San Francisco", href: "/locations/san-francisco" },
+  { label: "London", href: "/locations/london" },
+  { label: "Berlin", href: "/locations/berlin" },
+  { label: "Sydney", href: "/locations/sydney" },
+];
+
+const quickLinks = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Industries", href: "/industries" },
+  { label: "Locations", href: "/locations" },
+  { label: "Resources", href: "/resources" },
+  { label: "Blog", href: "/resources/blogs" },
+  { label: "Case Studies", href: "/resources/case-studies" },
+  { label: "Contact", href: "/contact" },
+];
+
+const socialLinks = [
+  {
+    label: "Facebook",
+    href: siteConfig.social.facebook.href,
+    Icon: FacebookIcon,
+  },
+  {
+    label: "Instagram",
+    href: siteConfig.social.instagram.href,
+    Icon: InstagramIcon,
+  },
+  {
+    label: "LinkedIn",
+    href: siteConfig.social.linkedin.href,
+    Icon: LinkedinIcon,
+  },
+  {
+    label: "X",
+    href: siteConfig.social.twitter.href,
+    Icon: XIcon,
+  },
+];
+
 export function Footer() {
   return (
     <footer className="border-t border-neutral-200 bg-white text-black">
-      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="flex flex-col gap-4">
-            <Link
-              href="/"
-              aria-label={siteConfig.name}
-              className="flex w-fit items-center"
-            >
+      <div className="mx-auto max-w-7xl px-6 pt-20 pb-12 sm:px-8">
+        <div className="grid grid-cols-1 gap-10 pb-16 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8">
+          <div className="sm:col-span-2 lg:col-span-1">
+            <Link href="/" className="flex items-center gap-3">
               <Image
                 src={siteConfig.logo.src}
                 alt={siteConfig.logo.alt}
-                width={50}
-                height={50}
-                className="h-[50px] w-[50px]"
+                width={48}
+                height={48}
+                className="h-12 w-12 object-contain"
               />
+              <span className="flex flex-col leading-none">
+                <span className="font-serif text-lg font-semibold text-neutral-900">
+                  Vertexa
+                </span>
+                <span className="-mt-0.5 font-serif text-lg font-semibold text-neutral-900">
+                  Digitals
+                </span>
+              </span>
             </Link>
-            <p className="font-serif text-lg text-black">
-              {siteConfig.tagline}
-            </p>
-            <p className="max-w-xs text-sm leading-relaxed text-neutral-600">
-              {siteConfig.description}
-            </p>
-          </div>
 
-          <div>
-            <h3 className="text-xs font-semibold tracking-widest text-neutral-500 uppercase">
-              Services
-            </h3>
-            <ul className="mt-5 flex flex-col gap-3">
-              {siteConfig.services.map((service) => (
-                <li key={service.href}>
-                  <Link
-                    href={service.href}
-                    className="text-sm text-neutral-700 transition-colors hover:text-black"
-                  >
-                    {service.label}
-                  </Link>
-                </li>
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-neutral-600">
+              A premium digital agency built for ambitious global brands. We
+              deliver senior-led web, mobile, SEO, and growth marketing — to
+              international standards, with measurable outcomes.
+            </p>
+
+            <div className="mt-6">
+              <p className="mb-2 text-xs tracking-wider text-neutral-500 uppercase">
+                Get in touch
+              </p>
+              <a
+                href={`mailto:${siteConfig.contact.email}`}
+                className="flex items-center gap-2 text-sm font-medium text-neutral-900 underline-offset-4 transition-colors hover:text-black hover:underline"
+              >
+                <Mail className="size-4" aria-hidden="true" />
+                {siteConfig.contact.email}
+              </a>
+            </div>
+
+            <div className="mt-6 flex items-center gap-3">
+              {socialLinks.map(({ label, href, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Vertexa Digitals on ${label}`}
+                  className="rounded-lg bg-neutral-100 p-2.5 transition-colors hover:bg-neutral-200"
+                >
+                  <Icon className="h-4.5 w-4.5 text-neutral-700" />
+                </a>
               ))}
-            </ul>
+            </div>
           </div>
 
           <div>
-            <h3 className="text-xs font-semibold tracking-widest text-neutral-500 uppercase">
-              Company
-            </h3>
+            <h3 className={headingClassName}>Our Services</h3>
             <ul className="mt-5 flex flex-col gap-3">
-              {siteConfig.company.map((link) => (
+              {ourServicesLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-neutral-700 transition-colors hover:text-black"
-                  >
+                  <Link href={link.href} className={linkClassName}>
                     {link.label}
                   </Link>
                 </li>
@@ -86,57 +171,54 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xs font-semibold tracking-widest text-neutral-500 uppercase">
-              Connect
-            </h3>
+            <h3 className={headingClassName}>Industries</h3>
             <ul className="mt-5 flex flex-col gap-3">
+              {industriesLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className={linkClassName}>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className={headingClassName}>Locations</h3>
+            <ul className="mt-5 flex flex-col gap-3">
+              {locationsLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className={linkClassName}>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
               <li>
-                <a
-                  href={`mailto:${siteConfig.contact.email}`}
-                  className="flex items-center gap-2 text-sm text-neutral-700 transition-colors hover:text-black"
+                <Link
+                  href="/locations"
+                  className="block text-xs text-neutral-500 italic transition-colors hover:text-neutral-900"
                 >
-                  <Mail className="size-4" aria-hidden="true" />
-                  {siteConfig.contact.email}
-                </a>
+                  View all →
+                </Link>
               </li>
-              <li>
-                <a
-                  href={siteConfig.contact.websiteUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-neutral-700 transition-colors hover:text-black"
-                >
-                  <Globe className="size-4" aria-hidden="true" />
-                  {siteConfig.contact.website}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={siteConfig.social.instagram.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-neutral-700 transition-colors hover:text-black"
-                >
-                  <InstagramIcon className="size-4" />
-                  {siteConfig.social.instagram.label}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={siteConfig.social.linkedin.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-neutral-700 transition-colors hover:text-black"
-                >
-                  <LinkedinIcon className="size-4" />
-                  {siteConfig.social.linkedin.label}
-                </a>
-              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className={headingClassName}>Quick Links</h3>
+            <ul className="mt-5 flex flex-col gap-3">
+              {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className={linkClassName}>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col items-start gap-4 border-t border-neutral-200 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col items-center gap-4 border-t border-neutral-200 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-neutral-500">
             © {new Date().getFullYear()} {siteConfig.name}. All rights
             reserved.

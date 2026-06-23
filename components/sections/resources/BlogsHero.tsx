@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 import { BlogSubscribeForm } from "@/components/sections/resources/BlogSubscribeForm";
@@ -23,30 +22,6 @@ export function BlogsHero({ h1, subheadline }: BlogsHeroProps) {
         variants={staggerContainer}
         className="mx-auto max-w-3xl text-center"
       >
-        <motion.nav
-          variants={fadeInUp}
-          aria-label="Breadcrumb"
-          className="flex justify-center text-sm text-neutral-500"
-        >
-          <ol className="flex flex-wrap items-center justify-center gap-2">
-            <li>
-              <Link href="/" className="hover:text-black">
-                Home
-              </Link>
-            </li>
-            <li aria-hidden="true">/</li>
-            <li>
-              <Link href="/resources" className="hover:text-black">
-                Resources
-              </Link>
-            </li>
-            <li aria-hidden="true">/</li>
-            <li aria-current="page" className="text-black">
-              Blog
-            </li>
-          </ol>
-        </motion.nav>
-
         <motion.h1
           id="blogs-hero-heading"
           variants={fadeInUp}

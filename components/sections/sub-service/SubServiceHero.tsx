@@ -33,39 +33,6 @@ export function SubServiceHero({
         variants={staggerContainer}
         className="mx-auto max-w-4xl text-center"
       >
-        <motion.nav
-          variants={fadeInUp}
-          aria-label="Breadcrumb"
-          className="flex justify-center text-sm text-neutral-500"
-        >
-          <ol className="flex flex-wrap items-center justify-center gap-2">
-            <li>
-              <Link href="/" className="hover:text-black">
-                Home
-              </Link>
-            </li>
-            <li aria-hidden="true">/</li>
-            <li>
-              <Link href="/services" className="hover:text-black">
-                Services
-              </Link>
-            </li>
-            <li aria-hidden="true">/</li>
-            <li>
-              <Link
-                href={`/services/${parentSlug}`}
-                className="hover:text-black"
-              >
-                {parentName}
-              </Link>
-            </li>
-            <li aria-hidden="true">/</li>
-            <li aria-current="page" className="text-black">
-              {eyebrow}
-            </li>
-          </ol>
-        </motion.nav>
-
         <motion.p
           variants={fadeInUp}
           className="mt-6 text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase"

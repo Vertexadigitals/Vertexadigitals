@@ -1,7 +1,12 @@
 import { siteConfig } from "@/lib/site-config";
 
 const logoUrl = `${siteConfig.url}${siteConfig.logo.src}`;
-const sameAs = [siteConfig.social.instagram.href, siteConfig.social.linkedin.href];
+const sameAs = [
+  siteConfig.social.facebook.href,
+  siteConfig.social.instagram.href,
+  siteConfig.social.linkedin.href,
+  siteConfig.social.twitter.href,
+];
 
 /** Organization schema describing Vertexa Digitals as a business entity. */
 export function getOrganizationSchema() {

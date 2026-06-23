@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
+import { QuoteCTA } from "@/components/sections/QuoteCTA";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { generateSeoMetadata } from "@/lib/seo";
@@ -54,6 +55,7 @@ export default function RootLayout({
         <JsonLd data={[getOrganizationSchema(), getWebsiteSchema()]} />
         <Navbar />
         <main className="flex-1">{children}</main>
+        <QuoteCTA />
         <Footer />
       </body>
     </html>

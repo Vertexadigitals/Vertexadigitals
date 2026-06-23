@@ -43,7 +43,7 @@ export function AboutCTA() {
             {siteConfig.cta.label}
           </Button>
           <Button
-            render={<Link href="/work" />}
+            render={<Link href="/resources/case-studies" />}
             variant="outline"
             className="rounded-full border-2 border-white bg-transparent px-8 py-4 text-base text-white hover:bg-white hover:text-black"
           >

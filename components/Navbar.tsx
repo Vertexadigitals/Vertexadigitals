@@ -50,16 +50,24 @@ export function Navbar() {
         <Link
           href="/"
           aria-label={siteConfig.name}
-          className="flex w-fit items-center"
+          className="flex w-fit items-center gap-3"
         >
           <Image
             src={siteConfig.logo.src}
             alt={siteConfig.logo.alt}
-            width={40}
-            height={40}
+            width={48}
+            height={48}
             priority
-            className="h-10 w-10"
+            className="h-12 w-12 object-contain"
           />
+          <span className="flex flex-col leading-none">
+            <span className="font-serif text-base font-semibold tracking-tight text-neutral-900 sm:text-lg">
+              Vertexa
+            </span>
+            <span className="-mt-0.5 font-serif text-base font-semibold tracking-tight text-neutral-900 sm:text-lg">
+              Digitals
+            </span>
+          </span>
         </Link>
 
         <DesktopNav />

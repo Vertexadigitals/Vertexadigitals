@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import { useHoverDelay } from "@/hooks/useHoverDelay";
 
 type NavMenuItemProps = {
   label: string;
@@ -14,23 +15,21 @@ type NavMenuItemProps = {
 };
 
 // Generic desktop dropdown trigger + panel used by Services, Industries,
-// Locations, and Resources. Handles open state, outside-click, Escape, and
-// basic Arrow Up/Down cycling between menuitems inside the panel — the
-// specific panel content (cascading mega menu vs. flat grid) is supplied
-// by the caller via the render-prop `children`.
+// Locations, and Resources. Handles delayed open/close (so crossing the
+// gap between trigger and panel doesn't collapse it), outside-click,
+// Escape, and basic Arrow Up/Down cycling between menuitems inside the
+// panel — the specific panel content (cascading mega menu vs. flat grid)
+// is supplied by the caller via the render-prop `children`.
 export function NavMenuItem({
   label,
   isActive,
   panelClassName,
   children,
 }: NavMenuItemProps) {
-  const [open, setOpen] = useState(false);
+  const { open, handleOpen, handleClose, closeImmediately } =
+    useHoverDelay(150);
   const containerRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
-
-  function close() {
-    setOpen(false);
-  }
 
   useEffect(() => {
     if (!open) return;
@@ -40,12 +39,12 @@ export function NavMenuItem({
         containerRef.current &&
         !containerRef.current.contains(event.target as Node)
       ) {
-        setOpen(false);
+        closeImmediately();
       }
     }
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        setOpen(false);
+        closeImmediately();
         triggerRef.current?.focus();
       }
     }
@@ -56,12 +55,12 @@ export function NavMenuItem({
       document.removeEventListener("mousedown", onClickOutside);
       document.removeEventListener("keydown", onKeyDown);
     };
-  }, [open]);
+  }, [open, closeImmediately]);
 
   function onTriggerKeyDown(event: React.KeyboardEvent<HTMLButtonElement>) {
     if (event.key === "ArrowDown") {
       event.preventDefault();
-      setOpen(true);
+      handleOpen();
       requestAnimationFrame(() => {
         const firstItem = containerRef.current?.querySelector<HTMLElement>(
           '[role="menuitem"]'
@@ -91,12 +90,13 @@ export function NavMenuItem({
   }
 
   return (
-    <div ref={containerRef} className="relative" onMouseLeave={close}>
+    <div ref={containerRef} className="relative">
       <button
         ref={triggerRef}
         type="button"
-        onClick={() => setOpen((value) => !value)}
-        onMouseEnter={() => setOpen(true)}
+        onClick={() => (open ? closeImmediately() : handleOpen())}
+        onMouseEnter={handleOpen}
+        onMouseLeave={handleClose}
         onKeyDown={onTriggerKeyDown}
         aria-haspopup="menu"
         aria-expanded={open}
@@ -120,20 +120,27 @@ export function NavMenuItem({
 
       <AnimatePresence>
         {open && (
+          // pt-3 (padding, not margin) keeps the gap to the trigger inside
+          // this element's hoverable box, so the cursor never crosses dead
+          // space between the trigger and the panel below.
           <motion.div
             role="menu"
             aria-label={label}
+            onMouseEnter={handleOpen}
+            onMouseLeave={handleClose}
             onKeyDown={onPanelKeyDown}
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.18, ease: "easeOut" }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
             className={cn(
-              "absolute top-full z-50 mt-3 rounded-xl border border-neutral-200 bg-white p-4 shadow-lg",
+              "absolute top-full z-50 pt-3",
               panelClassName
             )}
           >
-            {children(close)}
+            <div className="rounded-2xl border border-neutral-200/60 bg-white p-6 shadow-2xl shadow-black/10">
+              {children(closeImmediately)}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -80,8 +80,8 @@ export const siteConfig = {
   ] satisfies ServiceLink[],
   company: [
     { label: "About", href: "/about" },
-    { label: "Work", href: "/work" },
-    { label: "Blog", href: "/blog" },
+    { label: "Case Studies", href: "/resources/case-studies" },
+    { label: "Blog", href: "/resources/blogs" },
     { label: "Contact", href: "/contact" },
   ] satisfies NavLink[],
   cta: {
@@ -94,13 +94,21 @@ export const siteConfig = {
     websiteUrl: "https://vertexadigitals.com",
   },
   social: {
+    facebook: {
+      label: "facebook.com/VertexaDigitals",
+      href: "https://www.facebook.com/people/Vertexa-Digitals/61590994481581/",
+    },
     instagram: {
       label: "@vertexadigitals",
-      href: "https://instagram.com/vertexadigitals",
+      href: "https://www.instagram.com/vertexadigitals/",
     },
     linkedin: {
-      label: "linkedin.com/company/vertexadigitals",
-      href: "https://linkedin.com/company/vertexadigitals",
+      label: "linkedin.com/company/vertexa-digitals-agency",
+      href: "https://www.linkedin.com/company/vertexa-digitals-agency/",
+    },
+    twitter: {
+      label: "@vertexadigitals",
+      href: "https://x.com/vertexadigitals",
     },
   },
   legal: [
