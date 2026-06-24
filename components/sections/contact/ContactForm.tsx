@@ -69,10 +69,19 @@ export function ContactForm() {
 
   async function onSubmit(values: ContactFormValues) {
     setSubmitError(false);
+    const reference = generateReferenceNumber();
     try {
-      // TODO: wire up to a real backend/email service.
-      console.log("Contact form submission:", values);
-      setReferenceNumber(generateReferenceNumber());
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...values, referenceNumber: reference }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
+
+      setReferenceNumber(reference);
       setSubmitted(true);
       reset();
     } catch {

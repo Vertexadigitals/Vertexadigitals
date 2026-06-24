@@ -12,12 +12,12 @@ export function IndustryToolsAndTech({
   return (
     <section
       aria-labelledby="industry-tools-heading"
-      className="bg-neutral-50 px-6 py-20 md:py-32"
+      className="bg-white px-6 py-20 sm:py-24 lg:py-32"
     >
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-4xl">
         <h2
           id="industry-tools-heading"
-          className="font-serif text-4xl text-black md:text-5xl"
+          className="font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
         >
           {h2}
         </h2>
@@ -28,7 +28,7 @@ export function IndustryToolsAndTech({
           {tools.map((tool) => (
             <li
               key={tool}
-              className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm text-neutral-700"
+              className="rounded-full border border-neutral-200/60 bg-neutral-50 px-4 py-2 text-sm text-neutral-700"
             >
               {tool}
             </li>

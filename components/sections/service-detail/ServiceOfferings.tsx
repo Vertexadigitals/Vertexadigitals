@@ -1,5 +1,6 @@
 "use client";
 
+import { CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 
 import { fadeInUp, staggerContainer } from "@/lib/motion";
@@ -17,12 +18,12 @@ export function ServiceOfferings({
   return (
     <section
       aria-labelledby="service-offerings-heading"
-      className="bg-neutral-50 px-6 py-20 md:py-32"
+      className="bg-white px-6 py-20 sm:py-24 lg:py-32"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         <h2
           id="service-offerings-heading"
-          className="max-w-2xl font-serif text-4xl text-black md:text-5xl"
+          className="max-w-2xl font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
         >
           What {serviceName} with Vertexa includes
         </h2>
@@ -38,12 +39,16 @@ export function ServiceOfferings({
             <motion.article
               key={offering.title}
               variants={fadeInUp}
-              className="rounded-2xl border border-black/10 bg-white p-6 sm:p-8"
+              className="rounded-xl border border-neutral-200/60 bg-neutral-50 p-6"
             >
-              <h3 className="font-serif text-xl text-black">
+              <CheckCircle2
+                className="size-5 text-neutral-700"
+                aria-hidden="true"
+              />
+              <h3 className="mt-4 font-serif text-lg font-medium text-black">
                 {offering.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-neutral-600">
+              <p className="mt-2 text-sm leading-relaxed text-neutral-600">
                 {offering.description}
               </p>
             </motion.article>

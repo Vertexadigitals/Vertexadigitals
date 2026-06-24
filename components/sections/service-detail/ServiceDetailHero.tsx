@@ -39,14 +39,14 @@ export function ServiceDetailHero({
         <motion.h1
           id="service-hero-heading"
           variants={fadeInUp}
-          className="mt-4 font-serif text-4xl text-black md:text-6xl"
+          className="mt-4 font-serif text-4xl leading-tight font-medium tracking-tight text-black sm:text-5xl lg:text-6xl"
         >
           {h1}
         </motion.h1>
 
         <motion.p
           variants={fadeInUp}
-          className="mt-6 text-lg text-neutral-600 md:text-xl"
+          className="mx-auto mt-6 max-w-2xl text-base text-neutral-600 sm:text-lg lg:text-xl"
         >
           {subheadline}
         </motion.p>

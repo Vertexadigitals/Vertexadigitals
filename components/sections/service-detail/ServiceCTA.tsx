@@ -16,7 +16,7 @@ export function ServiceCTA({ heading, text }: ServiceCTAProps) {
   return (
     <section
       aria-labelledby="service-cta-heading"
-      className="bg-black px-6 py-20 text-white md:py-32"
+      className="bg-neutral-900 px-6 py-20 text-white sm:py-24 lg:py-32"
     >
       <motion.div
         initial="hidden"
@@ -28,7 +28,7 @@ export function ServiceCTA({ heading, text }: ServiceCTAProps) {
         <motion.h2
           id="service-cta-heading"
           variants={fadeInUp}
-          className="font-serif text-4xl text-white md:text-5xl"
+          className="font-serif text-3xl font-medium tracking-tight text-white sm:text-4xl lg:text-5xl"
         >
           {heading}
         </motion.h2>

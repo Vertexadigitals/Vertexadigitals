@@ -54,6 +54,13 @@ const inputClassName =
 const labelClassName =
   "text-xs font-medium tracking-wider text-neutral-700 uppercase";
 
+// Defined outside the component so the impure Date.now() call happens in an
+// event-handler-only code path the React Compiler's purity check can verify
+// never runs during render.
+function generateReferenceNumber() {
+  return `VRTX-${Date.now()}`;
+}
+
 export function QuoteCTA() {
   const pathname = usePathname();
 
@@ -76,9 +83,19 @@ export function QuoteCTA() {
   async function onSubmit(values: QuoteFormValues) {
     setSubmitError(false);
     try {
-      // TODO: wire up to a real backend/email service — same destination
-      // as the /contact form.
-      console.log("Quote CTA submission:", values);
+      const response = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...values,
+          referenceNumber: generateReferenceNumber(),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
+
       setSubmitted(true);
       reset();
     } catch {

@@ -16,11 +16,11 @@ export function SubServiceCTA({ h2, subhead }: SubServiceCTAProps) {
   return (
     <section
       aria-labelledby="sub-service-cta-heading"
-      className="bg-black px-6 py-20 text-white md:py-32"
+      className="bg-neutral-900 px-6 py-20 text-white sm:py-24 lg:py-32"
     >
       <motion.div
         initial="hidden"
-        whileInView="visible" 
+        whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         variants={staggerContainer}
         className="mx-auto max-w-3xl text-center"
@@ -28,7 +28,7 @@ export function SubServiceCTA({ h2, subhead }: SubServiceCTAProps) {
         <motion.h2
           id="sub-service-cta-heading"
           variants={fadeInUp}
-          className="font-serif text-4xl text-white md:text-5xl"
+          className="font-serif text-3xl font-medium tracking-tight text-white sm:text-4xl lg:text-5xl"
         >
           {h2}
         </motion.h2>

@@ -73,12 +73,12 @@ export function SubServiceTemplate({ data }: SubServiceTemplateProps) {
         />
       )}
       <SubServiceUseCases h2={data.useCases.h2} cases={data.useCases.cases} />
-      <SubServiceFAQ serviceName={serviceName} faqs={data.faqs} />
       <SubServiceRelated
         related={data.relatedSubServices}
         parentName={data.parentName}
         parentSlug={data.parentSlug}
       />
+      <SubServiceFAQ serviceName={serviceName} faqs={data.faqs} />
       <SubServiceCTA h2={data.cta.h2} subhead={data.cta.subhead} />
     </>
   );

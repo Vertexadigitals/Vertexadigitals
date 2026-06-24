@@ -11,11 +11,11 @@ type ServiceProcessProps = {
 
 export function ServiceProcess({ steps }: ServiceProcessProps) {
   return (
-    <section aria-labelledby="service-process-heading" className="px-6 py-20 md:py-32">
-      <div className="mx-auto max-w-6xl">
+    <section aria-labelledby="service-process-heading" className="bg-neutral-50 px-6 py-20 sm:py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl">
         <h2
           id="service-process-heading"
-          className="font-serif text-4xl text-black md:text-5xl"
+          className="font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
         >
           How we deliver
         </h2>
@@ -32,7 +32,7 @@ export function ServiceProcess({ steps }: ServiceProcessProps) {
               <span className="font-serif text-6xl text-neutral-300">
                 {step.step}
               </span>
-              <h3 className="mt-4 font-serif text-xl text-black">
+              <h3 className="mt-4 font-serif text-xl font-medium text-black">
                 {step.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-neutral-600">

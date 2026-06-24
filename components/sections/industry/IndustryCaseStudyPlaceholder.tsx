@@ -13,12 +13,12 @@ export function IndustryCaseStudyPlaceholder({
   return (
     <section
       aria-labelledby="industry-case-study-heading"
-      className="px-6 py-20 md:py-32"
+      className="bg-neutral-50 px-6 py-20 sm:py-24 lg:py-32"
     >
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-4xl">
         <h2
           id="industry-case-study-heading"
-          className="font-serif text-4xl text-black md:text-5xl"
+          className="font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
         >
           {h2}
         </h2>
