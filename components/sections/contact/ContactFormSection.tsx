@@ -1,24 +1,30 @@
+import { ContactInfo } from "@/components/sections/contact/ContactInfo";
 import { ContactForm } from "@/components/sections/contact/ContactForm";
 
 export function ContactFormSection() {
   return (
-    <section aria-labelledby="contact-form-heading" className="px-6 py-12 md:py-16">
-      <div className="mx-auto max-w-3xl">
-        <h2
-          id="contact-form-heading"
-          className="font-serif text-3xl text-black md:text-4xl"
-        >
-          Tell us about your project
-        </h2>
-        <p className="mt-4 text-base text-neutral-600">
-          The more context you give us, the faster we can come back with a
-          useful answer instead of a round of clarifying questions. Every
-          field below feeds directly into how we prepare for our first
-          conversation, so a few extra minutes here usually saves a back-and-forth
-          email thread later.
-        </p>
-        <div className="mt-10">
-          <ContactForm />
+    <section
+      aria-label="Contact information and form"
+      className="bg-white px-6 py-20 sm:px-8 sm:py-28"
+    >
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-5">
+            <ContactInfo />
+          </div>
+
+          <div className="lg:col-span-7">
+            <div className="rounded-2xl border border-neutral-200/60 bg-neutral-50 p-6 shadow-xl shadow-black/5 sm:p-10">
+              <h2 className="text-center font-serif text-2xl font-medium tracking-tight text-neutral-900 sm:text-3xl">
+                Tell us about your project
+              </h2>
+              <p className="mt-2 mb-8 text-center text-sm text-neutral-500">
+                We&apos;ll respond within 24-48 hours with next steps.
+              </p>
+
+              <ContactForm />
+            </div>
+          </div>
         </div>
       </div>
     </section>

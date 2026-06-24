@@ -7,41 +7,6 @@ export const budgetRanges = [
   "Not sure yet",
 ];
 
-export const timelineOptions = [
-  "ASAP / within a month",
-  "1–3 months",
-  "3–6 months",
-  "Just exploring, no fixed timeline",
-];
-
-export type ContactStep = {
-  title: string;
-  description: string;
-};
-
-export const whatHappensNextSteps: ContactStep[] = [
-  {
-    title: "Discovery Call",
-    description:
-      "We schedule a 30-minute call to understand your goals, constraints, and what success looks like — no slide deck, just a real conversation about your project, your team, and what's actually driving the timeline.",
-  },
-  {
-    title: "Proposal",
-    description:
-      "Within a few days, you'll get a written proposal with scope, timeline, and pricing — specific to your project, not a templated rate card we send to everyone regardless of what they actually asked for.",
-  },
-  {
-    title: "Scope Alignment",
-    description:
-      "We walk through the proposal together, adjust anything that doesn't fit, and make sure expectations are aligned on both sides before any contract gets signed or any deposit is requested.",
-  },
-  {
-    title: "Kickoff",
-    description:
-      "Once everything's confirmed, we kick off with a clear project plan, communication cadence, and the first milestone already on the calendar before week one ends — not a vague \"we'll be in touch.\"",
-  },
-];
-
 export type ContactFaq = {
   question: string;
   answer: string;

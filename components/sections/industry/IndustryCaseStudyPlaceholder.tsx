@@ -27,10 +27,13 @@ export function IndustryCaseStudyPlaceholder({
         </p>
         <Link
           href="/resources/case-studies"
-          className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-black hover:underline"
+          className="group mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-black transition-colors hover:text-neutral-700"
         >
           See what we&apos;re building toward
-          <ArrowRight className="size-3.5" aria-hidden="true" />
+          <ArrowRight
+            className="size-3.5 transition-transform group-hover:translate-x-0.5"
+            aria-hidden="true"
+          />
         </Link>
       </div>
     </section>

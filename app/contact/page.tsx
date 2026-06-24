@@ -2,11 +2,7 @@ import type { Metadata } from "next";
 
 import { JsonLd } from "@/components/JsonLd";
 import { ContactHero } from "@/components/sections/contact/ContactHero";
-import { BeforeYouReachOut } from "@/components/sections/contact/BeforeYouReachOut";
 import { ContactFormSection } from "@/components/sections/contact/ContactFormSection";
-import { WhatToInclude } from "@/components/sections/contact/WhatToInclude";
-import { ContactMethods } from "@/components/sections/contact/ContactMethods";
-import { WhatHappensNext } from "@/components/sections/contact/WhatHappensNext";
 import { ContactFAQ } from "@/components/sections/contact/ContactFAQ";
 import { generateSeoMetadata } from "@/lib/seo";
 import {
@@ -57,11 +53,7 @@ export default function ContactPage() {
         data={[contactPageSchema, localBusinessSchema, breadcrumbSchema, faqSchema]}
       />
       <ContactHero />
-      <BeforeYouReachOut />
       <ContactFormSection />
-      <WhatToInclude />
-      <ContactMethods />
-      <WhatHappensNext />
       <ContactFAQ />
     </>
   );

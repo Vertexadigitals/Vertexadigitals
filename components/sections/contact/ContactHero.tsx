@@ -8,36 +8,34 @@ export function ContactHero() {
   return (
     <section
       aria-labelledby="contact-hero-heading"
-      className="px-6 pt-12 pb-16 text-center md:pt-16 md:pb-20"
+      className="px-6 pt-12 md:pt-16"
     >
       <motion.div
         initial="hidden"
         animate="visible"
         variants={staggerContainer}
-        className="mx-auto max-w-3xl"
+        className="mx-auto max-w-7xl sm:px-2"
       >
         <motion.p
           variants={fadeInUp}
-          className="text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase"
+          className="text-xs tracking-widest text-neutral-500 uppercase"
         >
-          Get In Touch
+          Contact
         </motion.p>
         <motion.h1
           id="contact-hero-heading"
           variants={fadeInUp}
-          className="mt-4 font-serif text-4xl text-black md:text-6xl"
+          className="mt-3 font-serif text-4xl leading-tight font-medium tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl"
         >
-          Let&apos;s Build Something Together
+          Let&apos;s build something exceptional.
         </motion.h1>
         <motion.p
           variants={fadeInUp}
-          className="mt-6 text-lg text-neutral-600 md:text-xl"
+          className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg"
         >
-          Tell us about your project — web development, mobile apps, SEO,
-          paid ads, branding, or content. We respond within 24 hours, every
-          weekday. No account managers in between, no automated drip
-          sequence — just a real reply from someone who&apos;ll actually
-          work on what you&apos;re describing.
+          Tell us about your project — what you&apos;re building, where
+          you&apos;re stuck, or what outcomes matter most. We respond within
+          24-48 hours with a clear path forward.
         </motion.p>
       </motion.div>
     </section>

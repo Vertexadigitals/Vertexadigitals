@@ -35,7 +35,7 @@ export function LocationsGrid() {
                     <li key={city.slug}>
                       <Link
                         href={`/locations/${city.slug}`}
-                        className="group inline-flex items-center gap-1.5 text-base text-black hover:underline"
+                        className="group inline-flex items-center gap-1.5 text-base text-black transition-colors hover:text-neutral-700"
                       >
                         Serving {city.city}
                         <ArrowRight

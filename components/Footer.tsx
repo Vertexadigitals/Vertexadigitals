@@ -108,15 +108,15 @@ export function Footer() {
               <Image
                 src={siteConfig.logo.src}
                 alt={siteConfig.logo.alt}
-                width={48}
-                height={48}
-                className="h-12 w-12 object-contain"
+                width={56}
+                height={56}
+                className="h-14 w-14 object-contain"
               />
               <span className="flex flex-col leading-none">
-                <span className="font-serif text-lg font-semibold text-neutral-900">
+                <span className="font-serif text-2xl font-semibold tracking-tight text-neutral-900">
                   Vertexa
                 </span>
-                <span className="-mt-0.5 font-serif text-lg font-semibold text-neutral-900">
+                <span className="mt-1.5 ml-px text-[11px] font-medium tracking-[0.25em] text-neutral-500 uppercase">
                   Digitals
                 </span>
               </span>
