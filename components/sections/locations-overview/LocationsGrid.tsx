@@ -14,9 +14,9 @@ export function LocationsGrid() {
   return (
     <section
       aria-labelledby="locations-grid-heading"
-      className="px-6 py-20 md:py-32"
+      className="bg-neutral-50 px-6 py-20 sm:py-24 lg:py-32"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         <h2 id="locations-grid-heading" className="sr-only">
           Locations We Serve
         </h2>

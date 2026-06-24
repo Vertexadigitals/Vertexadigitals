@@ -39,24 +39,49 @@ export async function sendLeadNotificationEmail(data: LeadData): Promise<void> {
 }
 
 export async function addContactToBrevoList(data: LeadData): Promise<void> {
+  const attributes = {
+    FIRSTNAME: data.firstName,
+    LASTNAME: data.lastName,
+    COMPANY: data.company ?? "",
+    PHONE_NUMBER: data.phone ?? "",
+    SERVICE: data.service,
+    BUDGET: data.budget ?? "",
+    PROJECT_DETAILS: data.projectDetails,
+    REFERENCE_NUMBER: data.referenceNumber,
+    SUBMISSION_SOURCE: data.submissionSource,
+  };
+
+  // Step 1: create or update the contact WITHOUT listIds. Brevo treats a
+  // createContact call that includes listIds as a silent import, which
+  // does not emit the "contact added to list" event that automations
+  // listen for. Keeping list membership out of this call is deliberate.
   try {
     await brevo.contacts.createContact({
       email: data.email,
       updateEnabled: true,
-      listIds: [VERTEXA_WEBSITE_LEADS_LIST_ID],
-      attributes: {
-        FIRSTNAME: data.firstName,
-        LASTNAME: data.lastName,
-        COMPANY: data.company ?? "",
-        PHONE_NUMBER: data.phone ?? "",
-        SERVICE: data.service,
-        BUDGET: data.budget ?? "",
-        PROJECT_DETAILS: data.projectDetails,
-        REFERENCE_NUMBER: data.referenceNumber,
-        SUBMISSION_SOURCE: data.submissionSource,
-      },
+      attributes,
     });
   } catch (error) {
-    console.error("[Brevo Contact Error]", error);
+    console.error("[Brevo Contact Create Error]", error);
+    try {
+      await brevo.contacts.updateContact({
+        identifier: data.email,
+        attributes,
+      });
+    } catch (updateError) {
+      console.error("[Brevo Contact Update Error]", updateError);
+    }
+  }
+
+  // Step 2: add the contact to the list through the dedicated endpoint.
+  // This call — not the listIds shortcut above — is what actually emits
+  // the "added to list" event that triggers Brevo automations.
+  try {
+    await brevo.contacts.addContactToList({
+      listId: VERTEXA_WEBSITE_LEADS_LIST_ID,
+      body: { emails: [data.email] },
+    });
+  } catch (error) {
+    console.error("[Brevo Add To List Error]", error);
   }
 }

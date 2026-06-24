@@ -17,30 +17,36 @@ export function LocationFAQ({ city, faqs }: LocationFAQProps) {
   return (
     <section
       aria-labelledby="location-faq-heading"
-      className="bg-neutral-50 px-6 py-20 md:py-32"
+      className="bg-white px-6 py-20 sm:py-24 lg:py-32"
     >
-      <div className="mx-auto max-w-3xl">
-        <h2
-          id="location-faq-heading"
-          className="font-serif text-4xl text-black md:text-5xl"
-        >
-          Frequently asked questions about working with {city} clients
-        </h2>
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-4">
+            <h2
+              id="location-faq-heading"
+              className="font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl"
+            >
+              Frequently asked questions about working with {city} clients
+            </h2>
+          </div>
 
-        <Accordion className="mt-12">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={faq.question} value={`location-faq-${index}`}>
-              <AccordionTrigger className="font-serif text-base text-black md:text-lg">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent>
-                <p className="text-sm leading-relaxed text-neutral-600 md:text-base">
-                  {faq.answer}
-                </p>
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+          <div className="lg:col-span-8">
+            <Accordion>
+              {faqs.map((faq, index) => (
+                <AccordionItem key={faq.question} value={`location-faq-${index}`}>
+                  <AccordionTrigger className="font-serif text-base text-black md:text-lg">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <p className="text-sm leading-relaxed text-neutral-600 md:text-base">
+                      {faq.answer}
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
       </div>
     </section>
   );
