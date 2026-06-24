@@ -39,14 +39,14 @@ const steps: Step[] = [
 
 export function Process() {
   return (
-    <section aria-labelledby="process-heading" className="bg-neutral-50 px-6 py-20 md:py-32">
-      <div className="mx-auto max-w-6xl">
+    <section aria-labelledby="process-heading" className="bg-white px-6 py-20 sm:py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl">
         <p className="text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase">
           How We Work
         </p>
         <h2
           id="process-heading"
-          className="mt-4 max-w-3xl font-serif text-4xl text-black md:text-5xl"
+          className="mt-4 max-w-3xl font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
         >
           A clear process. No guesswork.
         </h2>
@@ -70,7 +70,7 @@ export function Process() {
               <span className="font-serif text-6xl text-neutral-300">
                 {step.number}
               </span>
-              <h3 className="mt-4 font-serif text-xl text-black">
+              <h3 className="mt-4 font-serif text-xl font-medium text-black">
                 {step.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-neutral-600">

@@ -1,50 +1,48 @@
+const blocks = [
+  {
+    title: "Founder-Touched, Not Outsourced",
+    description:
+      "Most digital agencies hand off projects to junior teams and hide behind status reports. Every project here is touched by our founders, every decision grounded in performance data, every deliverable built to compete on the global stage.",
+  },
+  {
+    title: "Built for Ambitious Brands",
+    description:
+      "Our clients are ambitious SaaS founders, D2C brands, B2B companies, and high-growth startups across the US, UK, EU, and Australia — companies that came to us tired of agencies that promised growth and delivered excuses.",
+  },
+  {
+    title: "No Outsourced Labor. No Middlemen.",
+    description:
+      "Whether it's a single high-impact engagement or a long-term growth partnership, we operate as an extension of your team. No surprises. Just senior-led execution, transparent communication, and measurable outcomes.",
+  },
+];
+
 export function Introduction() {
   return (
-    <section aria-labelledby="intro-heading" className="px-6 py-20 md:py-32">
-      <div className="mx-auto max-w-3xl">
-        <h2
-          id="intro-heading"
-          className="font-serif text-4xl text-black md:text-5xl"
-        >
-          We&apos;re not a digital agency. We&apos;re your growth partner.
-        </h2>
+    <section aria-labelledby="intro-heading" className="bg-neutral-50 px-6 py-20 sm:py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
+          <h2
+            id="intro-heading"
+            className="font-serif text-3xl leading-tight font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
+          >
+            We&apos;re not a digital agency. We&apos;re your growth partner.
+          </h2>
 
-        <div className="mt-8 flex flex-col gap-6 text-base leading-relaxed text-neutral-600 md:text-lg">
-          <p>
-            Most digital agencies treat clients like ticket numbers. They
-            hand off projects to junior teams, hide behind status reports,
-            and deliver work that looks good in screenshots but underperforms
-            in reality. We built Vertexa Digitals differently — every project
-            is touched by our founders, every decision is grounded in
-            performance data, and every deliverable is built to compete on
-            the global stage.
-          </p>
-          <p>
-            Our clients are ambitious SaaS founders, D2C brands, B2B
-            companies, and high-growth startups across the United States,
-            United Kingdom, European Union, and Australia. They came to us
-            because they were tired of agencies that promised growth and
-            delivered excuses. They stayed because we delivered results —
-            better rankings, higher conversions, faster ship cycles, and the
-            kind of design that wins awards and customers.
-          </p>
-          <p>
-            Whether you need a single high-impact engagement — like a
-            complete website rebuild or an SEO turnaround — or a long-term
-            growth partnership across multiple disciplines, we operate as an
-            extension of your team. No outsourced labor. No middlemen. No
-            surprises. Just senior-led execution, transparent communication,
-            and measurable outcomes.
-          </p>
-          <p>
-            That&apos;s the difference between hiring a digital agency and
-            partnering with a digital growth partner. As a global digital
-            agency built for international standards, we don&apos;t just
-            execute briefs — we challenge assumptions, recommend the right
-            channels, and hold ourselves accountable to the same metrics you
-            report to your board. It&apos;s why companies that could hire
-            anyone choose to work with us long after the first project ships.
-          </p>
+          <div className="flex flex-col gap-6">
+            {blocks.map((block) => (
+              <div
+                key={block.title}
+                className="rounded-xl border border-neutral-200/60 bg-white p-6"
+              >
+                <h3 className="font-serif text-lg font-medium text-black">
+                  {block.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-neutral-600">
+                  {block.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

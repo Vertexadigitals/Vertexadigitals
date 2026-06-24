@@ -40,14 +40,14 @@ const reasons: Reason[] = [
 
 export function WhyVertexa() {
   return (
-    <section aria-labelledby="why-heading" className="px-6 py-20 md:py-32">
-      <div className="mx-auto max-w-6xl">
+    <section aria-labelledby="why-heading" className="bg-neutral-50 px-6 py-20 sm:py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl">
         <p className="text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase">
           Why Vertexa
         </p>
         <h2
           id="why-heading"
-          className="mt-4 max-w-3xl font-serif text-4xl text-black md:text-5xl"
+          className="mt-4 max-w-3xl font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
         >
           Built on standards. Driven by results.
         </h2>
@@ -66,12 +66,21 @@ export function WhyVertexa() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer}
-          className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:gap-12"
+          className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2"
         >
           {reasons.map((reason) => (
-            <motion.div key={reason.title} variants={fadeInUp}>
-              <reason.icon className="size-8 text-black" aria-hidden="true" />
-              <h3 className="mt-4 font-serif text-xl text-black">
+            <motion.div
+              key={reason.title}
+              variants={fadeInUp}
+              className="rounded-xl border border-neutral-200/60 bg-white p-6 sm:p-8"
+            >
+              <div className="inline-flex rounded-lg bg-neutral-100 p-2.5">
+                <reason.icon
+                  className="size-5 text-neutral-700"
+                  aria-hidden="true"
+                />
+              </div>
+              <h3 className="mt-4 font-serif text-xl font-medium text-black">
                 {reason.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-neutral-600">

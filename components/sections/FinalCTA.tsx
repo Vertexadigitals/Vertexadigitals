@@ -11,7 +11,7 @@ export function FinalCTA() {
   return (
     <section
       aria-labelledby="final-cta-heading"
-      className="bg-black px-6 py-20 text-white md:py-32"
+      className="bg-neutral-900 px-6 py-20 text-white sm:py-24 lg:py-32"
     >
       <motion.div
         initial="hidden"
@@ -29,7 +29,7 @@ export function FinalCTA() {
         <motion.h2
           id="final-cta-heading"
           variants={fadeInUp}
-          className="mt-4 font-serif text-4xl text-white md:text-6xl"
+          className="mt-4 font-serif text-3xl font-medium tracking-tight text-white sm:text-4xl lg:text-5xl"
         >
           Let&apos;s build something great together.
         </motion.h2>

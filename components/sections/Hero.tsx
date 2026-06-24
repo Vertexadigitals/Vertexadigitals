@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
@@ -12,7 +11,7 @@ export function Hero() {
   return (
     <section
       aria-labelledby="hero-heading"
-      className="relative flex flex-col items-center justify-center px-6 py-24 text-center md:min-h-[90vh] md:py-0"
+      className="relative flex flex-col items-center justify-center px-6 py-24 text-center sm:py-32 lg:py-40"
     >
       <motion.div
         initial="hidden"
@@ -30,14 +29,14 @@ export function Hero() {
         <motion.h1
           id="hero-heading"
           variants={fadeInUp}
-          className="mt-6 max-w-4xl font-serif text-5xl leading-tight font-bold text-black md:text-7xl lg:text-8xl"
+          className="mt-6 max-w-3xl font-serif text-4xl leading-tight font-medium tracking-tight text-black sm:text-5xl lg:text-6xl"
         >
           Your Complete Digital Growth Partner
         </motion.h1>
 
         <motion.p
           variants={fadeInUp}
-          className="mt-6 max-w-3xl text-xl text-neutral-600 md:text-2xl"
+          className="mt-6 max-w-2xl text-base text-neutral-600 sm:text-lg lg:text-xl"
         >
           We design, build, and scale digital experiences for ambitious
           brands across the United States, United Kingdom, European Union,
@@ -63,15 +62,13 @@ export function Hero() {
             Explore Services
           </Button>
         </motion.div>
-      </motion.div>
 
-      <motion.div
-        aria-hidden="true"
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-neutral-400"
-      >
-        <ChevronDown className="size-6" />
+        <motion.p
+          variants={fadeInUp}
+          className="mt-8 text-xs tracking-widest text-neutral-400 uppercase"
+        >
+          Serving brands across {siteConfig.areaServed.join(" · ")}
+        </motion.p>
       </motion.div>
     </section>
   );
