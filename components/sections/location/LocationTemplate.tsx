@@ -5,6 +5,8 @@ import { LocationServices } from "@/components/sections/location/LocationService
 import { LocationTimezone } from "@/components/sections/location/LocationTimezone";
 import { LocationWhyRemote } from "@/components/sections/location/LocationWhyRemote";
 import { LocationIndustries } from "@/components/sections/location/LocationIndustries";
+import { LocationHowWeWork } from "@/components/sections/location/LocationHowWeWork";
+import { LocationTrustSignals } from "@/components/sections/location/LocationTrustSignals";
 import { LocationFAQ } from "@/components/sections/location/LocationFAQ";
 import { LocationCTA } from "@/components/sections/location/LocationCTA";
 import { getBreadcrumbSchema, getFAQSchema, getServiceSchema } from "@/lib/schema";
@@ -64,6 +66,8 @@ export function LocationTemplate({ data }: LocationTemplateProps) {
         h2={data.industriesInCity.h2}
         industries={data.industriesInCity.industries}
       />
+      <LocationHowWeWork city={data.city} timezoneFriendly={data.timezoneFriendly} />
+      <LocationTrustSignals city={data.city} regionShort={data.regionShort} />
       <LocationFAQ city={data.city} faqs={data.faqs} />
       <LocationCTA h2={data.cta.h2} subhead={data.cta.subhead} />
     </>
