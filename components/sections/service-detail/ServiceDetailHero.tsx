@@ -1,11 +1,7 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
-import { fadeInUp, staggerContainer } from "@/lib/motion";
 
 type ServiceDetailHeroProps = {
   serviceName: string;
@@ -23,38 +19,23 @@ export function ServiceDetailHero({
       aria-labelledby="service-hero-heading"
       className="px-6 pt-12 pb-20 md:pt-16 md:pb-28"
     >
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={staggerContainer}
-        className="mx-auto max-w-4xl text-center"
-      >
-        <motion.p
-          variants={fadeInUp}
-          className="mt-6 text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase"
-        >
+      <div className="mx-auto max-w-4xl text-center">
+        <p className="mt-6 text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase">
           {serviceName}
-        </motion.p>
+        </p>
 
-        <motion.h1
+        <h1
           id="service-hero-heading"
-          variants={fadeInUp}
           className="mt-4 font-serif text-4xl leading-tight font-medium tracking-tight text-black sm:text-5xl lg:text-6xl"
         >
           {h1}
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          variants={fadeInUp}
-          className="mx-auto mt-6 max-w-2xl text-base text-neutral-600 sm:text-lg lg:text-xl"
-        >
+        <p className="mx-auto mt-6 max-w-2xl text-base text-neutral-600 sm:text-lg lg:text-xl">
           {subheadline}
-        </motion.p>
+        </p>
 
-        <motion.div
-          variants={fadeInUp}
-          className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row"
-        >
+        <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button
             render={<Link href={siteConfig.cta.href} />}
             className="rounded-full bg-black px-7 py-3.5 text-white hover:bg-neutral-800"
@@ -68,8 +49,8 @@ export function ServiceDetailHero({
           >
             See Our Work
           </Button>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>
   );
 }
