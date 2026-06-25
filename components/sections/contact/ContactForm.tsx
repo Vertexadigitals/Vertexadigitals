@@ -41,7 +41,7 @@ const contactFormSchema = z.object({
 type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 const inputClassName =
-  "h-auto w-full rounded-lg border-neutral-200 bg-white px-4 py-3 text-sm placeholder:text-neutral-400 focus-visible:border-neutral-900 focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-1 transition-all duration-150 data-[size=default]:h-auto aria-invalid:border-red-500";
+  "h-auto w-full rounded-lg border-neutral-200 bg-white px-4 py-3 text-sm placeholder:text-neutral-500 focus-visible:border-neutral-900 focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-1 transition-all duration-150 data-[size=default]:h-auto aria-invalid:border-red-500";
 
 const labelClassName =
   "text-xs font-medium tracking-wider text-neutral-700 uppercase";
@@ -102,7 +102,7 @@ export function ContactForm() {
         <p className="mt-2 text-sm text-neutral-600">
           We&apos;ll be in touch within 24-48 hours.
         </p>
-        <p className="mt-4 text-xs text-neutral-400">
+        <p className="mt-4 text-xs text-neutral-600">
           Reference number: {referenceNumber}
         </p>
       </div>

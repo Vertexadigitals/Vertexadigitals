@@ -86,7 +86,7 @@ export function MobileNav() {
             const cities = getLocationsByRegion(region.short);
             return (
               <div key={region.short} className="mt-2 first:mt-0">
-                <p className="px-2 text-xs font-semibold tracking-widest text-neutral-400 uppercase">
+                <p className="px-2 text-xs font-semibold tracking-widest text-neutral-600 uppercase">
                   {region.label}
                 </p>
                 {cities.map((city) => (

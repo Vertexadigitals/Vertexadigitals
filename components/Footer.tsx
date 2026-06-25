@@ -198,7 +198,7 @@ export function Footer() {
                   href="/locations"
                   className="block text-xs text-neutral-500 italic transition-colors hover:text-neutral-900"
                 >
-                  View all →
+                  View all locations we serve →
                 </Link>
               </li>
             </ul>

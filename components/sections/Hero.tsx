@@ -65,7 +65,7 @@ export function Hero() {
 
         <motion.p
           variants={fadeInUp}
-          className="mt-8 text-xs tracking-widest text-neutral-400 uppercase"
+          className="mt-8 text-xs tracking-widest text-neutral-600 uppercase"
         >
           Serving brands across {siteConfig.areaServed.join(" · ")}
         </motion.p>

@@ -78,9 +78,9 @@ export function ServicesGrid() {
                   href={service.href}
                   className="group mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-black transition-colors hover:text-neutral-700"
                 >
-                  Learn More
+                  Learn more about {service.name}
                   <ArrowRight
-                    className="size-3.5 transition-transform group-hover:translate-x-0.5"
+                    className="size-3.5 shrink-0 transition-transform group-hover:translate-x-0.5"
                     aria-hidden="true"
                   />
                 </Link>

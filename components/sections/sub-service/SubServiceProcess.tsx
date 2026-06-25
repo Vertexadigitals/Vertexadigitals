@@ -33,7 +33,7 @@ export function SubServiceProcess({ h2, steps }: SubServiceProcessProps) {
         >
           {steps.map((step) => (
             <motion.div key={step.number} variants={fadeInUp}>
-              <span className="font-serif text-6xl text-neutral-300">
+              <span className="font-serif text-6xl text-neutral-300" aria-hidden="true">
                 {step.number}
               </span>
               <h3 className="mt-4 font-serif text-xl font-medium text-black">
