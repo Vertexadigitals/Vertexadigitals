@@ -1,4 +1,4 @@
-import { BrevoClient } from "@getbrevo/brevo";
+import { BrevoClient, BrevoError } from "@getbrevo/brevo";
 
 import { siteConfig } from "@/lib/site-config";
 import { renderLeadNotificationEmail } from "@/lib/email-templates/lead-notification";
@@ -82,6 +82,17 @@ export async function addContactToBrevoList(data: LeadData): Promise<void> {
       body: { emails: [data.email] },
     });
   } catch (error) {
-    console.error("[Brevo Add To List Error]", error);
+    // Brevo returns 400 "invalid_parameter" when the contact is already
+    // on the list (e.g. a repeat submission from the same email) — that's
+    // an expected outcome, not a failure, so it's not logged as an error.
+    const alreadyInList =
+      error instanceof BrevoError &&
+      error.statusCode === 400 &&
+      typeof (error.body as { message?: string } | undefined)?.message === "string" &&
+      (error.body as { message: string }).message.toLowerCase().includes("already");
+
+    if (!alreadyInList) {
+      console.error("[Brevo Add To List Error]", error);
+    }
   }
 }
