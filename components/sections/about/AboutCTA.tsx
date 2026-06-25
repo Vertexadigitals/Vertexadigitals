@@ -11,7 +11,7 @@ export function AboutCTA() {
   return (
     <section
       aria-labelledby="about-cta-heading"
-      className="bg-black px-6 py-20 text-white md:py-32"
+      className="bg-neutral-900 px-6 py-16 text-white sm:py-20 lg:py-24"
     >
       <motion.div
         initial="hidden"
@@ -23,7 +23,7 @@ export function AboutCTA() {
         <motion.h2
           id="about-cta-heading"
           variants={fadeInUp}
-          className="font-serif text-4xl text-white md:text-5xl"
+          className="font-serif text-3xl font-medium tracking-tight text-white sm:text-4xl lg:text-5xl"
         >
           Want to work with us?
         </motion.h2>

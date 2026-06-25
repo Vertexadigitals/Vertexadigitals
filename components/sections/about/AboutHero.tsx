@@ -15,12 +15,12 @@ export function AboutHero() {
         </p>
         <h1
           id="about-hero-heading"
-          className="mt-4 font-serif text-4xl text-black md:text-6xl"
+          className="mt-4 font-serif text-4xl leading-tight font-medium tracking-tight text-black sm:text-5xl lg:text-6xl"
         >
           Building the Agency We Wanted to Hire
         </h1>
-        <p className="mt-6 text-lg text-neutral-600 md:text-xl">
-          We&apos;re four specialists who got tired of watching good client
+        <p className="mt-6 text-base text-neutral-600 sm:text-lg lg:text-xl">
+          We&apos;re four founders who got tired of watching good client
           work get diluted by agency overhead — so we built the agency
           we&apos;d actually want to hire ourselves.
         </p>

@@ -6,8 +6,11 @@ import { OriginStory } from "@/components/sections/about/OriginStory";
 import { FoundersGrid } from "@/components/sections/about/FoundersGrid";
 import { Mission } from "@/components/sections/about/Mission";
 import { Values } from "@/components/sections/about/Values";
+import { HowWeWork } from "@/components/sections/about/HowWeWork";
 import { WhyForeignClients } from "@/components/sections/about/WhyForeignClients";
+import { Stats } from "@/components/sections/about/Stats";
 import { Location } from "@/components/sections/about/Location";
+import { AboutFAQ } from "@/components/sections/about/AboutFAQ";
 import { AboutCTA } from "@/components/sections/about/AboutCTA";
 import { generateSeoMetadata } from "@/lib/seo";
 import { getBreadcrumbSchema, getPersonSchema } from "@/lib/schema";
@@ -53,8 +56,11 @@ export default function AboutPage() {
       <FoundersGrid />
       <Mission />
       <Values />
+      <HowWeWork />
       <WhyForeignClients />
+      <Stats />
       <Location />
+      <AboutFAQ />
       <AboutCTA />
     </>
   );

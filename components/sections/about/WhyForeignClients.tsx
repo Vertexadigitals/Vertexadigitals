@@ -1,23 +1,46 @@
-import { whyForeignClientsParagraphs } from "@/lib/about-content";
+"use client";
+
+import { motion } from "framer-motion";
+
+import { whyVertexaDifferentiators } from "@/lib/about-content";
+import { fadeInUp, staggerContainer } from "@/lib/motion";
 
 export function WhyForeignClients() {
   return (
     <section
       aria-labelledby="why-foreign-clients-heading"
-      className="px-6 py-20 md:py-32"
+      className="bg-white px-6 py-16 sm:py-20 lg:py-24"
     >
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-7xl">
         <h2
           id="why-foreign-clients-heading"
-          className="font-serif text-4xl text-black md:text-5xl"
+          className="max-w-2xl font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
         >
-          Why We Only Work With Foreign Clients
+          Why We Only Work With International Clients
         </h2>
-        <div className="mt-8 flex flex-col gap-6 text-base leading-relaxed text-neutral-600 md:text-lg">
-          {whyForeignClientsParagraphs.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={staggerContainer}
+          className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3"
+        >
+          {whyVertexaDifferentiators.map((item) => (
+            <motion.div
+              key={item.title}
+              variants={fadeInUp}
+              className="rounded-xl border border-neutral-200/60 bg-neutral-50 p-6 sm:p-8"
+            >
+              <h3 className="font-serif text-lg font-medium text-black">
+                {item.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-neutral-600">
+                {item.description}
+              </p>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

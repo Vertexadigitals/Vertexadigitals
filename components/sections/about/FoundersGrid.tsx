@@ -9,14 +9,17 @@ export function FoundersGrid() {
   return (
     <section
       aria-labelledby="founders-heading"
-      className="bg-neutral-50 px-6 py-20 md:py-32"
+      className="bg-white px-6 py-16 sm:py-20 lg:py-24"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
+        <p className="text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase">
+          Our Founders
+        </p>
         <h2
           id="founders-heading"
-          className="font-serif text-4xl text-black md:text-5xl"
+          className="mt-4 font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
         >
-          Meet the team
+          Meet the founders
         </h2>
 
         <motion.div
@@ -30,12 +33,12 @@ export function FoundersGrid() {
             <motion.article
               key={founder.name}
               variants={fadeInUp}
-              className="rounded-2xl border border-black/10 bg-white p-6 sm:p-8"
+              className="rounded-xl border border-neutral-200/60 bg-neutral-50 p-6 sm:p-8"
             >
-              <h3 className="font-serif text-2xl text-black">
+              <h3 className="font-serif text-xl font-medium text-black">
                 {founder.name}
               </h3>
-              <p className="mt-1 text-sm font-medium text-neutral-500">
+              <p className="mt-1 text-sm font-medium text-neutral-600">
                 {founder.role}
               </p>
               <p className="mt-4 text-sm leading-relaxed text-neutral-600">
