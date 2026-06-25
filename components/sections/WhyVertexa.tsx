@@ -40,7 +40,7 @@ const reasons: Reason[] = [
 
 export function WhyVertexa() {
   return (
-    <section aria-labelledby="why-heading" className="bg-neutral-50 px-6 py-20 sm:py-24 lg:py-32">
+    <section aria-labelledby="why-heading" className="bg-neutral-50 px-6 py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <p className="text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase">
           Why Vertexa

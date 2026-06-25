@@ -33,6 +33,21 @@ export const metadata: Metadata = {
     default: "Vertexa Digitals | Your Complete Digital Growth Partner",
     template: "%s | Vertexa Digitals",
   },
+  // Explicit alongside the app/ icon file conventions (favicon.ico,
+  // icon.png, apple-icon.png) as a defensive second source for crawlers —
+  // points at the public/ duplicates so both mechanisms agree on the URLs.
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export const viewport: Viewport = {

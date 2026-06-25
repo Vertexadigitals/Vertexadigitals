@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       aria-labelledby="hero-heading"
-      className="relative flex flex-col items-center justify-center px-6 py-24 text-center sm:py-32 lg:py-40"
+      className="relative flex flex-col items-center justify-center px-6 py-20 text-center sm:py-24 lg:py-28"
     >
       <div className="flex flex-col items-center">
         <p className="text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase">

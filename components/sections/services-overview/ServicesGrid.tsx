@@ -31,12 +31,12 @@ export function ServicesGrid() {
   return (
     <section
       aria-labelledby="services-grid-heading"
-      className="bg-neutral-50 px-6 py-20 md:py-32"
+      className="bg-white px-6 py-16 sm:py-20 lg:py-24"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         <h2
           id="services-grid-heading"
-          className="font-serif text-4xl text-black md:text-5xl"
+          className="font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
         >
           Six services. One integrated approach.
         </h2>
@@ -57,10 +57,12 @@ export function ServicesGrid() {
               <motion.article
                 key={service.href}
                 variants={fadeInUp}
-                className="flex flex-col rounded-2xl border border-black/10 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8"
+                className="flex flex-col rounded-xl border border-neutral-200/60 bg-neutral-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8"
               >
-                <Icon className="size-10 text-black" aria-hidden="true" />
-                <h3 className="mt-6 font-serif text-2xl text-black">
+                <div className="inline-flex rounded-lg bg-neutral-100 p-2.5">
+                  <Icon className="size-5 text-neutral-700" aria-hidden="true" />
+                </div>
+                <h3 className="mt-6 font-serif text-xl font-medium text-black">
                   {service.name}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-neutral-600">

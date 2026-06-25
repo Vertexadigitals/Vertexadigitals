@@ -12,8 +12,9 @@ const source = join(root, "public", "logo.png");
 const pngTargets = [
   { size: 512, output: join(root, "app", "icon.png") },
   { size: 180, output: join(root, "app", "apple-icon.png") },
-  { size: 192, output: join(root, "public", "android-chrome-192x192.png") },
-  { size: 512, output: join(root, "public", "android-chrome-512x512.png") },
+  { size: 192, output: join(root, "public", "icon-192.png") },
+  { size: 512, output: join(root, "public", "icon-512.png") },
+  { size: 180, output: join(root, "public", "apple-touch-icon.png") },
 ];
 
 const icoSizes = [16, 32, 48];
@@ -45,9 +46,17 @@ async function generate() {
     )
   );
   const icoBuffer = await pngToIco(icoBuffers);
-  const icoOutput = join(root, "app", "favicon.ico");
-  await writeFile(icoOutput, icoBuffer);
-  console.log(`Generated ${icoOutput} (16x16, 32x32, 48x48)`);
+  const appIcoOutput = join(root, "app", "favicon.ico");
+  await writeFile(appIcoOutput, icoBuffer);
+  console.log(`Generated ${appIcoOutput} (16x16, 32x32, 48x48)`);
+
+  // Also written to public/ as a defensive duplicate at the same /favicon.ico
+  // URL — Next.js's app/ file convention already serves this path; this
+  // copy exists only so the file is present even if that convention ever
+  // changes, per the explicit request for a public/ fallback.
+  const publicIcoOutput = join(root, "public", "favicon.ico");
+  await writeFile(publicIcoOutput, icoBuffer);
+  console.log(`Generated ${publicIcoOutput} (16x16, 32x32, 48x48)`);
 
   console.log("Favicon generation complete!");
 }

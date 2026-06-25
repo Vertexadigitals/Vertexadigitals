@@ -39,7 +39,7 @@ const steps: Step[] = [
 
 export function Process() {
   return (
-    <section aria-labelledby="process-heading" className="bg-white px-6 py-20 sm:py-24 lg:py-32">
+    <section aria-labelledby="process-heading" className="bg-white px-6 py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <p className="text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase">
           How We Work

@@ -11,7 +11,7 @@ export function FinalCTA() {
   return (
     <section
       aria-labelledby="final-cta-heading"
-      className="bg-neutral-900 px-6 py-20 text-white sm:py-24 lg:py-32"
+      className="bg-neutral-900 px-6 py-16 text-white sm:py-20 lg:py-24"
     >
       <motion.div
         initial="hidden"

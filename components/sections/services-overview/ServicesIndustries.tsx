@@ -2,19 +2,19 @@ export function ServicesIndustries() {
   return (
     <section
       aria-labelledby="services-industries-heading"
-      className="bg-neutral-50 px-6 py-20 md:py-32"
+      className="bg-white px-6 py-16 sm:py-20 lg:py-24"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         <h2
           id="services-industries-heading"
-          className="font-serif text-4xl text-black md:text-5xl"
+          className="font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
         >
           Industries We Serve
         </h2>
 
-        <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
-          <div>
-            <h3 className="font-serif text-xl text-black">
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <div className="rounded-xl border border-neutral-200/60 bg-neutral-50 p-6">
+            <h3 className="font-serif text-lg font-medium text-black">
               SaaS Companies
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-neutral-600">
@@ -26,8 +26,8 @@ export function ServicesIndustries() {
               engagement once the first project proves the work.
             </p>
           </div>
-          <div>
-            <h3 className="font-serif text-xl text-black">
+          <div className="rounded-xl border border-neutral-200/60 bg-neutral-50 p-6">
+            <h3 className="font-serif text-lg font-medium text-black">
               D2C &amp; E-commerce
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-neutral-600">
@@ -39,8 +39,8 @@ export function ServicesIndustries() {
               engagements covering all of them.
             </p>
           </div>
-          <div>
-            <h3 className="font-serif text-xl text-black">
+          <div className="rounded-xl border border-neutral-200/60 bg-neutral-50 p-6">
+            <h3 className="font-serif text-lg font-medium text-black">
               B2B &amp; Professional Services
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-neutral-600">

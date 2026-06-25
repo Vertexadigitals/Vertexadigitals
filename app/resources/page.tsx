@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ResourcesHero } from "@/components/sections/resources/ResourcesHero";
 import { ResourcesCards } from "@/components/sections/resources/ResourcesCards";
 import { ResourcesWhatWereBuilding } from "@/components/sections/resources/ResourcesWhatWereBuilding";
+import { ResourcesCTA } from "@/components/sections/resources/ResourcesCTA";
 import { generateSeoMetadata } from "@/lib/seo";
 import { getBreadcrumbSchema, getWebPageSchema } from "@/lib/schema";
 import { resourcesHubContent } from "@/lib/resources-content";
@@ -50,6 +51,7 @@ export default function ResourcesPage() {
         h2={resourcesHubContent.whatWereBuilding.h2}
         paragraphs={resourcesHubContent.whatWereBuilding.paragraphs}
       />
+      <ResourcesCTA />
     </>
   );
 }

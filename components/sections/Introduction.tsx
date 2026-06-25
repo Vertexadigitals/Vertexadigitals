@@ -18,7 +18,7 @@ const blocks = [
 
 export function Introduction() {
   return (
-    <section aria-labelledby="intro-heading" className="bg-neutral-50 px-6 py-20 sm:py-24 lg:py-32">
+    <section aria-labelledby="intro-heading" className="bg-neutral-50 px-6 py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
           <h2
