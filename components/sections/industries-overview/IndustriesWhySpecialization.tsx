@@ -1,3 +1,5 @@
+import { SectionHeader } from "@/components/sections/SectionHeader";
+
 const supportingPoints = [
   "We've built specific pattern recognition across the eight industries listed here through repeated, focused work — not a single project we're now generalizing into an \"industry expertise\" claim. The challenges a SaaS company brings us are genuinely different from the challenges a law firm or a real estate brokerage brings us.",
   "Specialization also means we already know which services actually matter most for your category and which ones are a lower priority, so we can scope an engagement around your real highest-leverage opportunity instead of a standard package.",
@@ -16,37 +18,23 @@ export function IndustriesWhySpecialization() {
       className="bg-white px-6 py-20 sm:py-24 lg:py-32"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <h2
-              id="industries-why-specialization-heading"
-              className="font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
-            >
-              Why Industry Specialization Matters
-            </h2>
-            <p className="mt-6 text-base leading-relaxed text-neutral-600 md:text-lg">
-              A generalist agency can produce competent work for almost any
-              industry, but competent isn&apos;t the same as informed. Every
-              category we work in has its own vocabulary, its own buyer
-              psychology, and its own version of what actually moves the
-              metrics that matter — and a team that has to learn that
-              context from scratch on your engagement is spending your
-              budget on their education, not your results.
-            </p>
-          </div>
+        <SectionHeader
+          headingId="industries-why-specialization-heading"
+          heading="Why Industry Specialization Matters"
+          subtext="A generalist agency can produce competent work for almost any industry, but competent isn't the same as informed. Every category we work in has its own vocabulary, its own buyer psychology, and its own version of what actually moves the metrics that matter — and a team that has to learn that context from scratch on your engagement is spending your budget on their education, not your results."
+        />
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {supportingPoints.map((point, index) => (
-              <div
-                key={index}
-                className="rounded-xl border border-neutral-200/60 bg-neutral-50 p-6"
-              >
-                <p className="text-sm leading-relaxed text-neutral-600">
-                  {point}
-                </p>
-              </div>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          {supportingPoints.map((point, index) => (
+            <div
+              key={index}
+              className="rounded-xl border border-neutral-200/60 bg-neutral-50 p-6"
+            >
+              <p className="text-sm leading-relaxed text-neutral-600">
+                {point}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
