@@ -2,6 +2,7 @@ import { siteConfig } from "@/lib/site-config";
 import { subServices } from "@/lib/sub-services-content";
 import { industries } from "@/lib/industries-content";
 import { locations } from "@/lib/locations-content";
+import { blogPosts } from "@/lib/blogs-content";
 
 type ChangeFrequency =
   | "always"
@@ -70,6 +71,12 @@ function buildEntries(): Entry[] {
     priority: 0.3,
   }));
 
+  const blogEntries: Entry[] = blogPosts.map((post) => ({
+    path: `/resources/blogs/${post.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
   return [
     ...staticEntries,
     ...serviceEntries,
@@ -77,6 +84,7 @@ function buildEntries(): Entry[] {
     ...industryEntries,
     ...locationEntries,
     ...legalEntries,
+    ...blogEntries,
   ];
 }
 

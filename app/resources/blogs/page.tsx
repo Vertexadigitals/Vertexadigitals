@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 import { JsonLd } from "@/components/JsonLd";
-import { BlogsHero } from "@/components/sections/resources/BlogsHero";
-import { BlogsTopics } from "@/components/sections/resources/BlogsTopics";
-import { BlogsWhyWaiting } from "@/components/sections/resources/BlogsWhyWaiting";
+import { BlogIndexHero } from "@/components/sections/blog/BlogIndexHero";
+import { BlogIndexGrid } from "@/components/sections/blog/BlogIndexGrid";
+import { BlogFinalCta } from "@/components/sections/blog/BlogFinalCta";
 import { generateSeoMetadata } from "@/lib/seo";
-import { getBreadcrumbSchema, getWebPageSchema } from "@/lib/schema";
-import { blogsPlaceholderContent } from "@/lib/resources-content";
+import { getBreadcrumbSchema, getItemListSchema, getWebPageSchema } from "@/lib/schema";
+import { blogPosts } from "@/lib/blogs-content";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = generateSeoMetadata({
   title: "Blog",
   description:
-    "The Vertexa Digitals blog is coming soon — insights, frameworks, and field notes on SEO, web development, performance marketing, branding, and content.",
+    "Premium insights for ambitious brands — deep dives into digital strategy, web development, SEO, mobile apps, branding, and content marketing.",
   canonical: "/resources/blogs",
   keywords: [
     "vertexa digitals blog",
@@ -28,7 +28,7 @@ export default function BlogsPage() {
   const webPageSchema = getWebPageSchema({
     name: "Blog",
     description:
-      "Insights, frameworks, and field notes on SEO, web development, performance marketing, branding, and content.",
+      "Premium insights for ambitious brands — digital strategy, web development, SEO, mobile apps, branding, and content marketing.",
     url: pageUrl,
   });
 
@@ -38,21 +38,23 @@ export default function BlogsPage() {
     { name: "Blog", url: pageUrl, position: 3 },
   ]);
 
+  const itemListSchema = getItemListSchema(
+    blogPosts.map((post) => ({
+      name: post.title,
+      url: `${siteConfig.url}/resources/blogs/${post.slug}`,
+    }))
+  );
+
   return (
     <>
-      <JsonLd data={[webPageSchema, breadcrumbSchema]} />
-      <BlogsHero
-        h1={blogsPlaceholderContent.hero.h1}
-        subheadline={blogsPlaceholderContent.hero.subheadline}
-      />
-      <BlogsTopics
-        h2={blogsPlaceholderContent.topics.h2}
-        intro={blogsPlaceholderContent.topics.intro}
-        items={blogsPlaceholderContent.topics.items}
-      />
-      <BlogsWhyWaiting
-        h2={blogsPlaceholderContent.whyWaiting.h2}
-        paragraphs={blogsPlaceholderContent.whyWaiting.paragraphs}
+      <JsonLd data={[webPageSchema, breadcrumbSchema, itemListSchema]} />
+      <BlogIndexHero />
+      <BlogIndexGrid posts={blogPosts} />
+      <BlogFinalCta
+        heading="Want to talk about your project?"
+        subheading="Tell us what you're building — we'll respond within 24-48 hours with a clear, honest next step."
+        buttonText="Get in Touch"
+        buttonLink="/contact"
       />
     </>
   );

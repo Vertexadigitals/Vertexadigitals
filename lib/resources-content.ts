@@ -57,53 +57,6 @@ export const resourcesHubContent: ResourcesHubContent = {
   },
 };
 
-export interface BlogsPlaceholderContent {
-  hero: {
-    h1: string;
-    subheadline: string;
-  };
-  topics: {
-    h2: string;
-    intro: string;
-    items: string[];
-  };
-  whyWaiting: {
-    h2: string;
-    paragraphs: string[];
-  };
-}
-
-export const blogsPlaceholderContent: BlogsPlaceholderContent = {
-  hero: {
-    h1: "Insights, Frameworks, and Field Notes",
-    subheadline:
-      "Our blog isn't live yet. Rather than launch with a handful of rushed posts just to have something published, we're holding off until we have a steady backlog of genuinely useful writing ready to go. Subscribe below and we'll let you know the moment it launches.",
-  },
-  topics: {
-    h2: "What We'll Cover",
-    intro:
-      "When the blog launches, expect writing pulled directly from the work we do across our core services, not generic advice rewritten from someone else's listicle. Topics will span:",
-    items: [
-      "Technical and on-page SEO diagnostics — what we actually find in real audits, not theoretical best practices",
-      "Web development decisions and tradeoffs — Next.js, Shopify, WordPress, and when each genuinely makes sense",
-      "Performance marketing breakdowns — what's actually working in Google Ads, Meta Ads, and LinkedIn Ads campaigns right now",
-      "Branding and design thinking — how we approach positioning and identity work before any visual decision gets made",
-      "Content and email marketing frameworks — the planning layer behind campaigns that actually convert",
-      "Honest retrospectives on our own work — including the parts that didn't go as planned the first time",
-    ],
-  },
-  whyWaiting: {
-    h2: "Why We're Taking Time to Launch This Right",
-    paragraphs: [
-      "We could have launched this blog with five generic posts on day one, the way most new agency websites do. We chose not to, because a blog that exists purely to fill a navigation link doesn't actually help anyone reading it, and it doesn't reflect well on the rest of the work we do.",
-      "Quality-over-quantity isn't just a nice phrase here — it's a genuine constraint we're applying to ourselves. Every post that eventually publishes needs to clear a bar: would this actually help someone making a real decision about their SEO, their website, or their marketing? If the honest answer is no, it doesn't go up, regardless of how it might help our own publishing cadence.",
-      "We'd rather you find five genuinely useful articles here in a few months than fifty mediocre ones today. Subscribing below means you'll hear from us when we've actually built up that initial library, not when we've simply decided it's time to launch something.",
-      "This also means we won't be publishing on a fixed weekly or biweekly schedule once the blog does launch. Cadence will follow whatever pace produces genuinely useful writing consistently, rather than forcing a publishing rhythm that eventually pressures quality downward just to hit a deadline we set for ourselves.",
-      "If there's a specific topic you'd want us to cover first — a particular platform, a specific industry angle, a question you haven't found a good answer to elsewhere — feel free to mention it when you reach out through our contact page. Reader input is a genuinely useful signal for what to prioritize early.",
-    ],
-  },
-};
-
 export interface CaseStudiesPlaceholderContent {
   hero: {
     h1: string;

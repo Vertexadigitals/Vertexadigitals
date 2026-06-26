@@ -1,4 +1,5 @@
 import { siteConfig } from "@/lib/site-config";
+import type { BlogPost } from "@/lib/blogs-content";
 
 const logoUrl = `${siteConfig.url}${siteConfig.logo.src}`;
 const sameAs = [
@@ -182,6 +183,39 @@ export function getArticleSchema(params: ArticleSchemaParams) {
         url: logoUrl,
       },
     },
+  };
+}
+
+/** BlogPosting schema for individual blog articles. */
+export function getBlogPostingSchema(blog: BlogPost) {
+  const url = `${siteConfig.url}/resources/blogs/${blog.slug}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: blog.title,
+    description: blog.metaDescription,
+    author: {
+      "@type": "Organization",
+      name: blog.authorName,
+      url: siteConfig.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      logo: {
+        "@type": "ImageObject",
+        url: logoUrl,
+      },
+    },
+    datePublished: blog.publishDate,
+    dateModified: blog.updatedDate,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    url,
+    keywords: [blog.primaryKeyword, ...blog.secondaryKeywords].join(", "),
   };
 }
 
