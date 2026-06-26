@@ -554,6 +554,456 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "choose-web-development-agency",
+    title: "How to Choose a Web Development Agency: 12-Point Checklist",
+    metaDescription:
+      "A practical 12-point checklist for evaluating web development agencies — red flags, discovery call questions, pricing models, and how to avoid a costly hiring mistake.",
+    excerpt:
+      "Choosing the wrong web development agency can cost six to twelve months and a full rebuild. Here's the exact checklist to evaluate one properly before you sign.",
+    publishDate: "2026-06-25",
+    updatedDate: "2026-06-25",
+    readTime: 20,
+    category: "Web Development",
+    tags: ["Web Development", "Hiring an Agency", "Project Management", "Pricing"],
+    authorName: "Vertexa Digitals Team",
+
+    primaryKeyword: "how to choose a web development agency",
+    secondaryKeywords: [
+      "web development agency checklist",
+      "hire a web development agency",
+      "web development agency red flags",
+      "web development pricing models",
+      "evaluate web development portfolio",
+    ],
+
+    hero: {
+      eyebrow: "WEB DEVELOPMENT",
+      title: "How to Choose a Web Development Agency: 12-Point Checklist",
+      subtitle:
+        "A practical framework for evaluating agencies before you sign — what to check, what to ask, and which red flags should end the conversation early.",
+    },
+
+    sections: [
+      {
+        type: "tableOfContents",
+        items: [
+          { text: "Why the Wrong Agency Costs You 6-12 Months", anchor: "wrong-agency-cost" },
+          { text: "The 12-Point Evaluation Checklist", anchor: "checklist" },
+          { text: "Red Flags to Avoid", anchor: "red-flags" },
+          { text: "Questions to Ask in the Discovery Call", anchor: "discovery-questions" },
+          { text: "How to Evaluate a Portfolio Properly", anchor: "portfolio" },
+          { text: "Pricing Models Explained", anchor: "pricing" },
+          { text: "Communication and Project Management Expectations", anchor: "communication" },
+          { text: "Foreign Market Considerations", anchor: "foreign-market" },
+          { text: "The Real Cost of Cheap Agencies", anchor: "real-cost" },
+          { text: "Frequently Asked Questions", anchor: "faq" },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "Why the Wrong Agency Costs You 6-12 Months", id: "wrong-agency-cost" },
+      {
+        type: "paragraph",
+        content:
+          "A bad web development agency doesn't usually fail loudly. It fails slowly — a launch date that quietly slips by a month, then another month, a build that technically works but breaks the moment real users with real browsers and real devices touch it, or a site that launches on time but is so difficult to maintain that every future change becomes its own small crisis.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "By the time the problems are undeniable, you're usually 4-6 months into a relationship, have already paid a meaningful portion of the budget, and face a genuinely difficult choice: keep pushing forward with a team that's already shown you who they are, or start over with someone new and absorb the sunk cost. Either path typically adds another 6-12 months before you're back to where you thought you'd already be — and that's before accounting for the time spent finding, vetting, and onboarding a replacement team from scratch.",
+      },
+      {
+        type: "callout",
+        variant: "warning",
+        heading: "The Real Cost Isn't the Invoice",
+        content:
+          "The money you lose to a bad agency is rarely the biggest cost. The bigger cost is the 6-12 months of market momentum, customer trust, and internal credibility you lose while waiting for a website that should have shipped on schedule.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "There's also an internal cost that's easy to underestimate going in: the credibility of whoever championed the hiring decision. A project that visibly stalls or underdelivers doesn't just cost the business time and money — it makes the next request for budget or buy-in from that same person noticeably harder to get approved, regardless of how reasonable the underlying decision-making actually was. Choosing well the first time protects more than the project itself.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This is exactly why the evaluation process before you sign matters more than most buyers treat it. A thorough discovery and vetting process that takes an extra two or three weeks is a rounding error compared to the months you'll lose if you skip it and pick wrong.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "There's also a compounding effect that most first-time buyers underestimate. A delayed launch doesn't just push back your go-live date — it pushes back every downstream plan that was built around that date: a marketing campaign timed to coincide with launch, a fundraising milestone tied to a working product demo, a sales team waiting on new collateral that depends on the new site. By the time the website itself is six months late, the actual business cost is usually several multiples larger than the development invoice alone would suggest.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The good news is that almost every failure mode we've seen play out with a bad agency was visible in hindsight during the evaluation phase, if someone had known what to look for. That's the entire purpose of the checklist below — not to make hiring an agency feel adversarial, but to replace gut feeling with a specific, repeatable process that surfaces the same information a six-month bad experience would eventually surface, except before you've signed anything.",
+      },
+
+      { type: "divider" },
+
+      { type: "heading", level: 2, text: "The 12-Point Evaluation Checklist", id: "checklist" },
+      {
+        type: "paragraph",
+        content:
+          "This is the exact list we'd want a prospective client to run any agency through — including us. If an agency can't answer most of these clearly and specifically, that's information, not an accident.",
+      },
+      {
+        type: "checklist",
+        items: [
+          { text: "1. Can they show you work in your specific industry or a closely adjacent one?", description: "Not required, but a genuine advantage — it means less time spent explaining your business from scratch." },
+          { text: "2. Do they ask about your business goals before talking about technology?", description: "An agency that leads with \"we build in React\" before asking what problem you're solving is leading with their preference, not your need." },
+          { text: "3. Who specifically will work on your project — and is it the same person pitching you?", description: "Many agencies sell with senior talent and deliver with whoever's available, which is the single most common bait-and-switch in this industry." },
+          { text: "4. What's their actual process from kickoff to launch, in specific stages?", description: "Vague answers (\"we're agile\") usually mean no real process exists at all." },
+          { text: "5. How do they handle scope changes once a project is underway?", description: "Every real project has scope changes. The question is whether there's a defined, fair process for handling them." },
+          { text: "6. What's included in their post-launch support, and for how long?", description: "A website handed off with zero support window is a liability waiting to surface the moment something breaks." },
+          { text: "7. Can they explain their tech stack choice in terms of your business, not just technical preference?", description: "\"We use Next.js because it's what we know\" is a different answer than one tied to your actual performance, SEO, or scaling needs." },
+          { text: "8. Do they own the code and infrastructure setup, or does a subcontractor?", description: "You want to know who's actually building this before you sign, not after." },
+          { text: "9. What does their typical project timeline actually look like, with real ranges?", description: "An agency unwilling to give you a realistic range, only a single optimistic number, is setting up a timeline conversation they'll lose later." },
+          { text: "10. How do they handle SEO, performance, and accessibility — built in, or an afterthought?", description: "If these come up only when you ask, they're being treated as optional, which usually means they were never properly planned for." },
+          { text: "11. What happens if the relationship doesn't work out partway through?", description: "Ask about their offboarding and code-handoff process before you need it, not after." },
+          { text: "12. Can former clients confirm what the agency told you, unprompted?", description: "A reference call where the client volunteers the same strengths the agency claimed, without being led, is worth more than any portfolio page." },
+        ],
+      },
+
+      { type: "divider" },
+
+      { type: "heading", level: 2, text: "Red Flags to Avoid", id: "red-flags" },
+      {
+        type: "paragraph",
+        content:
+          "Some warning signs are subtle. Others are obvious once you know to look for them — and most prospective clients only learn to recognize them after getting burned once.",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "A quote that's dramatically lower than every other agency you've talked to, with no clear explanation for the gap",
+          "Reluctance to put a senior team member on the actual kickoff call — you only meet the people who'll do the work after signing",
+          "No questions about your business, your customers, or your goals before jumping straight to a proposal",
+          "A portfolio full of screenshots with no live links, or links that no longer work",
+          "Pressure to sign quickly, paired with urgency language that doesn't match the actual stakes of the decision",
+          "Vague or evasive answers about who specifically owns the code and hosting once the project ships",
+          "No written contract, or a contract that's entirely one-sided in the agency's favor on revisions and ownership",
+          "An unwillingness to provide even one reference you can speak with directly",
+        ],
+      },
+      {
+        type: "quote",
+        text: "The agencies most eager to start tomorrow are often the ones who most need you to sign before you have time to think it through.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The bait-and-switch on team composition deserves particular attention because it's both common and hard to catch in a single meeting. An agency's founder or senior account lead pitches the deal, demonstrates deep expertise, and earns your trust — then, once signed, the actual day-to-day work gets handed to whoever's available, who may be a junior hire several levels below the person you evaluated. Ask explicitly, by name if necessary, who will be doing the actual work, and ask to meet them before signing, not after.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Pricing that's dramatically below every other quote you've received deserves the same scrutiny as pricing that seems too good to be true in any other context, because it usually is. The gap is being absorbed somewhere — junior talent doing senior-level work, corners cut on testing and QA, a thinner discovery process that will surface as scope disagreements later, or a business model that depends on volume over depth. None of that means the cheapest option is automatically wrong, but it does mean the burden is on them to explain the gap convincingly, not on you to assume it's a great deal.",
+      },
+
+      { type: "divider" },
+
+      { type: "heading", level: 2, text: "Questions to Ask in the Discovery Call", id: "discovery-questions" },
+      {
+        type: "paragraph",
+        content:
+          "The discovery call is where most of the real signal lives — not in the polished deck, but in how specifically and honestly an agency answers questions they weren't given in advance.",
+      },
+      { type: "heading", level: 3, text: "About the team" },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Who exactly will be working on this, day to day?",
+          "How many other active projects is that person or team carrying right now?",
+          "Is any part of this work subcontracted, and if so, which part?",
+        ],
+      },
+      { type: "heading", level: 3, text: "About the process" },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Walk me through your last project of similar scope, stage by stage.",
+          "What's the single most common reason your projects run late?",
+          "How do you handle a client who wants to add scope mid-project?",
+        ],
+      },
+      { type: "heading", level: 3, text: "About the outcome" },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "What happens in the first 30 days after launch?",
+          "Who owns the domain, hosting, and codebase once we're live?",
+          "If we wanted to leave in a year, how hard would that transition be?",
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "Listen as closely to how an agency answers these as to what they actually say. A team with a real, lived process will answer specifically and quickly, often with a concrete example from a past project. A team without one will answer in generalities, pivot toward reassurance rather than specifics, or take noticeably longer to respond because they're constructing an answer in real time rather than recalling one. Neither tone nor confidence is a reliable signal on its own — specificity is.",
+      },
+
+      { type: "divider" },
+
+      { type: "heading", level: 2, text: "How to Evaluate a Portfolio Properly", id: "portfolio" },
+      {
+        type: "paragraph",
+        content:
+          "Most buyers evaluate a portfolio the way they'd browse a gallery — does it look nice? That's the wrong question. A portfolio screenshot tells you almost nothing about whether the site performs well, was delivered on time, or is actually easy for the client to maintain today.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Click through to the actual live site, not just the case study page. Check how it loads on your phone over a real mobile connection, not just on the agency's office Wi-Fi. Look at the site's actual structure — does navigation make sense, do forms work, is content easy to find — rather than just the hero section that was clearly built to be screenshotted.",
+      },
+      {
+        type: "checklist",
+        heading: "A real portfolio audit checklist",
+        items: [
+          { text: "Does the live site still work, and does it load reasonably fast on mobile?" },
+          { text: "Is the case study specific about the actual problem solved, or just a generic description?" },
+          { text: "Are there any results mentioned, and do they sound plausible and specific rather than vague?" },
+          { text: "Is this a project similar in scope and complexity to what you need, or a different category entirely?" },
+          { text: "Can you talk to the actual client behind this specific project, not a different one?" },
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "Pay particular attention to how a case study describes the problem it solved. A strong case study is specific: it names the actual constraint the client faced, explains the reasoning behind the approach taken, and is honest about tradeoffs. A weak case study reads like marketing copy applied retroactively to a finished project — \"we built a beautiful, modern website that exceeded expectations\" — without ever describing what problem the work was actually solving or why the specific decisions made sense for that client's situation.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "It's also worth asking what the project looked like six months or a year after launch, not just on launch day. A site can look impressive at the moment of handoff and still be poorly built underneath — slow to update, fragile when new features get added, or quietly accumulating bugs that never get fixed because the underlying code wasn't structured to be maintained by anyone other than the original builder. If an agency stays in touch with past clients well after launch, ask them directly how the site has held up.",
+      },
+
+      { type: "divider" },
+
+      { type: "heading", level: 2, text: "Pricing Models Explained", id: "pricing" },
+      {
+        type: "paragraph",
+        content:
+          "Web development pricing generally falls into three models, and each one shifts risk between you and the agency differently. Understanding which model you're actually being offered — and what it implies about incentives — matters more than comparing raw numbers across quotes.",
+      },
+      {
+        type: "comparison",
+        heading: "Fixed Price vs. Hourly vs. Retainer",
+        columns: [
+          {
+            title: "Fixed Price",
+            points: [
+              "Best for well-defined projects with a clear, stable scope",
+              "Agency absorbs the risk of underestimating effort — which is exactly why scope changes get billed separately",
+              "Requires detailed upfront discovery to price accurately; rushed fixed quotes are a red flag",
+            ],
+          },
+          {
+            title: "Hourly / Time & Materials",
+            points: [
+              "Best for projects with evolving or unclear scope, or ongoing iterative work",
+              "You absorb the risk of scope creep, but gain flexibility to change direction without renegotiating a contract",
+              "Requires real trust and transparent time tracking — ask for it from day one",
+            ],
+          },
+          {
+            title: "Monthly Retainer",
+            points: [
+              "Best for ongoing development, maintenance, or a long-term partnership beyond a single launch",
+              "Predictable cost, but only works if the scope of \"what's included\" is defined clearly upfront",
+              "Watch for retainers that quietly shrink in actual hours delivered over time",
+            ],
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "None of these models is inherently better — the right choice depends on how well-defined your project actually is. A genuinely fixed-scope marketing site is well suited to fixed pricing. A platform that will keep evolving based on user feedback is poorly suited to it, because every fixed-price contract for a moving target eventually turns into a change-order negotiation.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Whatever model you choose, ask explicitly how the agency handles the gap between estimated and actual effort. A fixed-price project that runs over the agency's internal estimate shouldn't become your problem unless the scope itself changed — that's the entire point of fixed pricing, and an agency that quietly pads every subsequent project to compensate for past underestimates isn't pricing fairly. Conversely, an hourly arrangement where hours seem to expand indefinitely without clear, itemized justification deserves the same scrutiny you'd apply to any other open-ended expense.",
+      },
+
+      { type: "divider" },
+
+      { type: "heading", level: 2, text: "Communication and Project Management Expectations", id: "communication" },
+      {
+        type: "paragraph",
+        content:
+          "The gap between agencies that feel easy to work with and ones that feel like a constant struggle almost never comes down to technical skill — it comes down to communication discipline that was either established clearly upfront or never discussed at all.",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "Agree on a communication cadence before the project starts — weekly syncs, async updates, or both",
+          "Establish a shared project board so progress is visible without needing to ask for a status update",
+          "Clarify response time expectations for both sides, including what happens outside business hours across time zones",
+          "Define what counts as a 'milestone' clearly enough that both sides agree when one has actually been hit",
+          "Set expectations for how feedback gets given and incorporated — vague feedback produces vague revisions",
+        ],
+      },
+      {
+        type: "callout",
+        variant: "info",
+        heading: "Async Doesn't Mean Absent",
+        content:
+          "A genuinely good remote or international agency relationship runs on disciplined async communication — detailed written updates, recorded walkthroughs, clear documentation — not constant live meetings. The absence of daily calls isn't a red flag if the written communication is consistently clear.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The clearest early signal of how a project will actually run is how the agency handles communication during the sales process itself, before any contract is signed. An agency that's slow to respond, vague in its answers, or inconsistent about who you're talking to during the courtship phase is showing you, in miniature, exactly how they'll communicate once you're a paying client and the relationship has lost its novelty. Pay close attention to this period — it's the most honest preview you'll get.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Project management tooling matters less than the discipline behind it. A team using a simple shared spreadsheet with rigorous, consistent updates will serve you better than a team using sophisticated software that nobody actually keeps current. Ask to see what the actual project tracking will look like for your engagement specifically, not a generic screenshot from their marketing materials.",
+      },
+
+      { type: "divider" },
+
+      { type: "heading", level: 2, text: "Foreign Market Considerations", id: "foreign-market" },
+      {
+        type: "paragraph",
+        content:
+          "Hiring an agency based in a different country or time zone than your own adds real considerations beyond the usual evaluation — none of them disqualifying on their own, but all of them worth addressing directly before you sign.",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Time zone overlap: how many real-time overlap hours exist, and is that enough for the cadence this project needs?",
+          "Language and communication clarity: is written and spoken communication clear enough for nuanced feedback, not just basic instructions?",
+          "Cultural and market fluency: does the team understand your market's specific user expectations, payment norms, and compliance requirements (GDPR for the EU, accessibility standards, etc.)?",
+          "Currency and contract terms: is pricing quoted in a currency and contract structure your finance team can work with cleanly?",
+          "Legal and IP considerations: does the contract clearly establish that you own the code, content, and IP once delivered, regardless of jurisdiction?",
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "None of these are reasons to avoid a foreign agency outright — some of the most senior, cost-effective development talent in the world works outside whatever market you're selling into. They're simply questions that deserve a direct, specific answer before you commit, the same way you'd want clarity on any other significant business relationship that crosses borders.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "In practice, working across a real time difference often produces better documentation discipline than working with a team in your own time zone, simply because the gap forces it. A team that can't rely on quickly grabbing someone for a five-minute hallway conversation has to get better at writing things down clearly the first time — decisions get recorded, expectations get set explicitly, and less depends on someone remembering a verbal conversation from three weeks ago. That discipline tends to benefit the project regardless of where everyone happens to be sitting.",
+      },
+
+      { type: "divider" },
+
+      { type: "heading", level: 2, text: "The Real Cost of Cheap Agencies", id: "real-cost" },
+      {
+        type: "paragraph",
+        content:
+          "The cheapest quote is rarely the cheapest outcome. A lower hourly rate or fixed price usually reflects one of a few realities: junior talent doing the actual work regardless of who's selling it, a thinner process with less discovery and planning, or a business model that depends on volume and fast turnaround rather than depth on any single project — none of which are obvious from the quote itself.",
+      },
+      {
+        type: "statBlock",
+        heading: "Where the Hidden Cost of \"Cheap\" Usually Shows Up",
+        stats: [
+          { number: "1", label: "Rebuild Risk", description: "A site built cheaply on outdated patterns often needs a full rebuild within 2-3 years" },
+          { number: "2x+", label: "Maintenance Cost", description: "Poorly structured code typically costs more to maintain than it saved upfront" },
+          { number: "0", label: "Post-Launch Support", description: "Common in budget engagements — support often ends the moment the invoice is paid" },
+          { number: "?", label: "SEO Foundation", description: "Frequently skipped entirely, requiring a second project later just to fix what should've shipped correctly" },
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "This isn't an argument for always choosing the most expensive option either — plenty of overpriced agencies deliver mediocre work while trading on brand reputation alone. It's an argument for evaluating price relative to the 12-point checklist above, not in isolation. A quote that's meaningfully below market rate deserves the question \"what, specifically, are we not getting for this price\" before you accept it.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The SEO foundation point deserves particular attention because it's one of the most expensive corners to cut, and one of the least visible at launch. A site built without proper semantic HTML, without attention to Core Web Vitals, without a sane URL structure, or without basic schema markup will look identical to a properly built one in a browser on launch day — the gap only becomes visible months later, in search rankings that never materialize, or in a technical SEO audit that reveals the site needs substantial rework before it can compete. By the time that gap is visible, the cost to fix it is almost always higher than building it correctly the first time would have been.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "There's a useful framing for thinking about this tradeoff: treat the cheapest quote and the most expensive quote both as data points that need explanation, not as signals to act on directly. The agency that explains, specifically and convincingly, what you're getting for the price — whether that price is low or high — deserves more trust than one that simply asks you to take the number on faith. Price is informative, but only once you understand what's actually behind it.",
+      },
+    ],
+
+    midArticleCta: {
+      heading: "Tired of agencies that overpromise and underdeliver?",
+      subheading:
+        "Vertexa Digitals is a senior-led web development team — the people who scope your project are the same people who build it.",
+      buttonText: "Talk to us",
+      buttonLink: "/contact",
+    },
+
+    relatedService: "/services/web-development",
+    relatedBlogs: [
+      "website-cost-2026",
+      "performance-marketing-playbook-2026",
+      "technical-seo-audit-checklist-2026",
+    ],
+
+    finalCta: {
+      heading: "Ready to work with a team that gets it right the first time?",
+      subheading:
+        "Tell us about your project. We'll give you a clear, honest assessment of scope, timeline, and what it would actually take — no inflated promises.",
+      buttonText: "Start a project",
+      buttonLink: "/contact",
+    },
+
+    faqs: [
+      {
+        question: "How long should it take to choose a web development agency?",
+        answer:
+          "Give yourself two to four weeks for a meaningful project, even if you feel pressure to move faster. That's enough time to have discovery calls with several agencies, check references properly, and review portfolios in real depth rather than skimming screenshots. Rushing this step to save two weeks is the single most common reason buyers end up in a six-month recovery process later. If an agency is pushing you to skip this timeline and sign immediately, treat that pressure itself as a signal worth paying attention to.",
+      },
+      {
+        question: "Should I choose a local agency or is remote fine?",
+        answer:
+          "Remote is fine, and for many businesses it's genuinely better — it opens up access to senior talent that isn't limited to whoever happens to operate in your specific city. What matters isn't geography; it's whether the agency has a real, disciplined process for communication, project visibility, and accountability regardless of where they're physically located. Plenty of local agencies communicate poorly, and plenty of remote, international teams communicate excellently. Evaluate the actual process, not the address.",
+      },
+      {
+        question: "How much does a website typically cost?",
+        answer:
+          "It depends heavily on scope, but as a general orientation, a simple marketing site might run a few thousand dollars, a more custom business site with bespoke design and functionality moves into the five-figure range, and a complex platform, e-commerce build, or web application can run well into five or six figures depending on complexity. The specific number matters far less than understanding what's actually included in any quote you receive — two agencies quoting the same dollar amount can be offering dramatically different scope, support, and quality underneath that number. Always ask for an itemized breakdown rather than a single lump figure, since that breakdown is usually where the real differences between two competing quotes become visible.",
+      },
+      {
+        question: "What questions reveal the most about an agency in a discovery call?",
+        answer:
+          "Questions that require a specific, detailed answer rather than a rehearsed one. Asking \"walk me through your last project of similar scope, stage by stage\" forces an agency to either demonstrate a real process or expose that they don't have one. Asking \"what's the most common reason your projects run late\" tests whether they're willing to be honest about their own limitations. Generic questions like \"are you good at communication\" invite generic answers; specific questions about their actual process invite specific, revealing ones.",
+      },
+      {
+        question: "Is it a red flag if an agency doesn't have experience in my exact industry?",
+        answer:
+          "Not necessarily. Industry-specific experience is a genuine advantage when it exists, because it reduces the time spent explaining your business and its constraints from scratch. But plenty of excellent agencies bring strong process, technical skill, and the ability to learn a new domain quickly, even without prior direct experience in your specific category. What matters more is whether they ask thoughtful, specific questions about your business during discovery — that's a better predictor of whether they'll understand your needs than a checklist of past industries. Pay attention to how quickly they pick up your industry's specific terminology and constraints over the first few conversations; a sharp team without direct prior experience will close that gap visibly fast.",
+      },
+      {
+        question: "How do I know if an agency's portfolio examples are actually their own work?",
+        answer:
+          "Ask directly, and ask for a reference you can speak with from that specific project. It's common in this industry for agencies to subcontract work or show examples from a previous role one of their team members held elsewhere, without being explicit about it. A direct, specific question — \"who on your current team actually built this, and can I speak with the client\" — usually surfaces the truth quickly, because evasive or vague answers to a direct question are themselves informative.",
+      },
+      {
+        question: "What should be included in a web development contract?",
+        answer:
+          "At minimum: a clear scope of work, defined deliverables and milestones, payment terms tied to those milestones, an explicit statement that you own the resulting code, content, and IP upon final payment, a defined process for handling scope changes, and clarity on what post-launch support is included and for how long. If a contract is vague on any of these points, ask for it to be made specific before signing — verbal assurances that aren't written into the contract are not enforceable if a disagreement comes up later. It's reasonable, and worth doing, to have a lawyer review a contract for any project above a modest budget threshold, the same way you'd review any other meaningful commercial agreement before signing it.",
+      },
+      {
+        question: "Why do web development projects run over budget so often?",
+        answer:
+          "Almost always one of two reasons: scope that wasn't actually well-defined upfront, or scope that was well-defined but changed significantly mid-project without a clear process for pricing the change. Both are preventable with thorough discovery before the contract is signed and a clear, agreed-upon process for handling any changes that come up afterward. Projects that go through detailed discovery, with a fixed scope and an explicit change-order process, rarely blow through budget by a wide margin — the projects that do almost always skipped one of those two steps. A third, less common but still real reason is an agency that intentionally underquotes to win the deal, expecting to recover margin through change orders later — which is exactly why understanding what's included in a quote upfront matters so much before you sign.",
+      },
+      {
+        question: "What happens if I'm not happy with the agency partway through the project?",
+        answer:
+          "This is exactly why asking about offboarding and code-handoff terms during the discovery call, before signing, matters so much — by the time you're unhappy partway through, your leverage to negotiate good terms is much weaker than it was before you signed. A well-structured contract should specify that you retain ownership of all work product completed and paid for, and should outline a reasonable transition process if either side wants to end the relationship. If an agency won't agree to clear terms on this upfront, take that as a meaningful signal about how the relationship would go if it ever needed to end. When things do go wrong mid-project, raise the specific concern directly and in writing before escalating to termination — many recoverable problems get treated as unrecoverable simply because nobody named the issue clearly and gave the other side a real chance to fix it.",
+      },
+    ],
+  },
 ];
 
 export function getBlogBySlug(slug: string): BlogPost | undefined {
