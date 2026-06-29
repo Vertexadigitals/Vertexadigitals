@@ -10,7 +10,7 @@ import { caseStudiesPlaceholderContent } from "@/lib/resources-content";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = generateSeoMetadata({
-  title: "Case Studies",
+  title: "Case Studies & Client Outcomes",
   description:
     "Vertexa Digitals case studies are in progress as we deliver work for our launch clients. Email us directly for relevant samples in the meantime.",
   canonical: "/resources/case-studies",

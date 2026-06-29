@@ -24,7 +24,7 @@ export function Introduction() {
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           headingId="intro-heading"
-          heading="We're not a digital agency. We're your growth partner."
+          heading="Beyond the typical digital agency — your growth partner."
         />
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">

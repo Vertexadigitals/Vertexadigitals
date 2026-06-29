@@ -11,7 +11,7 @@ import { resourcesHubContent } from "@/lib/resources-content";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = generateSeoMetadata({
-  title: "Resources & Insights",
+  title: "Digital Marketing Insights & Resources",
   description:
     "Resources and insights from Vertexa Digitals — a growing blog and case study library, built deliberately rather than rushed out to hit a quota.",
   canonical: "/resources",

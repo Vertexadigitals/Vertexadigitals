@@ -54,9 +54,9 @@ export type ServiceContent = {
 export const servicesContent: Record<string, ServiceContent> = {
   "web-development": {
     h1: "Web Development for Brands That Demand More",
-    metaTitle: "Web Development Services",
+    metaTitle: "Web Development Agency",
     metaDescription:
-      "Custom web development with Next.js, React, and Shopify — fast, SEO-optimized websites built for conversions. Trusted by ambitious global brands.",
+      "Web development agency for ambitious global brands. Custom development with Next.js, React, Shopify, WordPress, and MERN stack. Built for US, UK, EU, and Australia markets.",
     keywords: [
       "web development services",
       "custom web development",
@@ -251,10 +251,10 @@ export const servicesContent: Record<string, ServiceContent> = {
     ctaText: "Tell us what you're building — we'll tell you honestly what it'll take.",
   },
   "mobile-app-development": {
-    h1: "Mobile Apps Built to Ship and Scale",
+    h1: "Mobile App Development for Global Brands",
     metaTitle: "Mobile App Development Services",
     metaDescription:
-      "iOS, Android, and cross-platform app development with React Native, Flutter, and native code. Built to ship fast and scale with your user base.",
+      "Mobile app development agency for global brands. Native iOS, Android, React Native, and Flutter apps. From MVP to enterprise scale for ambitious international brands.",
     keywords: [
       "mobile app development services",
       "iOS app development",
@@ -448,10 +448,10 @@ export const servicesContent: Record<string, ServiceContent> = {
     ctaText: "Let's scope what it actually takes to build and launch it.",
   },
   seo: {
-    h1: "SEO That Ranks Where Revenue Lives",
-    metaTitle: "SEO Services",
+    h1: "SEO Services That Drive Sustainable Rankings",
+    metaTitle: "SEO Services for Global Brands",
     metaDescription:
-      "Technical SEO and content strategy that ranks for keywords that drive revenue — not vanity traffic. Built for global B2B and e-commerce brands.",
+      "SEO agency for ambitious global brands. Technical SEO, content strategy, international SEO, and link building. Built for sustainable rankings in competitive markets.",
     keywords: [
       "SEO services",
       "technical SEO",
@@ -638,10 +638,10 @@ export const servicesContent: Record<string, ServiceContent> = {
     ctaText: "Let's audit what's holding your rankings back.",
   },
   "performance-marketing": {
-    h1: "Performance Marketing Engineered for ROAS",
-    metaTitle: "Performance Marketing Services",
+    h1: "Performance Marketing for Measurable ROAS",
+    metaTitle: "Performance Marketing Agency",
     metaDescription:
-      "Paid acquisition across Google, Meta, and LinkedIn Ads — engineered around ROAS and CAC, not vanity impressions. For ambitious global brands.",
+      "Performance marketing agency for global brands. Google Ads, Meta Ads, LinkedIn Ads, and TikTok campaigns optimized for measurable ROAS and growth.",
     keywords: [
       "performance marketing services",
       "paid ads agency",
@@ -836,10 +836,10 @@ export const servicesContent: Record<string, ServiceContent> = {
     ctaText: "Let's audit your accounts and show you what's actually working.",
   },
   "branding-design": {
-    h1: "Branding That Builds Recognition and Revenue",
-    metaTitle: "Branding & Design Services",
+    h1: "Branding & Design for Ambitious Global Brands",
+    metaTitle: "Branding & Design Agency",
     metaDescription:
-      "Brand identity, UI/UX design, and design systems for companies that want to look as serious as they are. Strategic branding agency for global growth brands.",
+      "Branding and design agency for ambitious global brands. Brand identity, logo design, UI/UX, design systems, and website redesign for international brands.",
     keywords: [
       "branding agency",
       "brand identity design",
@@ -1031,10 +1031,10 @@ export const servicesContent: Record<string, ServiceContent> = {
     ctaText: "Let's talk about what your brand needs to say.",
   },
   "content-social-media": {
-    h1: "Content That Attracts, Converts, and Compounds",
-    metaTitle: "Content & Social Media Marketing Services",
+    h1: "Content & Social Media for Brand Growth",
+    metaTitle: "Content Marketing & Social Media",
     metaDescription:
-      "Content strategy, copywriting, and social media management built to attract, convert, and compound — not chase algorithm trends. For global brands.",
+      "Content marketing agency for global brands. Strategy, blog writing, social media management, copywriting, and email marketing for ambitious international brands.",
     keywords: [
       "content marketing services",
       "social media agency",

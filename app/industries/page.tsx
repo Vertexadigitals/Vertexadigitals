@@ -16,7 +16,7 @@ import { industries, industriesHubFaqs } from "@/lib/industries-content";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = generateSeoMetadata({
-  title: "Industries We Serve",
+  title: "Digital Agency Services by Industry",
   description:
     "Digital agency with real specialization across SaaS, e-commerce, healthcare, FinTech, B2B, real estate, legal, and education — not a generic playbook.",
   canonical: "/industries",

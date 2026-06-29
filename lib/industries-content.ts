@@ -74,9 +74,9 @@ export const industries: Industry[] = [
     cardDescription:
       "Marketing sites, organic acquisition, and conversion work built around trial signups and activation, not vanity traffic.",
     meta: {
-      title: "Digital Agency for SaaS Companies",
+      title: "SaaS Marketing Agency",
       description:
-        "Digital agency for SaaS companies — marketing sites, organic acquisition, and conversion-focused work built around trial signups and activation, not vanity traffic.",
+        "Digital agency for SaaS companies. Growth marketing, SEO, performance ads, and content strategy for B2B SaaS brands targeting US, UK, EU, and Australia markets.",
       keywords: [
         "digital agency for SaaS",
         "SaaS marketing agency",
@@ -270,9 +270,9 @@ export const industries: Industry[] = [
     cardDescription:
       "Storefronts that handle real order volume, paid acquisition that stays profitable at scale, and branding that earns repeat purchases.",
     meta: {
-      title: "Digital Agency for E-commerce & D2C Brands",
+      title: "E-commerce Marketing Agency",
       description:
-        "Digital agency for e-commerce and D2C brands — Shopify development, performance marketing, and branding built around CAC, LTV, and order volume that actually scales.",
+        "Digital agency for e-commerce brands. Shopify development, SEO, performance marketing, and content for D2C brands targeting global markets.",
       keywords: [
         "ecommerce digital agency",
         "D2C marketing agency",
@@ -465,9 +465,9 @@ export const industries: Industry[] = [
     cardDescription:
       "Compliance-aware web development, medically accurate content, and local SEO built for patient trust and practice-level acquisition.",
     meta: {
-      title: "Digital Agency for Healthcare & MedTech",
+      title: "Healthcare Marketing Agency",
       description:
-        "Digital agency for healthcare and MedTech — compliance-aware web development, medical content authority, and local SEO for practices, platforms, and startups.",
+        "Digital agency for healthcare brands. HIPAA-compliant marketing, SEO, content, and performance ads for medical, wellness, and biotech companies.",
       keywords: [
         "healthcare digital agency",
         "medical SEO services",
@@ -663,9 +663,9 @@ export const industries: Industry[] = [
     cardDescription:
       "Trust-building branding, regulatory-aware content, and SEO for financial products where credibility decides conversion before anything else.",
     meta: {
-      title: "Digital Agency for FinTech & Financial Services",
+      title: "Fintech Marketing Agency",
       description:
-        "Digital agency for FinTech and financial services — trust-building branding, regulatory-aware content, and SEO for products that need credibility before conversion.",
+        "Digital agency for fintech brands. Branding, web development, SEO, and growth marketing for financial services, payments, and digital banking companies.",
       keywords: [
         "fintech digital agency",
         "financial services marketing",
@@ -862,9 +862,9 @@ export const industries: Industry[] = [
     cardDescription:
       "SEO, content, and LinkedIn-driven demand generation built for long B2B sales cycles and credibility-led buying decisions.",
     meta: {
-      title: "Digital Agency for B2B & Professional Services",
+      title: "B2B Marketing Agency",
       description:
-        "Digital agency for B2B and professional services — SEO, content, and LinkedIn-driven demand generation built for long sales cycles and credibility-led buying.",
+        "Digital agency for B2B brands. Demand generation, account-based marketing, LinkedIn ads, content marketing, and SEO for enterprise software and services.",
       keywords: [
         "B2B digital agency",
         "B2B marketing agency",
@@ -1061,9 +1061,9 @@ export const industries: Industry[] = [
     cardDescription:
       "Hyper-local SEO, IDX-integrated websites, and performance marketing built for realtors, brokerages, and property tech startups.",
     meta: {
-      title: "Digital Agency for Real Estate & PropTech",
+      title: "Real Estate Marketing Agency",
       description:
-        "Digital agency for real estate — hyper-local SEO, IDX-integrated websites, and performance marketing built for realtors, brokerages, and property tech startups.",
+        "Digital agency for real estate brands. Lead generation, branding, SEO, and performance marketing for residential, commercial, and PropTech companies.",
       keywords: [
         "real estate digital agency",
         "realtor marketing agency",
@@ -1256,9 +1256,9 @@ export const industries: Industry[] = [
     cardDescription:
       "Ethics-aware local and practice-area SEO, authority-building content, and sites built for nurturing high-value legal cases.",
     meta: {
-      title: "Digital Agency for Law Firms & Legal Tech",
+      title: "Legal Marketing Agency",
       description:
-        "Digital agency for law firms and legal tech — ethics-aware local and practice-area SEO, authority-building content, and websites built for high-value lead nurturing.",
+        "Digital agency for law firms. Branding, web development, SEO, and content marketing for legal practices in the US, UK, EU, and Australia.",
       keywords: [
         "law firm digital agency",
         "legal marketing agency",
@@ -1460,9 +1460,9 @@ export const industries: Industry[] = [
     cardDescription:
       "Student and teacher acquisition, content authority, and SEO built for online schools, course creators, and learning platforms.",
     meta: {
-      title: "Digital Agency for Education & EdTech",
+      title: "Education Marketing Agency",
       description:
-        "Digital agency for education and EdTech — student and teacher acquisition, content authority, and SEO built for online schools, course creators, and platforms.",
+        "Digital agency for education brands. Web development, SEO, content marketing, and performance ads for EdTech, higher education, and online learning.",
       keywords: [
         "edtech digital agency",
         "education marketing agency",

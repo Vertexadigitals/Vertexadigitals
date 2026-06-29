@@ -15,7 +15,7 @@ import { contactFaqs } from "@/lib/contact-content";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = generateSeoMetadata({
-  title: "Contact Us",
+  title: "Contact Us — Start Your Project",
   description:
     "Get in touch with Vertexa Digitals. Tell us about your project — web development, mobile apps, SEO, paid ads, branding, or content. We respond within 24 hours.",
   canonical: "/contact",

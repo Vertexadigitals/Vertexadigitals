@@ -18,7 +18,7 @@ import { founders } from "@/lib/about-content";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = generateSeoMetadata({
-  title: "About Us",
+  title: "About Our Founder-Led Digital Agency",
   description:
     "Vertexa Digitals — four founders building a global digital agency from India for ambitious brands in the US, UK, EU, and Australia.",
   canonical: "/about",

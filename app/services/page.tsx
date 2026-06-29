@@ -18,7 +18,7 @@ import { servicesOverviewFaqs } from "@/lib/services-content";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = generateSeoMetadata({
-  title: "Services",
+  title: "Digital Agency Services for Global Brands",
   description:
     "Premium digital services from one integrated team: web development, mobile apps, SEO, performance marketing, branding & content. For ambitious global brands.",
   canonical: "/services",

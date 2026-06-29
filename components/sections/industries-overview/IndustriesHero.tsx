@@ -14,7 +14,7 @@ export function IndustriesHero() {
           id="industries-hero-heading"
           className="mt-6 font-serif text-4xl leading-tight font-medium tracking-tight text-black sm:text-5xl lg:text-6xl"
         >
-          Industries We Serve
+          Digital Agency Specialization by Industry
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-base text-neutral-600 sm:text-lg lg:text-xl">

@@ -67,9 +67,9 @@ export const locations: Location[] = [
     timezone: "America/New_York",
     timezoneFriendly: "Eastern Time (ET)",
     meta: {
-      title: "Digital Agency for New York Brands",
+      title: "Digital Agency in New York",
       description:
-        "Digital agency serving New York brands remotely — full Eastern Time overlap, hyper-competitive market understanding, and senior execution without NYC agency overhead.",
+        "Digital agency for New York-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for ambitious NYC companies.",
       keywords: [
         "digital agency New York",
         "NYC marketing agency",
@@ -214,9 +214,9 @@ export const locations: Location[] = [
     timezone: "America/Los_Angeles",
     timezoneFriendly: "Pacific Time (PT)",
     meta: {
-      title: "Digital Agency for Los Angeles Brands",
+      title: "Digital Agency in Los Angeles",
       description:
-        "Digital agency serving Los Angeles brands remotely — D2C and e-commerce experience, real estate market knowledge, and Pacific Time overlap without LA agency rates.",
+        "Digital agency for Los Angeles-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for ambitious LA companies.",
       keywords: [
         "digital agency Los Angeles",
         "LA marketing agency",
@@ -363,9 +363,9 @@ export const locations: Location[] = [
     timezone: "America/Los_Angeles",
     timezoneFriendly: "Pacific Time (PT)",
     meta: {
-      title: "Digital Agency for San Francisco Tech & SaaS Companies",
+      title: "Digital Agency in San Francisco",
       description:
-        "Digital agency serving San Francisco tech and SaaS companies remotely — startup-pace execution, genuine SaaS marketing experience, and Pacific Time overlap.",
+        "Digital agency for San Francisco-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for Bay Area companies.",
       keywords: [
         "digital agency San Francisco",
         "SF SaaS marketing agency",
@@ -512,9 +512,9 @@ export const locations: Location[] = [
     timezone: "America/Chicago",
     timezoneFriendly: "Central Time (CT)",
     meta: {
-      title: "Digital Agency for Chicago Businesses",
+      title: "Digital Agency in Chicago",
       description:
-        "Digital agency serving Chicago businesses remotely — B2B, FinTech, and professional services experience, with Central Time overlap and senior execution.",
+        "Digital agency for Chicago-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for ambitious Chicago companies.",
       keywords: [
         "digital agency Chicago",
         "Chicago marketing agency",
@@ -661,9 +661,9 @@ export const locations: Location[] = [
     timezone: "America/Chicago",
     timezoneFriendly: "Central Time (CT)",
     meta: {
-      title: "Digital Agency for Austin Startups & Brands",
+      title: "Digital Agency in Austin",
       description:
-        "Digital agency serving Austin startups and growing brands remotely — SaaS, e-commerce, and education experience, with Central Time overlap and startup-friendly pricing.",
+        "Digital agency for Austin-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for ambitious Austin companies.",
       keywords: [
         "digital agency Austin",
         "Austin marketing agency",
@@ -810,9 +810,9 @@ export const locations: Location[] = [
     timezone: "Europe/London",
     timezoneFriendly: "Greenwich Mean Time (GMT) / British Summer Time (BST)",
     meta: {
-      title: "Digital Agency for London Businesses",
+      title: "Digital Agency in London",
       description:
-        "Digital agency serving London businesses remotely — FinTech, B2B, and real estate experience, with strong daily overlap and UK-specific localization built in.",
+        "Digital agency for London-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for ambitious UK companies.",
       keywords: [
         "digital agency London",
         "London marketing agency",
@@ -959,9 +959,9 @@ export const locations: Location[] = [
     timezone: "Europe/London",
     timezoneFriendly: "Greenwich Mean Time (GMT) / British Summer Time (BST)",
     meta: {
-      title: "Digital Agency for Manchester Businesses",
+      title: "Digital Agency in Manchester",
       description:
-        "Digital agency serving Manchester businesses remotely — e-commerce, B2B, and education experience, with strong daily UK overlap and proper local market understanding.",
+        "Digital agency for Manchester-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for ambitious UK companies.",
       keywords: [
         "digital agency Manchester",
         "Manchester marketing agency",
@@ -1108,9 +1108,9 @@ export const locations: Location[] = [
     timezone: "Europe/London",
     timezoneFriendly: "Greenwich Mean Time (GMT) / British Summer Time (BST)",
     meta: {
-      title: "Digital Agency for Edinburgh Businesses",
+      title: "Digital Agency in Edinburgh",
       description:
-        "Digital agency serving Edinburgh businesses remotely — FinTech, legal, and education experience, with strong daily UK overlap and Scotland-specific market understanding.",
+        "Digital agency for Edinburgh-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for ambitious UK companies.",
       keywords: [
         "digital agency Edinburgh",
         "Edinburgh marketing agency",
@@ -1257,9 +1257,9 @@ export const locations: Location[] = [
     timezone: "Europe/Berlin",
     timezoneFriendly: "Central European Time (CET) / Central European Summer Time (CEST)",
     meta: {
-      title: "Digital Agency for Berlin Startups & Brands",
+      title: "Digital Agency in Berlin",
       description:
-        "Digital agency serving Berlin startups and brands remotely — SaaS, e-commerce, and B2B experience, with strong daily EU overlap and German market understanding.",
+        "Digital agency for Berlin-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for ambitious German companies.",
       keywords: [
         "digital agency Berlin",
         "Berlin marketing agency",
@@ -1406,9 +1406,9 @@ export const locations: Location[] = [
     timezone: "Europe/Amsterdam",
     timezoneFriendly: "Central European Time (CET) / Central European Summer Time (CEST)",
     meta: {
-      title: "Digital Agency for Amsterdam Businesses",
+      title: "Digital Agency in Amsterdam",
       description:
-        "Digital agency serving Amsterdam businesses remotely — SaaS, FinTech, and e-commerce experience, with strong daily EU overlap and Dutch market understanding.",
+        "Digital agency for Amsterdam-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for ambitious Dutch companies.",
       keywords: [
         "digital agency Amsterdam",
         "Amsterdam marketing agency",
@@ -1555,9 +1555,9 @@ export const locations: Location[] = [
     timezone: "Europe/Dublin",
     timezoneFriendly: "Greenwich Mean Time (GMT) / Irish Standard Time (IST)",
     meta: {
-      title: "Digital Agency for Dublin Businesses",
+      title: "Digital Agency in Dublin",
       description:
-        "Digital agency serving Dublin businesses remotely — SaaS, FinTech, and healthcare tech experience, with strong daily EU overlap and English-native communication.",
+        "Digital agency for Dublin-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for ambitious Irish companies.",
       keywords: [
         "digital agency Dublin",
         "Dublin marketing agency",
@@ -1704,9 +1704,9 @@ export const locations: Location[] = [
     timezone: "Australia/Sydney",
     timezoneFriendly: "Australian Eastern Time (AEST/AEDT)",
     meta: {
-      title: "Digital Agency for Sydney Businesses",
+      title: "Digital Agency in Sydney",
       description:
-        "Digital agency serving Sydney businesses remotely — SaaS, FinTech, and real estate experience, with genuinely favorable Indian timezone overlap and senior execution.",
+        "Digital agency for Sydney-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for ambitious Australian firms.",
       keywords: [
         "digital agency Sydney",
         "Sydney marketing agency",
@@ -1853,9 +1853,9 @@ export const locations: Location[] = [
     timezone: "Australia/Melbourne",
     timezoneFriendly: "Australian Eastern Time (AEST/AEDT)",
     meta: {
-      title: "Digital Agency for Melbourne Businesses",
+      title: "Digital Agency in Melbourne",
       description:
-        "Digital agency serving Melbourne businesses remotely — e-commerce, education, and healthcare experience, with favorable Indian timezone overlap and senior execution.",
+        "Digital agency for Melbourne-based brands. Web development, SEO, performance marketing, and branding. Founder-led delivery for ambitious Australian firms.",
       keywords: [
         "digital agency Melbourne",
         "Melbourne marketing agency",

@@ -16,7 +16,7 @@ import { locations, locationsHubFaqs } from "@/lib/locations-content";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = generateSeoMetadata({
-  title: "Locations We Serve",
+  title: "Digital Agency Services by Location",
   description:
     "Remote digital agency serving brands across the US, UK, EU, and Australia — genuine timezone overlap and market understanding, city by city.",
   canonical: "/locations",

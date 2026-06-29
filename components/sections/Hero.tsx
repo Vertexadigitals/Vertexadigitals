@@ -11,14 +11,14 @@ export function Hero() {
     >
       <div className="flex flex-col items-center">
         <p className="text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase">
-          Digital Agency · Built for Global Brands
+          Founder-Led · International Standards
         </p>
 
         <h1
           id="hero-heading"
           className="mt-6 max-w-3xl font-serif text-4xl leading-tight font-medium tracking-tight text-black sm:text-5xl lg:text-6xl"
         >
-          Your Complete Digital Growth Partner
+          Digital Agency Built for Ambitious Global Brands
         </h1>
 
         <p className="mt-6 max-w-2xl text-base text-neutral-600 sm:text-lg lg:text-xl">
