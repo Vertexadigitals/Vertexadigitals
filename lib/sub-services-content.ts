@@ -88,9 +88,9 @@ export const subServices: SubService[] = [
     parentName: "Web Development",
     parentLabel: "Web Development",
     meta: {
-      title: "Shopify Development Services",
+      title: "Shopify Development Agency",
       description:
-        "Custom Shopify development — themes, Hydrogen storefronts, and app integrations built for stores that have outgrown generic templates.",
+        "Custom Shopify development for ambitious e-commerce brands. Themes, Hydrogen storefronts, and Shopify Plus. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "Shopify development services",
         "Shopify developer",
@@ -313,9 +313,9 @@ export const subServices: SubService[] = [
     parentName: "Web Development",
     parentLabel: "Web Development",
     meta: {
-      title: "WordPress Development Services",
+      title: "WordPress Development Agency",
       description:
-        "Custom WordPress development — theme builds, Gutenberg blocks, ACF, and WooCommerce for content-heavy sites that need a CMS editors actually like.",
+        "WordPress development for ambitious content-driven brands. Custom themes, Gutenberg blocks, and WooCommerce. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "WordPress development services",
         "custom WordPress development",
@@ -538,9 +538,9 @@ export const subServices: SubService[] = [
     parentName: "Web Development",
     parentLabel: "Web Development",
     meta: {
-      title: "Next.js Development Services",
+      title: "Next.js Development Agency",
       description:
-        "Next.js development with the App Router and React Server Components — for sites and apps where performance and SEO are non-negotiable.",
+        "Next.js development for ambitious teams. App Router, React Server Components, and performance-critical web products. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "Next.js development agency",
         "Next.js development services",
@@ -763,9 +763,9 @@ export const subServices: SubService[] = [
     parentName: "Web Development",
     parentLabel: "Web Development",
     meta: {
-      title: "Webflow Development Services",
+      title: "Webflow Development Agency",
       description:
-        "Webflow development and custom CMS builds — for marketing teams who want real design control without depending on developers for every page.",
+        "Webflow development for design-led teams wanting real site control. Custom builds, CMS setup, and Webflow migrations. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "Webflow development services",
         "Webflow developer",
@@ -988,9 +988,9 @@ export const subServices: SubService[] = [
     parentName: "Web Development",
     parentLabel: "Web Development",
     meta: {
-      title: "Headless CMS Development Services",
+      title: "Headless CMS Development Agency",
       description:
-        "Headless CMS architecture and content modeling with Sanity, Contentful, and similar platforms — decoupled content management for modern frontends.",
+        "Headless CMS development for ambitious content teams. Contentful, Sanity, and custom architecture for decoupled frontends. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "headless CMS development",
         "headless CMS agency",
@@ -1212,9 +1212,9 @@ export const subServices: SubService[] = [
     parentName: "Web Development",
     parentLabel: "Web Development",
     meta: {
-      title: "E-commerce Development Services",
+      title: "E-commerce Development Agency",
       description:
-        "Custom e-commerce development across Shopify, headless commerce, and custom platforms — built around your catalog complexity and order volume.",
+        "E-commerce development for ambitious D2C and B2B brands. Platform selection, custom builds, and replatforming. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "ecommerce development services",
         "ecommerce development agency",
@@ -1437,9 +1437,9 @@ export const subServices: SubService[] = [
     parentName: "Mobile App Development",
     parentLabel: "Mobile Apps",
     meta: {
-      title: "iOS App Development Services",
+      title: "iOS App Development Agency",
       description:
-        "Native iOS app development with Swift and SwiftUI — built for deep Apple ecosystem integration and App Store approval on the first submission.",
+        "Native iOS development for ambitious global brands. Swift, SwiftUI, and deep Apple ecosystem integration. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "iOS app development services",
         "iOS app developer",
@@ -1663,9 +1663,9 @@ export const subServices: SubService[] = [
     parentName: "Mobile App Development",
     parentLabel: "Mobile Apps",
     meta: {
-      title: "Android App Development Services",
+      title: "Android App Development Agency",
       description:
-        "Native Android app development with Kotlin and Jetpack Compose — built and tested across the device fragmentation real Android users actually have.",
+        "Native Android development for ambitious global brands. Kotlin, Jetpack Compose, and multi-device testing. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "Android app development services",
         "Android app developer",
@@ -1890,9 +1890,9 @@ export const subServices: SubService[] = [
     parentName: "Mobile App Development",
     parentLabel: "Mobile Apps",
     meta: {
-      title: "React Native Development Services",
+      title: "React Native App Development",
       description:
-        "React Native app development — one codebase shipping to iOS and Android, ideal for teams already working in React or JavaScript.",
+        "React Native development for ambitious teams. One codebase, iOS and Android, built for teams already working in React. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "React Native development services",
         "React Native developer",
@@ -2115,9 +2115,9 @@ export const subServices: SubService[] = [
     parentName: "Mobile App Development",
     parentLabel: "Mobile Apps",
     meta: {
-      title: "Flutter App Development Services",
+      title: "Flutter App Development Agency",
       description:
-        "Flutter app development — one Dart codebase rendering custom, pixel-perfect UI natively on iOS and Android with consistent performance.",
+        "Flutter development for ambitious brands. Pixel-perfect cross-platform mobile with custom UI from one Dart codebase. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "Flutter app development services",
         "Flutter developer",
@@ -2341,9 +2341,9 @@ export const subServices: SubService[] = [
     parentName: "Mobile App Development",
     parentLabel: "Mobile Apps",
     meta: {
-      title: "Cross-Platform App Development Services",
+      title: "Cross-Platform App Development",
       description:
-        "Cross-platform app development — React Native, Flutter, or the right framework for your team, chosen based on your actual requirements.",
+        "Cross-platform app development for ambitious brands. React Native and Flutter, chosen to match your team and product. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "cross-platform app development",
         "cross-platform development agency",
@@ -2569,7 +2569,7 @@ export const subServices: SubService[] = [
     meta: {
       title: "Technical SEO Services",
       description:
-        "Technical SEO audits and fixes — crawlability, indexation, Core Web Vitals, and structured data that remove the barriers capping your rankings.",
+        "Technical SEO for ambitious brands. Crawlability audits, Core Web Vitals, JS rendering, and structured data. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "technical SEO services",
         "technical SEO audit",
@@ -2795,7 +2795,7 @@ export const subServices: SubService[] = [
     meta: {
       title: "On-Page SEO Services",
       description:
-        "On-page SEO — search intent mapping, title and content optimization, and fixing keyword cannibalization so your pages rank for the right terms.",
+        "On-page SEO for ambitious brands. Search intent mapping, title optimization, and content structure. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "on-page SEO services",
         "on-page SEO optimization",
@@ -3019,7 +3019,7 @@ export const subServices: SubService[] = [
     meta: {
       title: "Link Building Services",
       description:
-        "Link building through genuine digital PR and outreach — earned links built to survive algorithm updates, not bulk purchases that eventually backfire.",
+        "Link building for ambitious brands. Editorial backlinks through digital PR and content-led outreach. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "link building services",
         "link building agency",
@@ -3242,7 +3242,7 @@ export const subServices: SubService[] = [
     meta: {
       title: "International SEO Services",
       description:
-        "International SEO — hreflang, multi-region content, and technical configuration for brands targeting the US, UK, EU, and Australia simultaneously.",
+        "International SEO for ambitious global brands. Hreflang, regional content strategy, and technical configuration for the US, UK, EU, and Australia.",
       keywords: [
         "international SEO services",
         "hreflang implementation",
@@ -3471,7 +3471,7 @@ export const subServices: SubService[] = [
     meta: {
       title: "E-commerce SEO Services",
       description:
-        "E-commerce SEO — category and product page optimization at scale, faceted navigation fixes, and structured data for catalogs with thousands of pages.",
+        "E-commerce SEO for ambitious catalog-scale brands. Category pages, faceted navigation, and product page optimization at volume. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "ecommerce SEO services",
         "ecommerce SEO agency",
@@ -3701,7 +3701,7 @@ export const subServices: SubService[] = [
     meta: {
       title: "SaaS SEO Services",
       description:
-        "SaaS SEO — product-led content and commercial-intent keyword strategy built to convert organic visitors into trials and demos, not just blog readers.",
+        "SaaS SEO for ambitious B2B brands. Commercial-intent content and trial conversion optimization. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "SaaS SEO services",
         "SaaS SEO agency",
@@ -3925,7 +3925,7 @@ export const subServices: SubService[] = [
     meta: {
       title: "Local SEO Services",
       description:
-        "Local SEO — Google Business Profile optimization, citation building, and location page strategy built to win local pack rankings and visibility.",
+        "Local SEO for businesses with a physical presence. Google Business Profile, citations, and map pack rankings. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "local SEO services",
         "local SEO agency",
@@ -4154,7 +4154,7 @@ export const subServices: SubService[] = [
     meta: {
       title: "Off-Page SEO Services",
       description:
-        "Off-page SEO — domain authority, digital PR, brand mentions, and citation consistency built as one coordinated strategy, not a single link-building tactic.",
+        "Off-page SEO for ambitious brands. Digital PR, brand mentions, and reputation signals beyond link building. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "off-page SEO services",
         "off page optimization",
@@ -4382,9 +4382,9 @@ export const subServices: SubService[] = [
     parentName: "Performance Marketing",
     parentLabel: "Performance Marketing",
     meta: {
-      title: "Google Ads Management Services",
+      title: "Google Ads Management Agency",
       description:
-        "Google Ads management — Search, Shopping, and Performance Max campaigns engineered around ROAS and CAC, with proper conversion tracking from day one.",
+        "Google Ads management for ambitious brands. Search, Shopping, and Performance Max built around commercial intent. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "Google Ads management services",
         "Google Ads agency",
@@ -4612,9 +4612,9 @@ export const subServices: SubService[] = [
     parentName: "Performance Marketing",
     parentLabel: "Performance Marketing",
     meta: {
-      title: "Meta Ads Management Services",
+      title: "Meta Ads Management Agency",
       description:
-        "Meta Ads management — Facebook and Instagram campaigns built on creative testing velocity, Pixel and CAPI tracking, and Advantage+ optimization.",
+        "Meta Ads management for ambitious D2C brands. Facebook and Instagram with creative testing and CAPI tracking. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "Meta Ads management services",
         "Facebook Ads agency",
@@ -4842,9 +4842,9 @@ export const subServices: SubService[] = [
     parentName: "Performance Marketing",
     parentLabel: "Performance Marketing",
     meta: {
-      title: "LinkedIn Ads Management Services",
+      title: "LinkedIn Ads Management Agency",
       description:
-        "LinkedIn Ads management — B2B campaigns targeting by job title, seniority, and company size, built for demand generation and account-based marketing.",
+        "LinkedIn Ads for ambitious B2B brands. Targeting by job title and company size for ABM and lead generation. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "LinkedIn Ads management services",
         "LinkedIn Ads agency",
@@ -5071,9 +5071,9 @@ export const subServices: SubService[] = [
     parentName: "Performance Marketing",
     parentLabel: "Performance Marketing",
     meta: {
-      title: "TikTok Ads Management Services",
+      title: "TikTok Ads Management Agency",
       description:
-        "TikTok Ads management — short-form video campaigns built on native, organic-feeling creative and Spark Ads, for brands reaching younger audiences.",
+        "TikTok Ads management for ambitious D2C brands. Native short-form creative, Spark Ads, and TikTok Shop. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "TikTok Ads management services",
         "TikTok Ads agency",
@@ -5300,9 +5300,9 @@ export const subServices: SubService[] = [
     parentName: "Performance Marketing",
     parentLabel: "Performance Marketing",
     meta: {
-      title: "Conversion Rate Optimization Services",
+      title: "Conversion Rate Optimization",
       description:
-        "Conversion rate optimization — landing page and checkout testing that turns the traffic you're already paying for into more leads and sales.",
+        "Conversion rate optimization for ambitious brands. Funnel audits, A/B testing, and checkout improvements. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "conversion rate optimization services",
         "CRO agency",
@@ -5529,9 +5529,9 @@ export const subServices: SubService[] = [
     parentName: "Branding & Design",
     parentLabel: "Branding & Design",
     meta: {
-      title: "Brand Identity Design Services",
+      title: "Brand Identity Design Agency",
       description:
-        "Brand identity design — strategy, visual system, and guidelines built around real market positioning, not just a logo and color palette.",
+        "Brand identity design for ambitious global brands. Strategy-first visual systems, brand voice, and guidelines. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "brand identity design services",
         "brand identity agency",
@@ -5757,9 +5757,9 @@ export const subServices: SubService[] = [
     parentName: "Branding & Design",
     parentLabel: "Branding & Design",
     meta: {
-      title: "Logo Design Services",
+      title: "Logo Design for Global Brands",
       description:
-        "Logo design — a distinctive, versatile mark built to work across every size and context, grounded in strategy rather than trend-chasing.",
+        "Logo design for ambitious global brands. A distinctive, versatile mark built for longevity, not trends. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "logo design services",
         "logo design agency",
@@ -5975,7 +5975,7 @@ export const subServices: SubService[] = [
     meta: {
       title: "UI/UX Design Services",
       description:
-        "UI/UX design — interface and user experience design grounded in usability research, for websites and digital products that need to actually work.",
+        "UI/UX design for ambitious product teams. Interface and UX design grounded in usability research. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "UI UX design services",
         "UI UX design agency",
@@ -6201,9 +6201,9 @@ export const subServices: SubService[] = [
     parentName: "Branding & Design",
     parentLabel: "Branding & Design",
     meta: {
-      title: "Design Systems Services",
+      title: "Design Systems Agency",
       description:
-        "Design systems — component libraries and design tokens that bridge design and development, reducing inconsistency as your product and team scale.",
+        "Design systems for ambitious product teams. Component libraries and design tokens for scaling design-dev alignment. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "design systems services",
         "design system agency",
@@ -6429,9 +6429,9 @@ export const subServices: SubService[] = [
     parentName: "Branding & Design",
     parentLabel: "Branding & Design",
     meta: {
-      title: "Website Redesign Services",
+      title: "Website Redesign Agency",
       description:
-        "Website redesign — rebuilding an underperforming site without losing the SEO equity and brand recognition already built into the one you have.",
+        "Website redesign for ambitious brands. Strategy-first rebuilds that improve performance and preserve SEO equity. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "website redesign services",
         "website redesign agency",
@@ -6657,9 +6657,9 @@ export const subServices: SubService[] = [
     parentName: "Content & Social Media",
     parentLabel: "Content & Social Media",
     meta: {
-      title: "Content Strategy Services",
+      title: "Content Strategy Agency",
       description:
-        "Content strategy — editorial roadmaps and topic clusters built around real search demand and business goals, not a content calendar to fill.",
+        "Content strategy for ambitious brands. Topic clusters, editorial roadmaps, and measurement frameworks. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "content strategy services",
         "content strategy agency",
@@ -6889,7 +6889,7 @@ export const subServices: SubService[] = [
     meta: {
       title: "Blog Writing Services",
       description:
-        "Blog writing — long-form content built on real keyword research and search intent, written to rank and actually convert readers, not just publish.",
+        "Blog writing for ambitious brands. SEO-optimized long-form content built to rank and convert readers. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "blog writing services",
         "blog content agency",
@@ -7121,9 +7121,9 @@ export const subServices: SubService[] = [
     parentName: "Content & Social Media",
     parentLabel: "Content & Social Media",
     meta: {
-      title: "Social Media Management Services",
+      title: "Social Media Management Agency",
       description:
-        "Social media management — platform-specific content and day-to-day management built around a sustainable cadence, not chasing every viral trend.",
+        "Social media management for ambitious brands. Platform-specific content, scheduling, and community management. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "social media management services",
         "social media management agency",
@@ -7354,7 +7354,7 @@ export const subServices: SubService[] = [
     meta: {
       title: "Copywriting Services",
       description:
-        "Copywriting — conversion-focused website, ad, and email copy with a consistent voice across every channel, not five different writers' worth of tone.",
+        "Copywriting for ambitious brands. Conversion-focused website, ad, and email copy with one consistent brand voice. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "copywriting services",
         "copywriting agency",
@@ -7584,9 +7584,9 @@ export const subServices: SubService[] = [
     parentName: "Content & Social Media",
     parentLabel: "Content & Social Media",
     meta: {
-      title: "Email Marketing Services",
+      title: "Email Marketing Agency",
       description:
-        "Email marketing — lifecycle and campaign emails built on real segmentation and deliverability practices, for an owned channel you don't rent.",
+        "Email marketing for ambitious brands. Campaign strategy, automation, segmentation, and deliverability optimization. Built for US, UK, EU, and Australia markets.",
       keywords: [
         "email marketing services",
         "email marketing agency",
