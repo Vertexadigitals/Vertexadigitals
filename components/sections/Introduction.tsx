@@ -4,7 +4,7 @@ const blocks = [
   {
     title: "Founder-Touched, Not Outsourced",
     description:
-      "Most digital agencies hand off projects to junior teams and hide behind status reports. Every project here is touched by our founders, every decision grounded in performance data, every deliverable built to compete on the global stage.",
+      "At Vertexa Digitals, every project is touched by our founders — not handed off to junior teams hiding behind status reports. Every decision is grounded in performance data, every deliverable built to compete on the global stage.",
   },
   {
     title: "Built for Ambitious Brands",

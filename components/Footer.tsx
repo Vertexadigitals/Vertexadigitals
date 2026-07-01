@@ -123,9 +123,9 @@ export function Footer() {
             </Link>
 
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-neutral-600">
-              A premium digital agency built for ambitious global brands. We
-              deliver senior-led web, mobile, SEO, and growth marketing — to
-              international standards, with measurable outcomes.
+              Vertexa Digitals is a premium digital agency built for ambitious
+              global brands. Senior-led web, mobile, SEO, and growth marketing
+              — to international standards, with measurable outcomes.
             </p>
 
             <div className="mt-6">

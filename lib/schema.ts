@@ -14,18 +14,39 @@ export function getOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.name,
+    alternateName: ["Vertexa", "Vertexa Digital", "Vertexa Digitals Agency"],
     url: siteConfig.url,
-    logo: logoUrl,
-    description: siteConfig.description,
+    logo: {
+      "@type": "ImageObject",
+      url: logoUrl,
+      width: 512,
+      height: 512,
+    },
+    description:
+      "Premium digital agency for ambitious global brands. Web development, mobile apps, SEO, performance marketing, branding, and content marketing for US, UK, EU, and Australia markets.",
     email: siteConfig.contact.email,
     sameAs,
     foundingDate: siteConfig.foundingDate,
+    founders: [
+      { "@type": "Person", name: "Ajaypal Singh", jobTitle: "Founder · SEO & Marketing" },
+      { "@type": "Person", name: "Manav Parihar", jobTitle: "Founder · Web Development" },
+      { "@type": "Person", name: "Nayan Kumar", jobTitle: "Founder · Mobile Development" },
+      { "@type": "Person", name: "Jayantilal Suthar", jobTitle: "Founder · Operations & Finance" },
+    ],
     address: {
       "@type": "PostalAddress",
       addressCountry: siteConfig.address.country,
       addressLocality: siteConfig.address.locality,
       addressRegion: siteConfig.address.region,
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: siteConfig.contact.email,
+      contactType: "customer service",
+      areaServed: ["US", "GB", "EU", "AU"],
+      availableLanguage: ["English"],
     },
     areaServed: siteConfig.areaServed,
   };
@@ -36,13 +57,14 @@ export function getWebsiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${siteConfig.url}/#website`,
     name: siteConfig.name,
     url: siteConfig.url,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: `${siteConfig.url}/search?q={search_term_string}`,
-      "query-input": "required name=search_term_string",
+    description: "Premium digital agency for ambitious global brands",
+    publisher: {
+      "@id": `${siteConfig.url}/#organization`,
     },
+    inLanguage: "en-US",
   };
 }
 
