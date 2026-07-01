@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { getAllCategories, type BlogCategory, type BlogPost } from "@/lib/blogs-content";
+import { BlogHeroImage } from "@/components/sections/blog/BlogHeroImage";
 
 function formatDate(dateString: string) {
   return new Date(dateString).toLocaleDateString("en-US", {
@@ -64,7 +65,12 @@ export function BlogIndexGrid({ posts }: BlogIndexGridProps) {
               href={`/resources/blogs/${featured.slug}`}
               className="group grid grid-cols-1 gap-8 rounded-2xl border border-neutral-200 p-6 transition-shadow duration-300 hover:shadow-xl sm:p-8 lg:grid-cols-2 lg:items-center"
             >
-              <div className="aspect-video rounded-2xl bg-neutral-100" />
+              <BlogHeroImage
+                title={featured.title}
+                category={featured.category}
+                variant="dark"
+                className="aspect-video rounded-2xl"
+              />
               <div>
                 <span className="inline-flex rounded-full bg-neutral-100 px-3 py-1 text-xs font-medium tracking-widest text-neutral-600 uppercase">
                   Featured
@@ -107,13 +113,18 @@ export function BlogIndexGrid({ posts }: BlogIndexGridProps) {
             </p>
           ) : (
             <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {gridPosts.map((post) => (
+              {gridPosts.map((post, idx) => (
                 <Link
                   key={post.slug}
                   href={`/resources/blogs/${post.slug}`}
                   className="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white transition-shadow duration-300 hover:shadow-xl"
                 >
-                  <div className="aspect-[16/10] bg-neutral-100" />
+                  <BlogHeroImage
+                    title={post.title}
+                    category={post.category}
+                    variant={idx % 2 === 0 ? "light" : "dark"}
+                    className="aspect-16/10"
+                  />
                   <div className="flex flex-1 flex-col p-6">
                     <span className="text-xs font-medium tracking-widest text-neutral-500 uppercase">
                       {post.category}
