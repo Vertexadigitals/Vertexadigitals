@@ -20,10 +20,6 @@ export function BlogHero({ blog }: BlogHeroProps) {
           {blog.category}
         </span>
 
-        <p className="mt-6 text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase">
-          {blog.hero.eyebrow}
-        </p>
-
         <h1 className="mt-4 font-serif text-4xl leading-tight font-medium tracking-tight text-black sm:text-5xl lg:text-6xl">
           {blog.hero.title}
         </h1>
