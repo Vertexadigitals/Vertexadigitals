@@ -49,7 +49,7 @@ export function WhyVertexa() {
           id="why-heading"
           className="mt-4 max-w-3xl font-serif text-3xl font-medium tracking-tight text-black sm:text-4xl lg:text-5xl"
         >
-          Built on standards. Driven by results.
+          Why ambitious global brands choose our digital agency
         </h2>
         <p className="mt-6 max-w-2xl text-base text-neutral-600 md:text-lg">
           We&apos;re a small team by design. That&apos;s not a limitation —

@@ -19,7 +19,7 @@ export function HomepageFAQ() {
         <SectionHeader
           headingId="faq-heading"
           eyebrow="Frequently Asked"
-          heading="Questions, answered"
+          heading="Frequently asked questions"
         />
 
         <div className="mx-auto max-w-4xl">

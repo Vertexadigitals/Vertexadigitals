@@ -18,7 +18,7 @@ export function AboutFAQ() {
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           headingId="about-faq-heading"
-          heading="Questions about Vertexa"
+          heading="Frequently asked questions about our digital agency"
         />
 
         <div className="mx-auto max-w-4xl">
