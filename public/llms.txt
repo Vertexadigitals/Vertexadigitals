@@ -1,0 +1,44 @@
+# Vertexa Digitals
+
+> Premium digital agency for ambitious global brands — web development, mobile apps, SEO, performance marketing, branding, and content marketing.
+
+Vertexa Digitals is a founder-led, full-service digital agency serving ambitious brands across the United States, United Kingdom, European Union, and Australia. Every project is touched by our founders — no outsourced labor, no middlemen. Also known as Vertexa or Vertexa Digitals Agency.
+
+## Services
+
+- [Web Development](https://vertexadigitals.com/services/web-development): Custom websites and web apps using Next.js, React, Shopify, WordPress, Webflow, and headless CMS. Fast, SEO-optimized, conversion-focused.
+- [Mobile App Development](https://vertexadigitals.com/services/mobile-app-development): Native iOS, Android, and cross-platform apps built with React Native and Flutter.
+- [SEO Services](https://vertexadigitals.com/services/seo): Technical SEO, on-page optimization, link building, international SEO, e-commerce SEO, SaaS SEO, local SEO, and off-page SEO.
+- [Performance Marketing](https://vertexadigitals.com/services/performance-marketing): Google Ads, Meta Ads, LinkedIn Ads, TikTok Ads, and conversion rate optimization.
+- [Branding & Design](https://vertexadigitals.com/services/branding-design): Brand identity, logo design, UI/UX design, design systems, and website redesign.
+- [Content & Social Media](https://vertexadigitals.com/services/content-social-media): Content strategy, blog writing, social media management, copywriting, and email marketing.
+
+## Sub-Services
+
+- [Shopify Development](https://vertexadigitals.com/services/web-development/shopify): Shopify store design, development, and optimization.
+- [WordPress Development](https://vertexadigitals.com/services/web-development/wordpress): Custom WordPress websites and plugins.
+- [Next.js Development](https://vertexadigitals.com/services/web-development/nextjs): High-performance Next.js web applications.
+- [Google Ads Management](https://vertexadigitals.com/services/performance-marketing/google-ads): Google Search, Display, and Shopping campaigns.
+- [Technical SEO](https://vertexadigitals.com/services/seo/technical-seo): Site audits, Core Web Vitals, structured data, and crawlability.
+- [Brand Identity Design](https://vertexadigitals.com/services/branding-design/brand-identity): Logo, visual identity, and brand guidelines.
+
+## About Vertexa Digitals
+
+- [About Us](https://vertexadigitals.com/about): Founder-led team with expertise in web development, SEO, and digital marketing for global brands. No outsourced labor. Senior-led execution.
+- [Industries We Serve](https://vertexadigitals.com/industries): SaaS, e-commerce, healthcare, fintech, B2B, real estate, legal, and education.
+- [Locations](https://vertexadigitals.com/locations): Serving clients in New York, Los Angeles, San Francisco, Chicago, Austin, London, Manchester, Edinburgh, Berlin, Amsterdam, Dublin, Sydney, and Melbourne.
+
+## Resources
+
+- [Blog](https://vertexadigitals.com/resources/blogs): Articles on digital marketing, web development, SEO strategy, and brand growth.
+- [Case Studies](https://vertexadigitals.com/resources/case-studies): Client work and project outcomes.
+
+## Contact
+
+- [Contact Vertexa Digitals](https://vertexadigitals.com/contact): Submit a project inquiry, request a quote, or start a conversation. Response within 24–48 hours.
+
+## Optional
+
+- [Sitemap](https://vertexadigitals.com/sitemap.xml): Full index of all pages.
+- [Privacy Policy](https://vertexadigitals.com/privacy): Data handling and privacy.
+- [Terms of Service](https://vertexadigitals.com/terms): Terms governing use of this site.

@@ -116,6 +116,7 @@ export default function QuoteCTAForm() {
         onSubmit={handleSubmit(onSubmit)}
         noValidate
         aria-label="Get a free quote"
+        data-mcp-tool="submit_quote_request"
         className="flex flex-col gap-5"
       >
         <div className="grid grid-cols-2 gap-4">

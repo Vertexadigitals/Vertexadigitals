@@ -11,7 +11,7 @@ export function Hero() {
     >
       <div className="flex flex-col items-center">
         <p className="text-xs font-semibold tracking-[0.2em] text-neutral-500 uppercase">
-          Founder-Led · International Standards
+          Vertexa Digitals · Founder-Led · International Standards
         </p>
 
         <h1

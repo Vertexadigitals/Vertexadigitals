@@ -1,0 +1,118 @@
+{
+  "schema_version": "v1",
+  "name": "Vertexa Digitals",
+  "description": "Contact and inquiry tools for Vertexa Digitals digital agency — web development, SEO, mobile apps, performance marketing, branding, and content marketing.",
+  "logo_url": "https://vertexadigitals.com/logo.png",
+  "contact_email": "info@vertexadigitals.com",
+  "legal_info_url": "https://vertexadigitals.com/privacy",
+  "tools": [
+    {
+      "name": "submit_contact",
+      "description": "Submit a project inquiry or contact request to Vertexa Digitals. Use this to reach out about web development, SEO, mobile apps, performance marketing, branding, or content marketing services.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "First name of the person submitting the inquiry"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Last name of the person submitting the inquiry"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "Email address for follow-up communication"
+          },
+          "company": {
+            "type": "string",
+            "description": "Company or business name (optional)"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Phone number with country code (optional)"
+          },
+          "service": {
+            "type": "string",
+            "description": "Digital service of interest",
+            "enum": [
+              "Web Development",
+              "Mobile App Development",
+              "SEO Services",
+              "Performance Marketing",
+              "Branding & Design",
+              "Content & Social Media",
+              "Multiple services / Not sure yet"
+            ]
+          },
+          "budget": {
+            "type": "string",
+            "description": "Approximate project budget range (optional)"
+          },
+          "details": {
+            "type": "string",
+            "description": "Project details including goals, timeline, and specific requirements. Minimum 20 characters.",
+            "minLength": 20
+          }
+        },
+        "required": ["firstName", "lastName", "email", "service", "details"]
+      },
+      "endpoint": {
+        "url": "https://vertexadigitals.com/api/contact",
+        "method": "POST",
+        "content_type": "application/json"
+      }
+    },
+    {
+      "name": "submit_quote_request",
+      "description": "Submit a quick quote request to Vertexa Digitals for a specific digital service.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "First name"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Last name"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "Email address"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Phone number (optional)"
+          },
+          "service": {
+            "type": "string",
+            "description": "Service you need a quote for",
+            "enum": [
+              "Web Development",
+              "Mobile App Development",
+              "SEO Services",
+              "Performance Marketing",
+              "Branding & Design",
+              "Content & Social Media",
+              "Multiple services / Not sure yet"
+            ]
+          },
+          "details": {
+            "type": "string",
+            "description": "Brief project description and requirements",
+            "minLength": 20
+          }
+        },
+        "required": ["firstName", "lastName", "email", "service", "details"]
+      },
+      "endpoint": {
+        "url": "https://vertexadigitals.com/api/quote",
+        "method": "POST",
+        "content_type": "application/json"
+      }
+    }
+  ]
+}

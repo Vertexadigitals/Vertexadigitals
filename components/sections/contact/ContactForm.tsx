@@ -114,6 +114,7 @@ export function ContactForm() {
       onSubmit={handleSubmit(onSubmit)}
       noValidate
       aria-label="Contact form"
+      data-mcp-tool="submit_contact"
       className="flex flex-col gap-5"
     >
       <div className="grid grid-cols-2 gap-4">

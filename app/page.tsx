@@ -29,6 +29,10 @@ const { title: _homeTitle, ...homeMetadata } = generateSeoMetadata({
     "Premium digital agency for ambitious global brands: web development, mobile apps, SEO, performance marketing, branding & content. US, UK, EU, Australia.",
   canonical: "/",
   keywords: [
+    "Vertexa Digitals",
+    "Vertexa",
+    "Vertexa Digitals Agency",
+    "Vertexa digital agency",
     "digital agency",
     "web development agency",
     "SEO agency",

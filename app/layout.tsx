@@ -68,6 +68,9 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="mcp-manifest" href="/.well-known/mcp.json" />
+      </head>
       <body className="min-h-full flex flex-col">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-CJ8W2PXSD7"
