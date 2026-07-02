@@ -9,7 +9,7 @@
     {
       "name": "submit_contact",
       "description": "Submit a project inquiry or contact request to Vertexa Digitals. Use this to reach out about web development, SEO, mobile apps, performance marketing, branding, or content marketing services.",
-      "input_schema": {
+      "inputSchema": {
         "type": "object",
         "properties": {
           "firstName": {
@@ -57,17 +57,12 @@
           }
         },
         "required": ["firstName", "lastName", "email", "service", "details"]
-      },
-      "endpoint": {
-        "url": "https://vertexadigitals.com/api/contact",
-        "method": "POST",
-        "content_type": "application/json"
       }
     },
     {
       "name": "submit_quote_request",
       "description": "Submit a quick quote request to Vertexa Digitals for a specific digital service.",
-      "input_schema": {
+      "inputSchema": {
         "type": "object",
         "properties": {
           "firstName": {
@@ -107,11 +102,6 @@
           }
         },
         "required": ["firstName", "lastName", "email", "service", "details"]
-      },
-      "endpoint": {
-        "url": "https://vertexadigitals.com/api/quote",
-        "method": "POST",
-        "content_type": "application/json"
       }
     }
   ]

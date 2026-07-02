@@ -69,7 +69,7 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <head>
-        <link rel="mcp-manifest" href="/.well-known/mcp.json" />
+        <link rel="mcp" href="/.well-known/mcp.json" type="application/json" />
       </head>
       <body className="min-h-full flex flex-col">
         <Script
