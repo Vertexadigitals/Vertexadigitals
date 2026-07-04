@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -342,7 +343,11 @@ export function ContactForm() {
       </Button>
 
       <p className="mt-2 text-center text-xs text-neutral-500">
-        Your information is private. We never share or sell data.
+        Your information is private. We never share or sell data.{" "}
+        <Link href="/privacy" className="underline underline-offset-2 hover:text-neutral-700">
+          Privacy Policy
+        </Link>
+        .
       </p>
     </form>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -304,8 +305,11 @@ export default function QuoteCTAForm() {
         </Button>
 
         <p className="mt-2 text-center text-xs text-neutral-500">
-          24-48 hour response &middot; No spam, ever &middot;
-          Senior-led delivery
+          24-48 hour response &middot; No spam, ever &middot; Senior-led delivery.{" "}
+          <Link href="/privacy" className="underline underline-offset-2 hover:text-neutral-700">
+            Privacy Policy
+          </Link>
+          .
         </p>
       </form>
     </>

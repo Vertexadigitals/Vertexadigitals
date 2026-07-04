@@ -4,6 +4,7 @@ import { Mail } from "lucide-react";
 
 import { siteConfig } from "@/lib/site-config";
 import { industries } from "@/lib/industries-content";
+import { locations } from "@/lib/locations-content";
 
 // lucide-react no longer ships brand/logo glyphs, so every social icon
 // here is inlined as a plain SVG to match the rest of the icon sizing.
@@ -54,14 +55,10 @@ const industriesLinks = industries.map((industry) => ({
   href: `/industries/${industry.slug}`,
 }));
 
-const locationsLinks = [
-  { label: "New York", href: "/locations/new-york" },
-  { label: "Los Angeles", href: "/locations/los-angeles" },
-  { label: "San Francisco", href: "/locations/san-francisco" },
-  { label: "London", href: "/locations/london" },
-  { label: "Berlin", href: "/locations/berlin" },
-  { label: "Sydney", href: "/locations/sydney" },
-];
+const locationsLinks = locations.map((location) => ({
+  label: location.city,
+  href: `/locations/${location.slug}`,
+}));
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -193,14 +190,6 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link
-                  href="/locations"
-                  className="block text-xs text-neutral-500 italic transition-colors hover:text-neutral-900"
-                >
-                  View all locations we serve →
-                </Link>
-              </li>
             </ul>
           </div>
 
