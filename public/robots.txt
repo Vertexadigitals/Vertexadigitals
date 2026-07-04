@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /admin/
-Disallow: /_next/
+Allow: /_next/static/
+Allow: /_next/image
 
 Sitemap: https://vertexadigitals.com/sitemap.xml
