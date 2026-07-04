@@ -13,12 +13,29 @@ const sameAs = [
 export function getOrganizationSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["Organization", "ProfessionalService"],
     "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.name,
+    legalName: siteConfig.name,
     alternateName: ["Vertexa", "Vertexa Digital", "Vertexa Digitals Agency"],
+    slogan: siteConfig.tagline,
+    brand: {
+      "@type": "Brand",
+      name: siteConfig.name,
+      slogan: siteConfig.tagline,
+      logo: {
+        "@type": "ImageObject",
+        url: logoUrl,
+      },
+    },
     url: siteConfig.url,
     logo: {
+      "@type": "ImageObject",
+      url: logoUrl,
+      width: 512,
+      height: 512,
+    },
+    image: {
       "@type": "ImageObject",
       url: logoUrl,
       width: 512,
@@ -49,6 +66,31 @@ export function getOrganizationSchema() {
       availableLanguage: ["English"],
     },
     areaServed: siteConfig.areaServed,
+    knowsAbout: [
+      "Web Development",
+      "Mobile App Development",
+      "Search Engine Optimization",
+      "Performance Marketing",
+      "Branding and Design",
+      "Content Marketing",
+      "Social Media Marketing",
+      "Digital Marketing",
+      "Shopify Development",
+      "UI/UX Design",
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `${siteConfig.name} Service Catalog`,
+      itemListElement: siteConfig.services.map((s) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: s.name,
+          description: s.description,
+          url: `${siteConfig.url}${s.href}`,
+        },
+      })),
+    },
   };
 }
 
@@ -59,12 +101,52 @@ export function getWebsiteSchema() {
     "@type": "WebSite",
     "@id": `${siteConfig.url}/#website`,
     name: siteConfig.name,
+    alternateName: ["Vertexa Digitals Agency", "Vertexa Digital"],
     url: siteConfig.url,
     description: "Premium digital agency for ambitious global brands",
     publisher: {
       "@id": `${siteConfig.url}/#organization`,
     },
     inLanguage: "en-US",
+    copyrightHolder: {
+      "@id": `${siteConfig.url}/#organization`,
+    },
+    copyrightYear: siteConfig.foundingDate,
+  };
+}
+
+/** HomePage WebPage schema — links the homepage to the Organization and WebSite entities. */
+export function getHomeWebPageSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${siteConfig.url}/#webpage`,
+    name: `${siteConfig.name} | Your Complete Digital Growth Partner`,
+    description:
+      "Premium digital agency for ambitious global brands. Web development, mobile apps, SEO, performance marketing, branding, and content marketing.",
+    url: siteConfig.url,
+    inLanguage: "en-US",
+    isPartOf: {
+      "@id": `${siteConfig.url}/#website`,
+    },
+    about: {
+      "@id": `${siteConfig.url}/#organization`,
+    },
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: siteConfig.url,
+        },
+      ],
+    },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: logoUrl,
+    },
   };
 }
 

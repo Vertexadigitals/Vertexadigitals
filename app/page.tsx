@@ -13,6 +13,7 @@ import { generateSeoMetadata } from "@/lib/seo";
 import {
   getBreadcrumbSchema,
   getFAQSchema,
+  getHomeWebPageSchema,
   getItemListSchema,
 } from "@/lib/schema";
 import { siteConfig } from "@/lib/site-config";
@@ -63,7 +64,7 @@ export default function Home() {
 
   return (
     <>
-      <JsonLd data={[itemListSchema, faqSchema, breadcrumbSchema]} />
+      <JsonLd data={[getHomeWebPageSchema(), itemListSchema, faqSchema, breadcrumbSchema]} />
       <Hero />
       <Introduction />
       <ServicesGrid />
