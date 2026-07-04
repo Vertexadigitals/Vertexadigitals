@@ -74,13 +74,27 @@ export const privacyContent: LegalPageContent = {
     {
       heading: "Your Rights Under GDPR",
       paragraphs: [
-        "If you are located in the European Union or European Economic Area, you have certain rights under the GDPR regarding your personal information, including the right to access a copy of the information we hold about you, the right to request correction of inaccurate or incomplete information, the right to request deletion of your information subject to certain legal exceptions, the right to request a portable copy of your data in a structured, machine-readable format, the right to restrict or object to certain processing of your information, and the right to lodge a complaint with your local data protection authority.",
+        "If you are located in the European Union or European Economic Area, you have the following rights under the GDPR regarding your personal information:",
+      ],
+      list: [
+        "The right to access a copy of the information we hold about you",
+        "The right to request correction of inaccurate or incomplete information",
+        "The right to request deletion of your information, subject to certain legal exceptions",
+        "The right to request a portable copy of your data in a structured, machine-readable format",
+        "The right to restrict or object to certain processing of your information",
+        "The right to lodge a complaint with your local data protection authority",
       ],
     },
     {
       heading: "Your Rights Under CCPA",
       paragraphs: [
-        "If you are a California resident, you have rights under the CCPA, including the right to know what categories of personal information we have collected about you and how it has been used, the right to request deletion of your personal information, the right to opt out of the sale or sharing of personal information (we do not sell or share personal information for cross-context behavioral advertising), and the right not to receive discriminatory treatment for exercising any of these rights.",
+        "If you are a California resident, you have the following rights under the CCPA:",
+      ],
+      list: [
+        "The right to know what categories of personal information we have collected about you and how it has been used",
+        "The right to request deletion of your personal information",
+        "The right to opt out of the sale or sharing of personal information (we do not sell or share personal information for cross-context behavioral advertising)",
+        "The right not to receive discriminatory treatment for exercising any of these rights",
       ],
       closingParagraph:
         "To exercise any rights described in this policy, contact us using the details at the end of this page. We will verify your request and respond within the timeframe required by applicable law, typically within 30 days.",
@@ -215,7 +229,12 @@ export const termsContent: LegalPageContent = {
       heading: "Intellectual Property",
       paragraphs: [
         "Upon full payment for a project, the Client owns the final deliverables created specifically for that project, including custom code, designs, and content produced under the engagement, except as noted below.",
-        "Vertexa Digitals retains ownership of any pre-existing tools, frameworks, templates, or proprietary processes used in delivering the work; any third-party software, plugins, or licensed assets incorporated into deliverables, which remain subject to their own licensing terms; and the right to display completed work in our portfolio and case studies, unless the Client requests confidentiality in writing prior to project completion.",
+        "Vertexa Digitals retains ownership of the following:",
+      ],
+      list: [
+        "Any pre-existing tools, frameworks, templates, or proprietary processes used in delivering the work",
+        "Any third-party software, plugins, or licensed assets incorporated into deliverables, which remain subject to their own licensing terms",
+        "The right to display completed work in our portfolio and case studies, unless the Client requests confidentiality in writing prior to project completion",
       ],
     },
     {
@@ -242,7 +261,12 @@ export const termsContent: LegalPageContent = {
     {
       heading: "Indemnification",
       paragraphs: [
-        "The Client agrees to indemnify and hold Vertexa Digitals harmless from any claims, damages, or expenses arising from the Client's breach of these Terms, the Client's provision of inaccurate information or unauthorized materials (including content, images, or trademarks the Client does not have rights to use), or the Client's misuse of deliverables provided by Vertexa Digitals.",
+        "The Client agrees to indemnify and hold Vertexa Digitals harmless from any claims, damages, or expenses arising from:",
+      ],
+      list: [
+        "The Client's breach of these Terms",
+        "The Client's provision of inaccurate information or unauthorized materials, including content, images, or trademarks the Client does not have rights to use",
+        "The Client's misuse of deliverables provided by Vertexa Digitals",
       ],
     },
     {
