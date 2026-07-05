@@ -530,6 +530,13 @@ export const subServices: SubService[] = [
         shortDescription:
           "Making sure your WordPress build is built to rank, not just publish.",
       },
+      {
+        slug: "webflow",
+        parentSlug: "web-development",
+        name: "Webflow Development",
+        shortDescription:
+          "Visual site control for design-led teams who want to own day-to-day changes.",
+      },
     ],
   },
   {
@@ -755,6 +762,13 @@ export const subServices: SubService[] = [
         shortDescription:
           "Headless commerce on Next.js when a standard platform theme isn't enough.",
       },
+      {
+        slug: "webflow",
+        parentSlug: "web-development",
+        name: "Webflow Development",
+        shortDescription:
+          "No-code CMS option for marketing teams that want design control without a full custom build.",
+      },
     ],
   },
   {
@@ -979,6 +993,13 @@ export const subServices: SubService[] = [
         name: "On-Page SEO",
         shortDescription:
           "Making sure your new Webflow pages are structured to rank.",
+      },
+      {
+        slug: "wordpress",
+        parentSlug: "web-development",
+        name: "WordPress Development",
+        shortDescription:
+          "CMS-driven sites for content-heavy brands that need editorial flexibility.",
       },
     ],
   },
@@ -1428,6 +1449,13 @@ export const subServices: SubService[] = [
         name: "Conversion Rate Optimization",
         shortDescription:
           "Turning the traffic your new storefront gets into completed orders.",
+      },
+      {
+        slug: "wordpress",
+        parentSlug: "web-development",
+        name: "WordPress Development",
+        shortDescription:
+          "WooCommerce development for stores wanting WordPress's editorial flexibility.",
       },
     ],
   },
@@ -3009,6 +3037,13 @@ export const subServices: SubService[] = [
         shortDescription:
           "New content planning for the gaps on-page audits reveal.",
       },
+      {
+        slug: "off-page-seo",
+        parentSlug: "seo",
+        name: "Off-Page SEO",
+        shortDescription:
+          "Authority building beyond the page that compounds on-page gains over time.",
+      },
     ],
   },
   {
@@ -3231,6 +3266,13 @@ export const subServices: SubService[] = [
         name: "Technical SEO",
         shortDescription:
           "Making sure new authority actually translates into crawlable, indexable rankings.",
+      },
+      {
+        slug: "off-page-seo",
+        parentSlug: "seo",
+        name: "Off-Page SEO",
+        shortDescription:
+          "The broader off-site authority strategy that link building sits inside.",
       },
     ],
   },
@@ -3691,6 +3733,13 @@ export const subServices: SubService[] = [
         shortDescription:
           "Turning the organic traffic your catalog earns into completed orders.",
       },
+      {
+        slug: "international-seo",
+        parentSlug: "seo",
+        name: "International SEO",
+        shortDescription:
+          "Multi-market SEO for stores selling across the US, UK, EU, and Australia.",
+      },
     ],
   },
   {
@@ -3914,6 +3963,13 @@ export const subServices: SubService[] = [
         name: "Conversion Rate Optimization",
         shortDescription:
           "Turning organic visits into trial signups once they land on your site.",
+      },
+      {
+        slug: "international-seo",
+        parentSlug: "seo",
+        name: "International SEO",
+        shortDescription:
+          "Expanding SaaS rankings across the US, UK, EU, and Australia simultaneously.",
       },
     ],
   },

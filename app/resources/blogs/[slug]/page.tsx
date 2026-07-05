@@ -28,7 +28,7 @@ export async function generateMetadata({
   if (!blog) return {};
 
   return generateSeoMetadata({
-    title: blog.title,
+    title: blog.seoTitle ?? blog.title,
     description: blog.metaDescription,
     canonical: `/resources/blogs/${blog.slug}`,
     keywords: [blog.primaryKeyword, ...blog.secondaryKeywords],

@@ -1,6 +1,7 @@
 export interface BlogPost {
   slug: string;
   title: string;
+  seoTitle?: string;
   metaDescription: string;
   excerpt: string;
   publishDate: string;
@@ -557,6 +558,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "choose-web-development-agency",
     title: "How to Choose a Web Development Agency: 12-Point Checklist",
+    seoTitle: "Choosing a Web Dev Agency: 12-Point Checklist",
     metaDescription:
       "A practical 12-point checklist for evaluating web development agencies — red flags, discovery call questions, pricing models, and how to avoid a costly hiring mistake.",
     excerpt:
@@ -1007,6 +1009,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "website-cost-2026",
     title: "How Much Does a Website Cost in 2026? Real Pricing Breakdown",
+    seoTitle: "Website Cost in 2026: Real Pricing Breakdown",
     metaDescription:
       "An honest breakdown of website costs in 2026 — pricing by site type, what actually drives the number up or down, hidden costs, and real ranges from marketing sites to custom platforms.",
     excerpt:
@@ -1869,6 +1872,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "international-seo-guide",
     title: "International SEO: Ranking in the US, UK, EU, and Australia",
+    seoTitle: "International SEO: US, UK, EU & Australia",
     metaDescription:
       "A practical international SEO guide for ranking across the US, UK, EU, and Australia — hreflang vs. ccTLDs vs. subdomains, market-specific considerations, localization, and link building per region.",
     excerpt:
