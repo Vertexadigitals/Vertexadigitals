@@ -16,7 +16,7 @@ export const founders: Founder[] = [
     bio: "Manav co-founded Vertexa with a focus on owning web development end to end — Shopify storefronts, WordPress builds, and modern Next.js applications. He's the one deciding which stack actually fits a project instead of defaulting to whatever's fastest to ship, and the one still in the codebase years after a site launches, because he believes a website's job isn't finished at launch — it's just getting started. He's also usually the person who notices a small performance regression before a client does.",
   },
   {
-    name: "Nayan Kumar",
+    name: "Nayan Suthar",
     role: "Founder · Mobile Development",
     bio: "Nayan co-founded Vertexa to deliver mobile app development across iOS, Android, React Native, and Flutter. He thinks about apps the way users actually experience them — load times, offline behavior, the small interactions that make an app feel native instead of assembled. Every mobile project at Vertexa goes through him, from the first architecture decision to the App Store submission that actually gets approved, and the maintenance work nobody notices until it's missing.",
   },

@@ -49,7 +49,7 @@ export function getOrganizationSchema() {
     founders: [
       { "@type": "Person", name: "Ajaypal Singh", jobTitle: "Founder · SEO & Marketing" },
       { "@type": "Person", name: "Manav Parihar", jobTitle: "Founder · Web Development" },
-      { "@type": "Person", name: "Nayan Kumar", jobTitle: "Founder · Mobile Development" },
+      { "@type": "Person", name: "Nayan Suthar", jobTitle: "Founder · Mobile Development" },
       { "@type": "Person", name: "Jayantilal Suthar", jobTitle: "Founder · Operations & Finance" },
     ],
     address: {
