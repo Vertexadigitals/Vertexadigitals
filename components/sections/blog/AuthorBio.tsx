@@ -5,7 +5,10 @@ export function AuthorBio() {
   return (
     <div className="mx-auto my-12 max-w-3xl rounded-2xl border border-neutral-200/60 bg-neutral-50 p-8">
       <p className="text-xs font-semibold tracking-widest text-neutral-500 uppercase">
-        Written by Vertexa Digitals
+        Written by{" "}
+        <Link href="/" className="underline underline-offset-2 hover:text-neutral-700">
+          Vertexa Digitals
+        </Link>
       </p>
       <p className="mt-3 text-sm leading-relaxed text-neutral-600">
         Vertexa Digitals is a senior-led digital agency serving ambitious

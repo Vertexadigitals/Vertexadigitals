@@ -65,6 +65,9 @@ export function getOrganizationSchema() {
       areaServed: ["US", "GB", "EU", "AU"],
       availableLanguage: ["English"],
     },
+    mainEntityOfPage: {
+      "@id": `${siteConfig.url}/#webpage`,
+    },
     areaServed: siteConfig.areaServed,
     knowsAbout: [
       "Web Development",
