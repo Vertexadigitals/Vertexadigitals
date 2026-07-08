@@ -55,7 +55,7 @@ export function TableOfContents({ items }: TableOfContentsProps) {
   );
 
   return (
-    <>
+    <div>
       {/* Mobile: collapsible */}
       <details className="mb-8 rounded-xl border border-neutral-200/60 bg-neutral-50 p-5 lg:hidden">
         <summary className="cursor-pointer text-sm font-medium text-neutral-900">
@@ -64,13 +64,14 @@ export function TableOfContents({ items }: TableOfContentsProps) {
         <div className="mt-4">{list}</div>
       </details>
 
-      {/* Desktop: sticky sidebar */}
-      <div className="hidden lg:sticky lg:top-32 lg:block">
+      {/* Desktop: sticky sidebar — outer div is the grid cell (stretches to article height),
+          inner div sticks within that tall containing block */}
+      <div className="sticky top-32 hidden lg:block">
         <p className="mb-4 text-xs font-semibold tracking-widest text-neutral-500 uppercase">
           On this page
         </p>
         {list}
       </div>
-    </>
+    </div>
   );
 }
