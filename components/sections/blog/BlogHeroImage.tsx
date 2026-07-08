@@ -18,7 +18,7 @@ export function BlogHeroImage({
   const accent = isDark ? "#525252" : "#a3a3a3";
 
   // Unique pattern ID avoids conflicts when multiple instances are on the same page
-  const patternId = `grid-${variant}-${category.replace(/[\s&/]/g, "-").toLowerCase()}`;
+  const patternId = `grid-${variant}-${category.replace(/[\s&\/]/g, "-").toLowerCase()}`;
 
   const displayTitle = title.length > 110 ? title.slice(0, 108) + "…" : title;
 
@@ -53,9 +53,18 @@ export function BlogHeroImage({
         </defs>
         <rect width="1200" height="675" fill={`url(#${patternId})`} />
 
-        {/* Wordmark — top left */}
-        <text
+        {/* Logo mark — top left */}
+        <image
+          href="/logo.png"
           x="80"
+          y="60"
+          width="72"
+          height="72"
+          preserveAspectRatio="xMidYMid meet"
+        />
+        {/* Wordmark — next to logo */}
+        <text
+          x="164"
           y="94"
           fontFamily="Playfair Display, Georgia, serif"
           fontSize="36"
@@ -66,7 +75,7 @@ export function BlogHeroImage({
           Vertexa
         </text>
         <text
-          x="82"
+          x="166"
           y="120"
           fontFamily="Inter, system-ui, sans-serif"
           fontSize="14"

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { SectionHeader } from "@/components/sections/SectionHeader";
+import { BlogHeroImage } from "@/components/sections/blog/BlogHeroImage";
 import type { BlogPost } from "@/lib/blogs-content";
 
 function formatDate(dateString: string) {
@@ -25,13 +26,18 @@ export function RelatedBlogs({ blogs }: RelatedBlogsProps) {
         <SectionHeader heading="Related Articles" />
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {blogs.map((blog) => (
+          {blogs.map((blog, idx) => (
             <Link
               key={blog.slug}
               href={`/resources/blogs/${blog.slug}`}
               className="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white transition-shadow duration-300 hover:shadow-xl"
             >
-              <div className="aspect-[16/10] bg-neutral-100" />
+              <BlogHeroImage
+                title={blog.title}
+                category={blog.category}
+                variant={idx % 2 === 0 ? "dark" : "light"}
+                className="aspect-16/10"
+              />
               <div className="flex flex-1 flex-col p-6">
                 <span className="text-xs font-medium tracking-widest text-neutral-500 uppercase">
                   {blog.category}
