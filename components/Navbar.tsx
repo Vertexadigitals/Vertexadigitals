@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu } from "lucide-react";
+import { Menu, Zap } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/lib/site-config";
@@ -73,6 +73,14 @@ export function Navbar() {
         <DesktopNav />
 
         <div className="flex items-center justify-end gap-2">
+          <Link
+            href="/audit"
+            className="hidden items-center gap-1.5 rounded-full border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-700 transition-colors hover:border-neutral-900 hover:text-neutral-900 md:inline-flex"
+          >
+            <Zap className="size-3.5" aria-hidden="true" />
+            Free Audit
+          </Link>
+
           <Button
             render={<Link href={siteConfig.cta.href} />}
             className="hidden rounded-full bg-black px-5 text-white hover:bg-neutral-800 md:inline-flex"
