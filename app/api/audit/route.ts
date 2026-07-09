@@ -495,7 +495,9 @@ export async function POST(request: Request) {
     );
   }
 
-  // Capture lead in Brevo (non-blocking — don't fail the request if CRM is down)
+  // Capture lead and send emails — must be awaited before response on serverless
+  // (Vercel terminates the function the moment NextResponse is returned, so
+  //  fire-and-forget void calls never complete in production)
   const leadData = {
     firstName,
     lastName,
@@ -511,7 +513,8 @@ export async function POST(request: Request) {
     bestPracticesScore: auditResult.scores.bestPractices,
   };
 
-  void Promise.all([
+  // Each function has its own internal try/catch — Promise.all will not reject
+  await Promise.all([
     submitAuditLead(leadData),
     sendAuditNotificationEmail(leadData),
     sendAuditConfirmationEmail({
